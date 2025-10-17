@@ -1,14 +1,12 @@
 import React from 'react';
 
 const certificates = [
-    { name: 'ISO 9001:2015 Certified', logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/ISO_9001-2015_Logo.svg/1200px-ISO_9001-2015_Logo.svg.png' },
-    { name: 'Qatar Civil Defence Approved', logoUrl: 'https://www.qfa.qa/wp-content/uploads/2020/09/civil-defence.png' },
-    { name: 'ISO 45001 Certified (OHSAS)', logoUrl: 'https://cdn.worldvectorlogo.com/logos/iso-45001.svg' },
-    { name: 'ISO 14001:2015 Certified', logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/ISO_14001-2015_Logo.svg/1200px-ISO_14001-2015_Logo.svg.png' },
-    { name: 'NFPA Member', logoUrl: 'https://www.nfpa.org/-/media/Images/Logos/NFPA-Logo-PNG.png' },
-    { name: 'Government Approved Contractor', logoUrl: 'https://cdn-icons-png.flaticon.com/512/7518/7518739.png' },
-    { name: 'Certified Installers', logoUrl: 'https://cdn-icons-png.flaticon.com/512/2921/2921918.png' },
-    { name: 'Safety Excellence Award', logoUrl: 'https://cdn-icons-png.flaticon.com/512/3112/3112946.png' }
+    { name: 'ISO ', logoUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3R_cu3acU338nQWWOFvtCIo6Y8XIYvPt3QtffUD8An5zf9B53iKqLeSBQfNHwHJQJNQY&usqp=CAU' },
+    { name: 'Qatar Civil Defence Approved', logoUrl: 'https://lda-audiotech.com/wp-content/uploads/2023/09/civil-defense-qatar-300px.jpg' }
+    { name: 'UL', logoUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW7JN0EjChT6JSQbStbFgzaZGmZt_hVE9DAA&s' },
+    { name: 'NFPA Member', logoUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8I6tX8MaQY1d2otpFy0o6WL6sjjxhi_dQSQ&s' },
+    { name: 'FM', logoUrl: 'https://storage.tameson.com/asset/Articles/general/fm-approved-certification.jpg' },
+    { name: 'BSI', logoUrl: 'https://winningthebusiness.com/wp-content/uploads/2022/05/bsi.png' }
 ];
 
 
