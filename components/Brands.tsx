@@ -2,17 +2,21 @@ import React from 'react';
 
 const brandLogos = [
     { name: '3M', logoUrl: 'https://img.favpng.com/25/22/12/3m-singapore-adhesive-tape-logo-brand-png-favpng-Am9s22LMss7Egr1vBTnWBpzDP.jpg' },
-    { name: 'Honeywell', logoUrl: 'https://companieslogo.com/img/orig/HON-78a74509.png?t=1683353272' },
-    { name: 'Bosch', logoUrl: 'https://companieslogo.com/img/orig/BOSCHLTD.NS-02298717.png?t=1653457997' },
-    { name: 'Siemens', logoUrl: 'https://companieslogo.com/img/orig/SIE.DE-ca917028.png?t=1683354425' },
-    { name: 'Tyco', logoUrl: 'https://www.johnsoncontrols.com/-/media/jci/tyco/images/tyco-logo-social.png' },
-    { name: 'Ansul', logoUrl: 'https://www.tycofpp.com/images/librariesprovider7/ansul/ansul-logo.png' },
-    { name: 'Viking', logoUrl: 'https://www.vikinggroupinc.com/sites/all/themes/viking/logo.png' },
-    { name: 'Kidde', logoUrl: 'https://1000logos.net/wp-content/uploads/2023/04/Kidde-Logo.png' },
-    { name: 'NAFFCO', logoUrl: 'https://www.naffco.com/media/logo/stores/1/NAFFCO_logo.png' },
-    { name: 'Jotun', logoUrl: 'https://companieslogo.com/img/orig/JOT.OL-33562657.png?t=1646802119' },
-    { name: 'Hilti', logoUrl: 'https://companieslogo.com/img/orig/HILTI.SW-d3e92e2a.png?t=1648359218' },
-    { name: 'Caterpillar', logoUrl: 'https://companieslogo.com/img/orig/CAT-42c21626.png?t=1683352726' }
+    { name: 'Honeywell', logoUrl: 'https://w7.pngwing.com/pngs/111/806/png-transparent-honeywell-logo-honeywell-company-manufacturing-sensor-industry-honeywell-logo-text-service-banner.png' },
+    { name: 'Bosch', logoUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIBwI1vUatZDBnpeNCWLmjmJYF_kadlJTlqw&s' },
+    { name: 'Siemens', logoUrl: 'https://i.pinimg.com/736x/ea/7a/aa/ea7aaaf8ddfeabc8ce8e223a58139fa6.jpg' },
+    { name: 'Tyco', logoUrl: 'https://w7.pngwing.com/pngs/755/200/png-transparent-tyco-hd-logo.png' },
+    { name: 'Ansul', logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/c/c0/AnsulLogo.gif' },
+    { name: 'Viking', logoUrl: 'https://www.agnindo.co.id/wp-content/uploads/2019/11/Viking_Group_Inc_-01.png' },
+    { name: 'Kidde', logoUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmlPJqr8Tsv4VtaYdI0zfCxxgKzpNhpRECKQ&s' },
+    { name: 'NAFFCO', logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/3/3e/NAFFCO_Logo_%28Transparent%29.png' },
+    { name: 'HD fire', logoUrl: 'https://apfmag.com/wp-content/uploads/2016/06/APF_58_Jul16_SHOWCASE_HD_Fire.png' },
+    { name: 'Weflo', logoUrl: 'https://deltaflow.com.mx/wp-content/uploads/2020/09/Weflo-Logo-768x186.png' },
+    { name: 'CNG', logoUrl: 'https://cdn.globalso.com/cngroove/CNG-LOGO.png' },
+    { name: 'Synergy Industries', logoUrl: 'https://images.squarespace-cdn.com/content/v1/5ccb612a9d75ab0001bda184/2516dc10-fba6-4dec-a53c-fbcce77e908d/SynergyLogo-Black.png' },
+    { name: 'Val matic', logoUrl: ' https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0avXZE_PWpLkbhsNWwxMUkvZBUEyhf5s8zw&s' }
+    
+   
 ];
 
 const Brands: React.FC = () => {

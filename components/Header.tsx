@@ -35,7 +35,7 @@ const Header: React.FC = () => {
         <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-md' : 'bg-transparent'}`}>
             <div className="container mx-auto px-6 py-3 flex justify-between items-center">
                 <Link to="/">
-                    <img src="https://drive.google.com/uc?export=download&id=1NRc5FA7l_D4iJfoSGi58ceiuN5aQQdlS" alt="Firetech Logo" className="h-12" />
+                    <img src="https://drive.google.com/file/d/1M6M_LNFO0pCBkcvrBJgU3YzUByptX0vy/preview" alt="Firetech Logo" className="h-12" />
                 </Link>
                 <nav className="hidden md:flex space-x-4">
                     <NavLinksContent />
