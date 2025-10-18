@@ -5,7 +5,7 @@ import Clients from '../components/Clients';
 
 const WhyUsPage: React.FC = () => {
   return (
-    <div className="pt-40">
+    <div className="pt-24 sm:pt-28">
       <WhyChooseUs />
       <Certificates />
       <Clients />

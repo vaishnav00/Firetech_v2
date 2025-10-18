@@ -26,7 +26,7 @@ const Brands: React.FC = () => {
                 <h2 className="text-sm font-bold uppercase text-firetech-red tracking-widest mb-2">Our Partners</h2>
                 <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800 mb-12">Trusted Brands We Supply</h3>
                 <div
-                    className="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
+                    className="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_48px,_black_calc(100%-48px),transparent_100%)]">
                     <ul className="flex items-center justify-center md:justify-start [&_li]:mx-4 md:[&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
                         {brandLogos.map((brand, index) => (
                             <li key={index}>

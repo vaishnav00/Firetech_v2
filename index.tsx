@@ -15,4 +15,4 @@ root.render(
 );
 
 // Unhide the root element after the initial render to prevent FOUC
-rootElement.style.visibility = 'visible';
+rootElement.style.display = 'block';

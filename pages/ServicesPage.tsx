@@ -93,11 +93,11 @@ const ProductCategoryCard: React.FC<{ category: string; description: string; ite
             <p className="text-gray-600 text-sm">{description}</p>
         </div>
         <div className="p-6 pt-0 mt-auto">
-             <div className="grid grid-cols-2 gap-2 sm:gap-4 border-t border-gray-200 pt-4">
+             <div className="grid grid-cols-2 gap-4 border-t border-gray-200 pt-4">
                 {items.map((item, index) => (
                     <div key={index} className="text-center group">
                         <div className="overflow-hidden rounded-md">
-                            <img src={item.imageUrl} alt={item.name} className="w-full h-20 sm:h-24 object-cover rounded-md shadow-sm mb-2 transform group-hover:scale-110 transition-transform duration-300" />
+                            <img src={item.imageUrl} alt={item.name} className="w-full h-24 object-cover rounded-md shadow-sm mb-2 transform group-hover:scale-110 transition-transform duration-300" />
                         </div>
                         <p className="text-xs font-semibold text-gray-700 mt-2">{item.name}</p>
                     </div>
@@ -121,7 +121,7 @@ const ProjectCard: React.FC<{ title: string, description: string, imageUrl: stri
 const ServiceCategory: React.FC<{ icon: React.ReactNode, title: string, items: string[] }> = ({ icon, title, items }) => (
     <div className="bg-white p-6 rounded-lg shadow-md">
         <div className="flex items-center mb-4">
-            <div className="bg-firetech-red text-white p-3 rounded-full mr-4">
+            <div className="bg-firetech-red text-white p-3 rounded-full mr-4 flex-shrink-0">
                 {icon}
             </div>
             <h3 className="text-xl md:text-2xl font-bold text-gray-800">{title}</h3>
@@ -140,7 +140,7 @@ const ServiceCategory: React.FC<{ icon: React.ReactNode, title: string, items: s
 
 const ServicesPage: React.FC = () => {
     return (
-        <div className="pt-40 bg-gray-50">
+        <div className="pt-24 sm:pt-28 bg-gray-50">
             {/* Page Header */}
             <section className="bg-firetech-red text-white py-16">
                 <div className="container mx-auto px-6 text-center">
@@ -196,7 +196,7 @@ const ServicesPage: React.FC = () => {
                         <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800">Product Showcase</h2>
                         <p className="text-lg text-gray-600 mt-2">A selection of high-quality products we supply from trusted global partners.</p>
                     </div>
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                         {productsByCategory.map((category, index) => (
                             <ProductCategoryCard key={index} {...category} />
                         ))}

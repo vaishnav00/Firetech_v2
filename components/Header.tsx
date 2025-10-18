@@ -22,15 +22,13 @@ const Header: React.FC = () => {
     ];
 
     return (
-        <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white ${scrolled ? 'shadow-md py-2' : 'shadow-sm py-4'}`}>
-            {/* THE FIX IS HERE: Changed px-6 to px-4 for better mobile spacing */}
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+        <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white ${scrolled ? 'shadow-md py-2' : 'shadow-sm py-3'}`}>
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 flex justify-between items-center">
                 <Link to="/" className="flex-shrink-0">
                     <img 
                         src="https://www.dropbox.com/scl/fi/g5esh24ikp2wfmwtkd2gn/logo-wit-name_ma.png?rlkey=e1dq12gdhdvmttybzqbd78rjm&raw=1" 
                         alt="Firetech Logo" 
-                        // THE MAIN FIX IS HERE: Simplified and reduced the height for mobile.
-                        className={`transition-all duration-300 ${scrolled ? 'h-12' : 'h-14 md:h-16'}`} 
+                        className={`transition-all duration-300 ${scrolled ? 'h-12 sm:h-14' : 'h-14 sm:h-16'}`} 
                     />
                 </Link>
                 <nav className="hidden md:flex space-x-2">
@@ -50,28 +48,27 @@ const Header: React.FC = () => {
                         className="focus:outline-none transition-colors duration-300 text-gray-600 hover:text-firetech-red p-2"
                         aria-label="Toggle mobile menu"
                     >
-                        <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <svg className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={mobileMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16m-7 6h7"} />
                         </svg>
                     </button>
                 </div>
             </div>
-            {mobileMenuOpen && (
-                <div className="md:hidden bg-white shadow-lg">
-                    <nav className="flex flex-col items-center py-4 space-y-2">
-                        {navLinks.map((link) => (
-                            <Link 
-                                key={link.name} 
-                                to={link.href} 
-                                onClick={() => setMobileMenuOpen(false)} 
-                                className="text-gray-600 hover:text-firetech-red transition duration-300 font-semibold w-full text-center px-3 py-2 rounded-md"
-                            >
-                                {link.name}
-                            </Link>
-                        ))}
-                    </nav>
-                </div>
-            )}
+            {/* Mobile Menu */}
+            <div className={`md:hidden bg-white shadow-lg transition-all duration-300 ease-in-out overflow-hidden ${mobileMenuOpen ? 'max-h-96' : 'max-h-0'}`}>
+                <nav className="flex flex-col items-center py-2 space-y-1">
+                    {navLinks.map((link) => (
+                        <Link 
+                            key={link.name} 
+                            to={link.href} 
+                            onClick={() => setMobileMenuOpen(false)} 
+                            className="text-gray-600 hover:bg-gray-100 transition duration-300 font-semibold w-full text-center px-3 py-3"
+                        >
+                            {link.name}
+                        </Link>
+                    ))}
+                </nav>
+            </div>
         </header>
     );
 };

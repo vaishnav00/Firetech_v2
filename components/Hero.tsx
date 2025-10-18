@@ -40,7 +40,7 @@ const Hero: React.FC = () => {
         <img 
           src="https://www.dropbox.com/scl/fi/gom5bwstmzus2rvbg06yd/firetech-logo-white.png?rlkey=qk3ffqe49620grjdmb3t2oa7w&raw=1" 
           alt="Firetech Logo" 
-          className="h-32 sm:h-40 md:h-56 mb-2" 
+          className="h-28 sm:h-40 md:h-56 mb-2" 
         />
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold uppercase tracking-wider mb-4">
           Firetech Trading & Contracting W.L.L
