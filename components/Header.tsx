@@ -26,7 +26,7 @@ const Header: React.FC = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 flex justify-between items-center">
                 <Link to="/" className="flex-shrink-0">
                     <img 
-                        src="https://www.dropbox.com/scl/fi/i9ydu1nycxa8poq4001ad/logo-wit-name.png?rlkey=caadna0kix8f0kebozdxg80yf&raw=1" 
+                        src="https://www.dropbox.com/scl/fi/g5esh24ikp2wfmwtkd2gn/logo-wit-name_ma.png?rlkey=e1dq12gdhdvmttybzqbd78rjm&raw=1" 
                         alt="Firetech Logo" 
                         className={`transition-all duration-300 ${scrolled ? 'h-12 sm:h-14' : 'h-14 sm:h-16'}`} 
                     />
