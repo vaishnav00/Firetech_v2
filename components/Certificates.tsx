@@ -18,9 +18,9 @@ const Certificates: React.FC = () => {
                 <h3 className="text-3xl md:text-4xl font-bold text-gray-800 mb-12">Our Certifications & Licenses</h3>
                 <div
                     className="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear_gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
-                    <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
+                    <ul className="flex items-center justify-center md:justify-start [&_li]:mx-4 md:[&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
                         {certificates.map((cert, index) => (
-                            <li key={index} className="flex flex-col items-center justify-center w-40">
+                            <li key={index} className="flex flex-col items-center justify-center w-32 md:w-40">
                                 <img 
                                     src={cert.logoUrl} 
                                     alt={cert.name} 
@@ -30,9 +30,9 @@ const Certificates: React.FC = () => {
                             </li>
                         ))}
                     </ul>
-                    <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll" aria-hidden="true">
+                    <ul className="flex items-center justify-center md:justify-start [&_li]:mx-4 md:[&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll" aria-hidden="true">
                          {certificates.map((cert, index) => (
-                            <li key={index} className="flex flex-col items-center justify-center w-40">
+                            <li key={index} className="flex flex-col items-center justify-center w-32 md:w-40">
                                 <img 
                                     src={cert.logoUrl} 
                                     alt={cert.name} 

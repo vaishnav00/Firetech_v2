@@ -23,7 +23,7 @@ const Header: React.FC = () => {
 
     return (
         <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white ${scrolled ? 'shadow-md py-3' : 'shadow-sm py-6'}`}>
-            <div className="container mx-auto px-6 flex justify-between items-center">
+            <div className="container mx-auto px-6 flex justify-between items-center max-w-7xl">
                 <Link to="/">
                     <img 
                         src="https://www.dropbox.com/scl/fi/g5esh24ikp2wfmwtkd2gn/logo-wit-name_ma.png?rlkey=e1dq12gdhdvmttybzqbd78rjm&raw=1" 

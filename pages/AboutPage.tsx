@@ -5,7 +5,7 @@ import CoreValues from '../components/CoreValues';
 
 const AboutPage: React.FC = () => {
   return (
-    <div className="pt-20">
+    <div className="pt-40">
       <About />
       <VisionMission />
       <CoreValues />

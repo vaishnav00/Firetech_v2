@@ -27,14 +27,14 @@ const Brands: React.FC = () => {
                 <h3 className="text-3xl md:text-4xl font-bold text-gray-800 mb-12">Trusted Brands We Supply</h3>
                 <div
                     className="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
-                    <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
+                    <ul className="flex items-center justify-center md:justify-start [&_li]:mx-4 md:[&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
                         {brandLogos.map((brand, index) => (
                             <li key={index}>
                                 <img src={brand.logoUrl} alt={`${brand.name} logo`} className="h-12 w-32 object-contain filter grayscale hover:grayscale-0 transition-all duration-300 cursor-pointer" />
                             </li>
                         ))}
                     </ul>
-                    <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll" aria-hidden="true">
+                    <ul className="flex items-center justify-center md:justify-start [&_li]:mx-4 md:[&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll" aria-hidden="true">
                         {brandLogos.map((brand, index) => (
                             <li key={index}>
                                  <img src={brand.logoUrl} alt={`${brand.name} logo`} className="h-12 w-32 object-contain filter grayscale hover:grayscale-0 transition-all duration-300 cursor-pointer" />

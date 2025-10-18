@@ -110,7 +110,7 @@ const ProductCategoryCard: React.FC<{ category: string; description: string; ite
 
 const ProjectCard: React.FC<{ title: string, description: string, imageUrl: string }> = ({ title, description, imageUrl }) => (
      <div className="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
-        <img src={imageUrl} alt={title} className="w-full h-56 object-cover" />
+        <img src={imageUrl} alt={title} className="w-full h-48 md:h-56 object-cover" />
         <div className="p-6">
             <h3 className="text-xl font-bold text-gray-800 mb-2">{title}</h3>
             <p className="text-gray-600">{description}</p>
@@ -140,7 +140,7 @@ const ServiceCategory: React.FC<{ icon: React.ReactNode, title: string, items: s
 
 const ServicesPage: React.FC = () => {
     return (
-        <div className="pt-20 bg-gray-50">
+        <div className="pt-40 bg-gray-50">
             {/* Page Header */}
             <section className="bg-firetech-red text-white py-16">
                 <div className="container mx-auto px-6 text-center">
@@ -157,7 +157,7 @@ const ServicesPage: React.FC = () => {
                     <div className="text-center mb-12">
                          <h2 className="text-3xl md:text-4xl font-bold text-gray-800">Our Core Service Areas</h2>
                     </div>
-                     <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-8">
+                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         <ServiceCategory 
                             icon={<FireIcon className="w-8 h-8"/>}
                             title="Fire & Safety Solutions"
@@ -211,7 +211,7 @@ const ServicesPage: React.FC = () => {
                         <h2 className="text-3xl md:text-4xl font-bold text-gray-800">Featured Projects</h2>
                         <p className="text-lg text-gray-600 mt-2">Demonstrating our capability and commitment to excellence across various sectors.</p>
                     </div>
-                    <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-8">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {projectsData.map((project, index) => (
                             <ProjectCard key={index} {...project} />
                         ))}

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { CheckCircleIcon } from './Icons';
 
@@ -43,7 +42,7 @@ const Services: React.FC = () => {
             <div className="container mx-auto px-6 text-center relative z-10">
                 <h2 className="text-sm font-bold uppercase tracking-widest mb-2 text-gray-200">What We Offer</h2>
                 <h3 className="text-3xl md:text-4xl font-bold mb-12">Products & Services</h3>
-                <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <ServiceCategory title={servicesData.fireSafety.title} items={servicesData.fireSafety.items} />
                     <ServiceCategory title={servicesData.construction.title} items={servicesData.construction.items} />
                     <ServiceCategory title={servicesData.contracting.title} items={servicesData.contracting.items} />
