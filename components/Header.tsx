@@ -22,13 +22,15 @@ const Header: React.FC = () => {
     ];
 
     return (
-        <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white ${scrolled ? 'shadow-md py-3' : 'shadow-sm py-6'}`}>
-            <div className="container mx-auto px-6 flex justify-between items-center max-w-7xl">
-                <Link to="/">
+        <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white ${scrolled ? 'shadow-md py-2' : 'shadow-sm py-4'}`}>
+            {/* THE FIX IS HERE: Changed px-6 to px-4 for better mobile spacing */}
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+                <Link to="/" className="flex-shrink-0">
                     <img 
                         src="https://www.dropbox.com/scl/fi/g5esh24ikp2wfmwtkd2gn/logo-wit-name_ma.png?rlkey=e1dq12gdhdvmttybzqbd78rjm&raw=1" 
                         alt="Firetech Logo" 
-                        className={`transition-all duration-300 h-14 ${scrolled ? 'sm:h-16' : 'sm:h-24'}`} 
+                        // THE MAIN FIX IS HERE: Simplified and reduced the height for mobile.
+                        className={`transition-all duration-300 ${scrolled ? 'h-12' : 'h-14 md:h-16'}`} 
                     />
                 </Link>
                 <nav className="hidden md:flex space-x-2">
