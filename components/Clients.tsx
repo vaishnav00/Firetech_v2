@@ -2,8 +2,8 @@ import React from 'react';
 
 const Clients: React.FC = () => {
     return (
-        <section id="clients" className="py-20 bg-white">
-            <div className="container mx-auto px-6">
+        <section id="clients" className="py-16 sm:py-20 bg-white">
+            <div className="container mx-auto px-4 sm:px-6">
                 <div className="flex flex-col-reverse md:flex-row items-center gap-8 md:gap-12">
                     <div className="md:w-1/2 text-center md:text-left">
                         <h2 className="text-sm font-bold uppercase text-firetech-red tracking-widest mb-2">Our Reach</h2>

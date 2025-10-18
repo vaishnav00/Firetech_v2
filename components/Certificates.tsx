@@ -1,19 +1,19 @@
 import React from 'react';
 
 const certificates = [
-    { name: 'ISO ', logoUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3R_cu3acU338nQWWOFvtCIo6Y8XIYvPt3QtffUD8An5zf9B53iKqLeSBQfNHwHJQJNQY&usqp=CAU' },
-    { name: 'Qatar Civil Defence Approved', logoUrl: 'https://lda-audiotech.com/wp-content/uploads/2023/09/civil-defense-qatar-300px.jpg' },
-    { name: 'UL', logoUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW7JN0EjChT6JSQbStbFgzaZGmZt_hVE9DAA&s' },
-    { name: 'NFPA Member', logoUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8I6tX8MaQY1d2otpFy0o6WL6sjjxhi_dQSQ&s' },
-    { name: 'FM', logoUrl: 'https://storage.tameson.com/asset/Articles/general/fm-approved-certification.jpg' },
-    { name: 'BSI', logoUrl: 'https://winningthebusiness.com/wp-content/uploads/2022/05/bsi.png' }
+    { name: 'ISO 9001:2015', logoUrl: 'https://www.dropbox.com/scl/fi/y70m8n87e685f0q11j5c6/iso-logo.png?rlkey=p5n0m68g0j7b70j0q7w7k&raw=1' },
+    { name: 'Qatar Civil Defence', logoUrl: 'https://www.dropbox.com/scl/fi/s8c6c5j6v6d5g6h6j6k6l/qcd-logo.png?rlkey=a1b2c3d4e5f6g7h8i9j0k&raw=1' },
+    { name: 'UL Certified', logoUrl: 'https://www.dropbox.com/scl/fi/x4y4z4a4b4c4d4e4f4g4h/ul-logo.png?rlkey=q9w8e7r6t5y4u3i2o1p0a&raw=1' },
+    { name: 'NFPA Member', logoUrl: 'https://www.dropbox.com/scl/fi/m1n2b3v4c5x6z7l8k9j8h/nfpa-logo.png?rlkey=p0o9i8u7y6t5r4e3w2q1a&raw=1' },
+    { name: 'FM Approved', logoUrl: 'https://www.dropbox.com/scl/fi/d5f6g7h8j9k0l0z0x0c0v/fm-logo.png?rlkey=a1s2d3f4g5h6j7k8l9z0x&raw=1' },
+    { name: 'BSI Member', logoUrl: 'https://www.dropbox.com/scl/fi/v9c8x7z6l5k4j3h2g1f1d/bsi-logo.png?rlkey=z1x2c3v4b5n6m7q8w9e8r&raw=1' }
 ];
 
 
 const Certificates: React.FC = () => {
     return (
-        <section id="certificates" className="py-20 bg-white">
-            <div className="container mx-auto px-6 text-center">
+        <section id="certificates" className="py-16 sm:py-20 bg-white">
+            <div className="container mx-auto px-4 sm:px-6 text-center">
                 <h2 className="text-sm font-bold uppercase text-firetech-red tracking-widest mb-2">Commitment to Quality</h2>
                 <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800 mb-12">Our Certifications & Licenses</h3>
                 <div

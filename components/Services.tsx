@@ -1,18 +1,24 @@
 import React from 'react';
-import { CheckCircleIcon } from './Icons';
+import { CheckCircleIcon, FireIcon, BuildingOfficeIcon, WrenchScrewdriverIcon } from './Icons';
 
 interface ServiceCategoryProps {
+    icon: React.ReactNode;
     title: string;
     items: string[];
 }
 
-const ServiceCategory: React.FC<ServiceCategoryProps> = ({ title, items }) => (
-    <div className="bg-white p-6 md:p-8 rounded-lg shadow-lg">
-        <h4 className="text-xl md:text-2xl font-bold text-gray-800 mb-6">{title}</h4>
-        <ul className="space-y-4">
+const ServiceCategory: React.FC<ServiceCategoryProps> = ({ icon, title, items }) => (
+    <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 h-full flex flex-col">
+        <div className="flex items-center mb-4">
+            <div className="bg-firetech-red text-white p-3 rounded-full mr-4 flex-shrink-0">
+                {icon}
+            </div>
+            <h3 className="text-xl font-bold text-gray-800 text-left">{title}</h3>
+        </div>
+        <ul className="space-y-3 mt-2 flex-grow">
             {items.map((item, index) => (
-                <li key={index} className="flex items-start">
-                    <CheckCircleIcon className="w-6 h-6 text-firetech-red mr-3 mt-1 flex-shrink-0" />
+                <li key={index} className="flex items-start text-left">
+                    <CheckCircleIcon className="w-5 h-5 text-firetech-red mr-3 mt-1 flex-shrink-0" />
                     <span className="text-gray-600">{item}</span>
                 </li>
             ))}
@@ -37,15 +43,26 @@ const Services: React.FC = () => {
     };
 
     return (
-        <section id="services" className="py-20 bg-firetech-red text-white relative">
-            <div className="absolute top-0 left-0 w-full h-full bg-cover bg-center opacity-10" style={{backgroundImage: "url('https://picsum.photos/1200/800?blur=1')"}}></div>
-            <div className="container mx-auto px-6 text-center relative z-10">
-                <h2 className="text-sm font-bold uppercase tracking-widest mb-2 text-gray-200">What We Offer</h2>
-                <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-12">Products & Services</h3>
+        <section id="services" className="py-16 sm:py-20 bg-gray-100">
+            <div className="container mx-auto px-4 sm:px-6 text-center">
+                <h2 className="text-sm font-bold uppercase text-firetech-red tracking-widest mb-2">What We Offer</h2>
+                <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800 mb-12">Products & Services</h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <ServiceCategory title={servicesData.fireSafety.title} items={servicesData.fireSafety.items} />
-                    <ServiceCategory title={servicesData.construction.title} items={servicesData.construction.items} />
-                    <ServiceCategory title={servicesData.contracting.title} items={servicesData.contracting.items} />
+                    <ServiceCategory 
+                        icon={<FireIcon className="w-7 h-7" />}
+                        title={servicesData.fireSafety.title} 
+                        items={servicesData.fireSafety.items} 
+                    />
+                    <ServiceCategory 
+                        icon={<BuildingOfficeIcon className="w-7 h-7" />}
+                        title={servicesData.construction.title} 
+                        items={servicesData.construction.items} 
+                    />
+                    <ServiceCategory 
+                        icon={<WrenchScrewdriverIcon className="w-7 h-7" />}
+                        title={servicesData.contracting.title} 
+                        items={servicesData.contracting.items} 
+                    />
                 </div>
             </div>
         </section>

@@ -25,9 +25,9 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gray-800 text-white relative overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center opacity-10" style={{backgroundImage: "url('https://picsum.photos/id/10/1920/1080')"}}></div>
-        <div className="container mx-auto px-6 relative z-10">
+    <section id="contact" className="py-16 sm:py-20 bg-gray-800 text-white relative overflow-hidden">
+        <div className="absolute inset-0 bg-cover bg-center opacity-10" style={{backgroundImage: "url('https://www.dropbox.com/scl/fi/h11o44k1a7yjwbhj5o3zt/contact-bg.jpg?rlkey=y4t3jdxuevgtqch4lq2p1j5y5&raw=1')"}}></div>
+        <div className="container mx-auto px-4 sm:px-6 relative z-10">
             <div className="text-center mb-12">
                 <h2 className="text-sm font-bold uppercase text-gray-300 tracking-widest mb-2">Get In Touch</h2>
                 <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-4">Contact Us</h3>

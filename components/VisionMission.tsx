@@ -2,8 +2,8 @@ import React from 'react';
 
 const VisionMission: React.FC = () => {
   return (
-    <section className="py-20 bg-white">
-      <div className="container mx-auto px-6">
+    <section className="py-16 sm:py-20 bg-white">
+      <div className="container mx-auto px-4 sm:px-6">
         <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-start">
           <div className="bg-gray-50 p-6 md:p-8 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
             <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4 border-b-4 border-firetech-red pb-2 inline-block">Our Vision</h3>

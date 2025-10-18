@@ -2,8 +2,8 @@ import React from 'react';
 
 const About: React.FC = () => {
   return (
-    <section id="about" className="py-20 bg-gray-50">
-      <div className="container mx-auto px-6">
+    <section id="about" className="py-16 sm:py-20 bg-gray-50">
+      <div className="container mx-auto px-4 sm:px-6">
         <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
           <div className="md:w-1/2">
             <div className="relative">

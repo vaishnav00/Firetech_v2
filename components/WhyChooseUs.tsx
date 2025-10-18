@@ -22,8 +22,8 @@ const WhyChooseUs: React.FC = () => {
     ];
 
     return (
-        <section id="why-us" className="py-20 bg-gray-50">
-            <div className="container mx-auto px-6">
+        <section id="why-us" className="py-16 sm:py-20 bg-gray-50">
+            <div className="container mx-auto px-4 sm:px-6">
                 <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-20">
                     <div className="lg:w-2/5">
                         <h2 className="text-sm font-bold uppercase text-firetech-red tracking-widest mb-2">Our Advantage</h2>
