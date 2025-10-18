@@ -59,6 +59,15 @@ This is a corporate website for Firetech Trading Contracting W.L.L, a company sp
 5. **Contact** (`/contact`) - Contact information and form
 
 ## Recent Changes
+**October 18, 2025 - Mobile Responsiveness Fix**
+- Fixed mobile layout issues where images were displaying at full size and breaking the layout
+- Updated three components with proper mobile image constraints:
+  - `About.tsx`: Added max-height (384px), max-width (28rem on mobile), and object-contain for fire extinguisher image
+  - `Clients.tsx`: Added max-height (384px), max-width (28rem on mobile), and object-cover for Qatar skyline image
+  - `WhyChooseUs.tsx`: Added max-height (320px), max-width (28rem on mobile), and object-cover for fire equipment image
+- All fixes maintain full-size display on desktop (md breakpoint and above)
+- Configured deployment settings for production (autoscale with build and preview commands)
+
 **October 18, 2025 - Initial Replit Setup**
 - Installed Node.js 20 and npm dependencies
 - Updated Vite configuration:
