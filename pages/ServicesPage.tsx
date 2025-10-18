@@ -93,11 +93,11 @@ const ProductCategoryCard: React.FC<{ category: string; description: string; ite
             <p className="text-gray-600 text-sm">{description}</p>
         </div>
         <div className="p-6 pt-0 mt-auto">
-             <div className="grid grid-cols-2 gap-4 border-t border-gray-200 pt-4">
+             <div className="grid grid-cols-2 gap-2 sm:gap-4 border-t border-gray-200 pt-4">
                 {items.map((item, index) => (
                     <div key={index} className="text-center group">
                         <div className="overflow-hidden rounded-md">
-                            <img src={item.imageUrl} alt={item.name} className="w-full h-24 object-cover rounded-md shadow-sm mb-2 transform group-hover:scale-110 transition-transform duration-300" />
+                            <img src={item.imageUrl} alt={item.name} className="w-full h-20 sm:h-24 object-cover rounded-md shadow-sm mb-2 transform group-hover:scale-110 transition-transform duration-300" />
                         </div>
                         <p className="text-xs font-semibold text-gray-700 mt-2">{item.name}</p>
                     </div>
@@ -124,7 +124,7 @@ const ServiceCategory: React.FC<{ icon: React.ReactNode, title: string, items: s
             <div className="bg-firetech-red text-white p-3 rounded-full mr-4">
                 {icon}
             </div>
-            <h3 className="text-2xl font-bold text-gray-800">{title}</h3>
+            <h3 className="text-xl md:text-2xl font-bold text-gray-800">{title}</h3>
         </div>
         <ul className="space-y-2">
             {items.map((item, index) => (
@@ -144,8 +144,8 @@ const ServicesPage: React.FC = () => {
             {/* Page Header */}
             <section className="bg-firetech-red text-white py-16">
                 <div className="container mx-auto px-6 text-center">
-                    <h1 className="text-4xl md:text-5xl font-extrabold mb-4">Our Products & Services</h1>
-                    <p className="text-lg md:text-xl max-w-3xl mx-auto">
+                    <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4">Our Products & Services</h1>
+                    <p className="text-base md:text-lg lg:text-xl max-w-3xl mx-auto">
                         Delivering integrated, world-class solutions across fire safety, construction, and industrial supply to safeguard your assets and ensure project success.
                     </p>
                 </div>
@@ -155,7 +155,7 @@ const ServicesPage: React.FC = () => {
             <section className="py-20">
                 <div className="container mx-auto px-6">
                     <div className="text-center mb-12">
-                         <h2 className="text-3xl md:text-4xl font-bold text-gray-800">Our Core Service Areas</h2>
+                         <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800">Our Core Service Areas</h2>
                     </div>
                      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         <ServiceCategory 
@@ -193,7 +193,7 @@ const ServicesPage: React.FC = () => {
             <section className="py-20 bg-gray-100">
                 <div className="container mx-auto px-6">
                     <div className="text-center mb-12">
-                        <h2 className="text-3xl md:text-4xl font-bold text-gray-800">Product Showcase</h2>
+                        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800">Product Showcase</h2>
                         <p className="text-lg text-gray-600 mt-2">A selection of high-quality products we supply from trusted global partners.</p>
                     </div>
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -208,7 +208,7 @@ const ServicesPage: React.FC = () => {
             <section className="py-20 bg-white">
                 <div className="container mx-auto px-6">
                     <div className="text-center mb-12">
-                        <h2 className="text-3xl md:text-4xl font-bold text-gray-800">Featured Projects</h2>
+                        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800">Featured Projects</h2>
                         <p className="text-lg text-gray-600 mt-2">Demonstrating our capability and commitment to excellence across various sectors.</p>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

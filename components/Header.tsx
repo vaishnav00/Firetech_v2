@@ -28,7 +28,7 @@ const Header: React.FC = () => {
                     <img 
                         src="https://www.dropbox.com/scl/fi/g5esh24ikp2wfmwtkd2gn/logo-wit-name_ma.png?rlkey=e1dq12gdhdvmttybzqbd78rjm&raw=1" 
                         alt="Firetech Logo" 
-                        className={`transition-all duration-300 ${scrolled ? 'h-16' : 'h-24'}`} 
+                        className={`transition-all duration-300 h-14 ${scrolled ? 'sm:h-16' : 'sm:h-24'}`} 
                     />
                 </Link>
                 <nav className="hidden md:flex space-x-2">
@@ -46,6 +46,7 @@ const Header: React.FC = () => {
                     <button 
                         onClick={() => setMobileMenuOpen(!mobileMenuOpen)} 
                         className="focus:outline-none transition-colors duration-300 text-gray-600 hover:text-firetech-red p-2"
+                        aria-label="Toggle mobile menu"
                     >
                         <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={mobileMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16m-7 6h7"} />

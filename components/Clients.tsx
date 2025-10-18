@@ -4,10 +4,10 @@ const Clients: React.FC = () => {
     return (
         <section id="clients" className="py-20 bg-white">
             <div className="container mx-auto px-6">
-                <div className="flex flex-col-reverse md:flex-row items-center gap-12">
+                <div className="flex flex-col-reverse md:flex-row items-center gap-8 md:gap-12">
                     <div className="md:w-1/2 text-center md:text-left">
                         <h2 className="text-sm font-bold uppercase text-firetech-red tracking-widest mb-2">Our Reach</h2>
-                        <h3 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Clients & Markets</h3>
+                        <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800 mb-6">Clients & Markets</h3>
                         <p className="text-lg text-gray-600 leading-relaxed">
                             Firetech serves construction companies, government agencies, industrial facilities, and commercial establishments throughout Qatar. Our products are trusted in projects ranging from residential developments and infrastructure to large-scale industrial installations.
                         </p>

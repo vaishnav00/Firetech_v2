@@ -40,17 +40,17 @@ const Hero: React.FC = () => {
         <img 
           src="https://www.dropbox.com/scl/fi/gom5bwstmzus2rvbg06yd/firetech-logo-white.png?rlkey=qk3ffqe49620grjdmb3t2oa7w&raw=1" 
           alt="Firetech Logo" 
-          className="h-40 md:h-56 mb-2" 
+          className="h-32 sm:h-40 md:h-56 mb-2" 
         />
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold uppercase tracking-wider mb-4">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold uppercase tracking-wider mb-4">
           Firetech Trading & Contracting W.L.L
         </h1>
-        <p className="text-xl md:text-2xl font-semibold mb-10 max-w-3xl mx-auto">
+        <p className="text-lg sm:text-xl md:text-2xl font-semibold mb-10 max-w-3xl mx-auto">
           Building trust through quality, safety, and excellence
         </p>
         <Link 
           to="/contact" 
-          className="bg-firetech-red text-white font-bold py-4 px-10 rounded-full hover:bg-firetech-dark-red transition duration-300 text-lg shadow-lg transform hover:scale-105"
+          className="bg-firetech-red text-white font-bold py-3 px-8 md:py-4 md:px-10 rounded-full hover:bg-firetech-dark-red transition duration-300 text-base md:text-lg shadow-lg transform hover:scale-105"
         >
           Get In Touch
         </Link>

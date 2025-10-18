@@ -3,7 +3,7 @@ import { PhoneIcon, MailIcon, LocationIcon } from './Icons';
 
 const ContactInfoItem: React.FC<{ icon: React.ReactNode; title: string; children: React.ReactNode }> = ({ icon, title, children }) => (
   <div className="flex items-start">
-    <div className="flex-shrink-0 h-12 w-12 bg-firetech-red text-white rounded-full flex items-center justify-center">
+    <div className="flex-shrink-0 h-10 w-10 bg-firetech-red text-white rounded-full flex items-center justify-center">
       {icon}
     </div>
     <div className="ml-4">
@@ -30,27 +30,27 @@ const Contact: React.FC = () => {
         <div className="container mx-auto px-6 relative z-10">
             <div className="text-center mb-12">
                 <h2 className="text-sm font-bold uppercase text-gray-300 tracking-widest mb-2">Get In Touch</h2>
-                <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">Contact Us</h3>
+                <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-4">Contact Us</h3>
                 <p className="text-lg text-gray-300 max-w-2xl mx-auto">We're ready to discuss your project needs and provide the right solutions. Contact us today to speak with our team.</p>
             </div>
-            <div className="max-w-6xl mx-auto bg-gray-900 bg-opacity-50 p-8 md:p-12 rounded-xl shadow-2xl backdrop-blur-sm">
+            <div className="max-w-6xl mx-auto bg-gray-900 bg-opacity-50 p-6 md:p-12 rounded-xl shadow-2xl backdrop-blur-sm">
                 <div className="grid md:grid-cols-2 gap-12 items-start">
                     
                     {/* Contact Information Column */}
                     <div>
                         <h3 className="text-2xl font-bold text-white mb-8 text-center md:text-left">Contact Information</h3>
                         <div className="space-y-8">
-                            <ContactInfoItem icon={<PhoneIcon className="h-6 w-6" />} title="Phone Numbers">
+                            <ContactInfoItem icon={<PhoneIcon className="h-5 w-5" />} title="Phone Numbers">
                                 <a href="tel:+97440054812" className="block hover:text-firetech-red transition">+974 4005 4812</a>
                                 <a href="tel:+97455221465" className="block hover:text-firetech-red transition">+974 5522 1465</a>
                                 <a href="tel:+97470111355" className="block hover:text-firetech-red transition">+974 7011 1355</a>
                                 <a href="tel:+97460069787" className="block hover:text-firetech-red transition">+974 6006 9787</a>
                             </ContactInfoItem>
-                            <ContactInfoItem icon={<MailIcon className="h-6 w-6" />} title="Email Addresses">
+                            <ContactInfoItem icon={<MailIcon className="h-5 w-5" />} title="Email Addresses">
                                 <a href="mailto:info@firetechqa.com" className="block hover:text-firetech-red transition">info@firetechqa.com</a>
                                 <a href="mailto:suresh@firetechqa.com" className="block hover:text-firetech-red transition">suresh@firetechqa.com</a>
                             </ContactInfoItem>
-                            <ContactInfoItem icon={<LocationIcon className="h-6 w-6" />} title="Office Address">
+                            <ContactInfoItem icon={<LocationIcon className="h-5 w-5" />} title="Office Address">
                                 <p>Office #10, 2nd Floor, Block 54 & 55, Sayer Building, Barwa Commercial Avenue, P.O. Box 22432, Doha, Qatar</p>
                             </ContactInfoItem>
                         </div>

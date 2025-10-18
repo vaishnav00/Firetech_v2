@@ -24,10 +24,10 @@ const WhyChooseUs: React.FC = () => {
     return (
         <section id="why-us" className="py-20 bg-gray-50">
             <div className="container mx-auto px-6">
-                <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+                <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-20">
                     <div className="lg:w-2/5">
                         <h2 className="text-sm font-bold uppercase text-firetech-red tracking-widest mb-2">Our Advantage</h2>
-                        <h3 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Why Choose Firetech?</h3>
+                        <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800 mb-6">Why Choose Firetech?</h3>
                         <p className="text-lg text-gray-600 mb-8">We provide a combination of superior products, expert service, and proven reliability to ensure your project's success.</p>
                          <img src="https://www.dropbox.com/scl/fi/ta6mxeq6k7idesava79ai/fire-eqp-image.jpg?rlkey=ajqzhkkyib3wo98ftsdxgssqd&raw=1" alt="Fire safety equipment" className="rounded-lg shadow-xl w-full" />
                     </div>
