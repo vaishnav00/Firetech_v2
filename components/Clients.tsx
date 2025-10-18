@@ -12,10 +12,10 @@ const Clients: React.FC = () => {
                             Firetech serves construction companies, government agencies, industrial facilities, and commercial establishments throughout Qatar. Our products are trusted in projects ranging from residential developments and infrastructure to large-scale industrial installations.
                         </p>
                     </div>
-                    <div className="md:w-1/2">
-                         <div className="relative">
+                    <div className="w-full md:w-1/2">
+                         <div className="relative max-w-md mx-auto md:max-w-none">
                             <div className="absolute -top-4 -right-4 w-full h-full bg-firetech-red transform skew-y-3 z-0"></div>
-                            <img src="https://www.dropbox.com/scl/fi/rg863yiujm8en6stt2xj4/qatar.jpeg?rlkey=gm8cwbkzdppzi72o7bvlu9eov&raw=1" alt="Doha, Qatar skyline" className="relative z-10 rounded-lg shadow-2xl w-full" />
+                            <img src="https://www.dropbox.com/scl/fi/rg863yiujm8en6stt2xj4/qatar.jpeg?rlkey=gm8cwbkzdppzi72o7bvlu9eov&raw=1" alt="Doha, Qatar skyline" className="relative z-10 rounded-lg shadow-2xl w-full h-auto object-cover max-h-96 md:max-h-none" />
                         </div>
                     </div>
                 </div>
