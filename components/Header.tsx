@@ -21,27 +21,32 @@ const Header: React.FC = () => {
         { name: 'Contact', href: '/contact' },
     ];
 
-    const NavLinksContent = () => (
-        <>
-            {navLinks.map((link) => (
-                <Link key={link.name} to={link.href} onClick={() => setMobileMenuOpen(false)} className="text-gray-600 hover:text-firetech-red transition duration-300 font-semibold px-3 py-2 rounded-md">
-                    {link.name}
-                </Link>
-            ))}
-        </>
-    );
-
     return (
-        <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-md' : 'bg-transparent'}`}>
-            <div className="container mx-auto px-6 py-3 flex justify-between items-center">
+        <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white ${scrolled ? 'shadow-md py-3' : 'shadow-sm py-6'}`}>
+            <div className="container mx-auto px-6 flex justify-between items-center">
                 <Link to="/">
-                    <img src="https://drive.google.com/file/d/1M6M_LNFO0pCBkcvrBJgU3YzUByptX0vy/preview" alt="Firetech Logo" className="h-12" />
+                    <img 
+                        src="https://www.dropbox.com/scl/fi/g5esh24ikp2wfmwtkd2gn/logo-wit-name_ma.png?rlkey=e1dq12gdhdvmttybzqbd78rjm&raw=1" 
+                        alt="Firetech Logo" 
+                        className={`transition-all duration-300 ${scrolled ? 'h-16' : 'h-24'}`} 
+                    />
                 </Link>
-                <nav className="hidden md:flex space-x-4">
-                    <NavLinksContent />
+                <nav className="hidden md:flex space-x-2">
+                    {navLinks.map((link) => (
+                        <Link 
+                            key={link.name} 
+                            to={link.href} 
+                            className="font-semibold px-4 py-2 rounded-md transition-all duration-300 text-gray-600 hover:bg-firetech-red hover:text-white"
+                        >
+                            {link.name}
+                        </Link>
+                    ))}
                 </nav>
                 <div className="md:hidden">
-                    <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="text-gray-800 hover:text-firetech-red focus:outline-none">
+                    <button 
+                        onClick={() => setMobileMenuOpen(!mobileMenuOpen)} 
+                        className="focus:outline-none transition-colors duration-300 text-gray-600 hover:text-firetech-red p-2"
+                    >
                         <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={mobileMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16m-7 6h7"} />
                         </svg>
@@ -51,7 +56,16 @@ const Header: React.FC = () => {
             {mobileMenuOpen && (
                 <div className="md:hidden bg-white shadow-lg">
                     <nav className="flex flex-col items-center py-4 space-y-2">
-                        <NavLinksContent />
+                        {navLinks.map((link) => (
+                            <Link 
+                                key={link.name} 
+                                to={link.href} 
+                                onClick={() => setMobileMenuOpen(false)} 
+                                className="text-gray-600 hover:text-firetech-red transition duration-300 font-semibold w-full text-center px-3 py-2 rounded-md"
+                            >
+                                {link.name}
+                            </Link>
+                        ))}
                     </nav>
                 </div>
             )}

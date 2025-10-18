@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const Clients: React.FC = () => {
@@ -16,7 +15,7 @@ const Clients: React.FC = () => {
                     <div className="md:w-1/2">
                          <div className="relative">
                             <div className="absolute -top-4 -right-4 w-full h-full bg-firetech-red transform skew-y-3 z-0"></div>
-                            <img src="https://picsum.photos/id/122/600/400" alt="Construction Site" className="relative z-10 rounded-lg shadow-2xl w-full" />
+                            <img src="https://www.dropbox.com/scl/fi/rg863yiujm8en6stt2xj4/qatar.jpeg?rlkey=gm8cwbkzdppzi72o7bvlu9eov&raw=1" alt="Doha, Qatar skyline" className="relative z-10 rounded-lg shadow-2xl w-full" />
                         </div>
                     </div>
                 </div>

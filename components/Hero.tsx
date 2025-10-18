@@ -2,41 +2,45 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 const heroImages = [
-  'https://picsum.photos/id/122/1920/1080', // Fire safety / industrial feel
-  'https://picsum.photos/id/1079/1920/1080', // Construction / architecture
-  'https://picsum.photos/id/1078/1920/1080', // Industrial pipes
-  'https://picsum.photos/id/1075/1920/1080'  // Cityscape / large projects
+  'https://www.dropbox.com/scl/fi/kqzg5hp2skj61qhlzy3vi/hero-1.png?rlkey=hztclbdhxpv41m0srainp5u9s&raw=1',
+  'https://www.dropbox.com/scl/fi/jgm7lrwakzy7u2hs25tpe/hero-3.jpg?rlkey=nepf43cvc61cfrula3w4twpsa&raw=1',
+  'https://www.dropbox.com/scl/fi/1numodrll1fkq017ucpl6/hero-2.jpg?rlkey=9kiye59sow8lj351yu1dn1p5u&raw=1',
 ];
 
 const Hero: React.FC = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % heroImages.length);
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) =>
+        prevIndex === heroImages.length - 1 ? 0 : prevIndex + 1
+      );
     }, 5000); // Change image every 5 seconds
 
-    return () => clearTimeout(timer);
-  }, [currentImageIndex]);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <section id="home" className="relative h-screen flex items-center justify-center text-white text-center overflow-hidden">
-      {/* Background Image Slideshow */}
-      {heroImages.map((imageUrl, index) => (
-         <div
-            key={index}
-            className={`absolute inset-0 bg-cover bg-center transition-opacity duration-2000 ease-in-out ${index === currentImageIndex ? 'opacity-100' : 'opacity-0'}`}
-            style={{ backgroundImage: `url('${imageUrl}')` }}
-         />
+      {/* Background Images */}
+      {heroImages.map((image, index) => (
+        <div
+          key={index}
+          className="absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ease-in-out"
+          style={{
+            backgroundImage: `url('${image}')`,
+            opacity: index === currentImageIndex ? 1 : 0,
+          }}
+        />
       ))}
       <div className="absolute inset-0 bg-black opacity-60"></div>
       
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-6">
+      <div className="relative z-10 container mx-auto px-6 flex flex-col items-center">
         <img 
-          src="https://drive.google.com/uc?export=download&id=1NRc5FA7l_D4iJfoSGi58ceiuN5aQQdlS" 
+          src="https://www.dropbox.com/scl/fi/gom5bwstmzus2rvbg06yd/firetech-logo-white.png?rlkey=qk3ffqe49620grjdmb3t2oa7w&raw=1" 
           alt="Firetech Logo" 
-          className="h-24 md:h-28 mx-auto mb-6" 
+          className="h-40 md:h-56 mb-2" 
         />
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold uppercase tracking-wider mb-4">
           Firetech Trading & Contracting W.L.L

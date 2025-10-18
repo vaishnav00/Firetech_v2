@@ -9,7 +9,7 @@ const About: React.FC = () => {
           <div className="md:w-1/2">
             <div className="relative">
               <div className="absolute -top-4 -left-4 w-full h-full bg-firetech-red transform -skew-y-3 z-0"></div>
-              <img src="https://picsum.photos/id/219/600/400" alt="About Firetech" className="relative z-10 rounded-lg shadow-2xl w-full" />
+              <img src="https://www.dropbox.com/scl/fi/vppr76tny98fzupw16ite/about-image.png?rlkey=2rtuwc2373yh4eq73yhthh7cl&raw=1" alt="About Firetech" className="relative z-10 rounded-lg shadow-2xl w-full" />
             </div>
           </div>
           <div className="md:w-1/2 text-center md:text-left">

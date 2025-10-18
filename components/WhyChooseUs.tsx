@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 interface FeatureProps {
@@ -30,7 +29,7 @@ const WhyChooseUs: React.FC = () => {
                         <h2 className="text-sm font-bold uppercase text-firetech-red tracking-widest mb-2">Our Advantage</h2>
                         <h3 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Why Choose Firetech?</h3>
                         <p className="text-lg text-gray-600 mb-8">We provide a combination of superior products, expert service, and proven reliability to ensure your project's success.</p>
-                         <img src="https://picsum.photos/id/1078/500/350" alt="Industrial pipes" className="rounded-lg shadow-xl w-full" />
+                         <img src="https://www.dropbox.com/scl/fi/ta6mxeq6k7idesava79ai/fire-eqp-image.jpg?rlkey=ajqzhkkyib3wo98ftsdxgssqd&raw=1" alt="Fire safety equipment" className="rounded-lg shadow-xl w-full" />
                     </div>
                     <div className="lg:w-3/5">
                         <div className="space-y-8">
