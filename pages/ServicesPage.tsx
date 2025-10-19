@@ -52,7 +52,14 @@ const productsByCategory = [
         { name: 'Kitchen Hood System', imageUrl: 'https://www.dropbox.com/scl/fi/ywtcuizs364phd1mzdtv8/Kitchen-Hood-System.jpg?rlkey=s767r68wdc1pyhsaw9qz9azc2&raw=1' },
         { name: 'Foam System', imageUrl: 'https://www.dropbox.com/scl/fi/kfzjajd2q8b0jgghh2aec/Foam-System.png?rlkey=0ecoi351vzpwwrxq2kyfsu867&raw=1' }
       ]
-    }
+    },
+    {
+        category: 'And Many More!',
+        description: 'Looking for something else or need a custom solution? We offer a vast range of products and services beyond what’s listed here. Get in touch with us for personalized assistance and to discover more!',
+        items: [
+          { name: 'Contact Us', imageUrl: 'https://www.dropbox.com/scl/fi/i9ydu1nycxa8poq4001ad/logo-wit-name.png?rlkey=caadna0kix8f0kebozdxg80yf&raw=1' } // Example generic contact/support icon. Replace with your company logo/icon if desired.
+        ]
+      }
   ];
 
 
