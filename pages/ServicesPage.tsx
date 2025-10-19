@@ -3,67 +3,57 @@ import { FireIcon, BuildingOfficeIcon, WrenchScrewdriverIcon, CheckCircleIcon } 
 
 // NEW: Updated data structure for products, grouped by category
 const productsByCategory = [
-  {
-    category: 'Fire Alarm & Detection Systems',
-    description: 'State-of-the-art systems to ensure early warnings and rapid response.',
-    items: [
-      { name: 'Smoke Detector', imageUrl: 'https://www.dropbox.com/scl/fi/a37k6l0efr4a8z1l4b1k1/smoke-detector.jpg?rlkey=c3y3d3e3f3g3h3j3k3l3m&raw=1' },
-      { name: 'Heat Detector', imageUrl: 'https://www.dropbox.com/scl/fi/n4m4o4p4q4r4s4t4u4v4w/heat-detector.jpg?rlkey=v1b1n1m1q1w1e1r1t1y1u&raw=1' },
-      { name: 'Control Panel', imageUrl: 'https://www.dropbox.com/scl/fi/i5j5k5l5m5n5o5p5q5r5s/control-panel.jpg?rlkey=a1s1d1f1g1h1j1k1l1z1x&raw=1' },
-      { name: 'Manual Call Point', imageUrl: 'https://www.dropbox.com/scl/fi/u6v6w6x6y6z6a6b6c6d6e/manual-call-point.jpg?rlkey=p1o1i1u1y1t1r1e1w1q1a&raw=1' }
-    ]
-  },
-  {
-    category: 'Firefighting Equipment',
-    description: 'A complete range of active fire suppression tools and systems.',
-    items: [
-      { name: 'Fire Extinguisher', imageUrl: 'https://www.dropbox.com/scl/fi/b7c7d7e7f7g7h7j7k7l7m/fire-extinguisher.jpg?rlkey=z1x1c1v1b1n1m1q1w1e1r&raw=1' },
-      { name: 'Fire Hose Reel', imageUrl: 'https://www.dropbox.com/scl/fi/k8l8m8n8o8p8q8r8s8t8u/fire-hose-reel.jpg?rlkey=f1g1h1j1k1l1z1x1c1v1b&raw=1' },
-      { name: 'Sprinkler System', imageUrl: 'https://www.dropbox.com/scl/fi/q9w9e9r9t9y9u9i9o9p9a/sprinkler.jpg?rlkey=m1n1b1v1c1x1z1l1k1j1h&raw=1' },
-      { name: 'Fire Hydrant', imageUrl: 'https://www.dropbox.com/scl/fi/s1d1f1g1h1j1k1l1z1x1c/fire-hydrant.jpg?rlkey=p0o9i8u7y6t5r4e3w2q1a&raw=1' }
-    ]
-  },
-  {
-    category: 'Personal Protective Equipment (PPE)',
-    description: 'High-quality gear to ensure workforce safety on any job site.',
-    items: [
-      { name: 'Safety Helmet', imageUrl: 'https://www.dropbox.com/scl/fi/y2z2a2b2c2d2e2f2g2h2j/safety-helmet.jpg?rlkey=v1b1n1m1q1w1e1r1t1y1u&raw=1' },
-      { name: 'Safety Gloves', imageUrl: 'https://www.dropbox.com/scl/fi/j3k3l3m3n3o3p3q3r3s3t/safety-gloves.jpg?rlkey=a1s1d1f1g1h1j1k1l1z1x&raw=1' },
-      { name: 'Safety Harness', imageUrl: 'https://www.dropbox.com/scl/fi/u4v4w4x4y4z4a4b4c4d4e/safety-harness.jpg?rlkey=p1o1i1u1y1t1r1e1w1q1a&raw=1' },
-      { name: 'Protective Boots', imageUrl: 'https://www.dropbox.com/scl/fi/b5c5d5e5f5g5h5j5k5l5m/safety-boots.jpg?rlkey=z1x1c1v1b1n1m1q1w1e1r&raw=1' }
-    ]
-  },
-  {
-    category: 'Piping & Industrial Valves',
-    description: 'Durable pipes, fittings, and valves for various industrial applications.',
-    items: [
-      { name: 'Gate Valve', imageUrl: 'https://www.dropbox.com/scl/fi/k6l6m6n6o6p6q6r6s6t6u/gate-valve.jpg?rlkey=f1g1h1j1k1l1z1x1c1v1b&raw=1' },
-      { name: 'Ball Valve', imageUrl: 'https://www.dropbox.com/scl/fi/q7w7e7r7t7y7u7i7o7p7a/ball-valve.jpg?rlkey=m1n1b1v1c1x1z1l1k1j1h&raw=1' },
-      { name: 'Steel Pipes', imageUrl: 'https://www.dropbox.com/scl/fi/s8d8f8g8h8j8k8l8z8x8c/steel-pipes.jpg?rlkey=p0o9i8u7y6t5r4e3w2q1a&raw=1' },
-      { name: 'Pipe Fittings', imageUrl: 'https://www.dropbox.com/scl/fi/y9z9a9b9c9d9e9f9g9h9j/pipe-fittings.jpg?rlkey=v1b1n1m1q1w1e1r1t1y1u&raw=1' }
-    ]
-  },
     {
-    category: 'Fire Suppression Systems',
-    description: 'Automated systems for high-risk areas like server rooms and kitchens.',
-    items: [
-      { name: 'FM-200 System', imageUrl: 'https://www.dropbox.com/scl/fi/j1k1l1m1n1o1p1q1r1s1t/fm200-system.jpg?rlkey=a1s1d1f1g1h1j1k1l1z1x&raw=1' },
-      { name: 'CO2 System', imageUrl: 'https://www.dropbox.com/scl/fi/u2v2w2x2y2z2a2b2c2d2e/co2-system.jpg?rlkey=p1o1i1u1y1t1r1e1w1q1a&raw=1' },
-      { name: 'Kitchen Hood System', imageUrl: 'https://www.dropbox.com/scl/fi/b3c3d3e3f3g3h3j3k3l3m/kitchen-hood.jpg?rlkey=z1x1c1v1b1n1m1q1w1e1r&raw=1' },
-      { name: 'Foam System', imageUrl: 'https://www.dropbox.com/scl/fi/k4l4m4n4o4p4q4r4s4t4u/foam-system.jpg?rlkey=f1g1h1j1k1l1z1x1c1v1b&raw=1' }
-    ]
-  },
-  {
-    category: 'Building Materials & Tools',
-    description: 'Essential construction materials and professional-grade power tools.',
-    items: [
-        { name: 'Structural Steel', imageUrl: 'https://www.dropbox.com/scl/fi/q5w5e5r5t5y5u5i5o5p5a/structural-steel.jpg?rlkey=m1n1b1v1c1x1z1l1k1j1h&raw=1' },
-        { name: 'Power Drills', imageUrl: 'https://www.dropbox.com/scl/fi/s6d6f6g6h6j6k6l6z6x6c/power-drill.jpg?rlkey=p0o9i8u7y6t5r4e3w2q1a&raw=1' },
-        { name: 'Fasteners & Bolts', imageUrl: 'https://www.dropbox.com/scl/fi/y7z7a7b7c7d7e7f7g7h7j/fasteners.jpg?rlkey=v1b1n1m1q1w1e1r1t1y1u&raw=1' },
-        { name: 'Welding Equipment', imageUrl: 'https://www.dropbox.com/scl/fi/j8k8l8m8n8o8p8q8r8s8t/welding-equipment.jpg?rlkey=a1s1d1f1g1h1j1k1l1z1x&raw=1' }
-    ]
-  }
-];
+      category: 'Fire Alarm & Detection Systems',
+      description: 'State-of-the-art systems to ensure early warnings and rapid response.',
+      items: [
+        { name: 'Smoke Detector', imageUrl: 'https://www.dropbox.com/scl/fi/gog9z50lrckq8m8o3pyq9/Smoke_detector.jpeg?rlkey=s03nb1z886lgbuwo4fcep4wpg&raw=1' },
+        { name: 'Heat Detector', imageUrl: 'https://www.dropbox.com/scl/fi/a457e72qzt8kp7noumogz/Heat-Detector.jpeg?rlkey=2qxl6iilrcqhpu1fv8h4i9fgg&raw=1' },
+        { name: 'Control Panel', imageUrl: 'https://www.dropbox.com/scl/fi/w2zxaxeunxydx6xvizqu9/fire-alarm-control-panel.jpg?rlkey=mpxwfpikvvoucgqff0x33iwad&raw=1' },
+        { name: 'Manual Call Point', imageUrl: 'https://www.dropbox.com/scl/fi/9c1tcr0vckdwnas1uwop9/Manual-Call-Point.jpg?rlkey=0zu3huatg3htuy44psgpzevvn&raw=1' }
+      ]
+    },
+    {
+      category: 'Firefighting Equipment',
+      description: 'A complete range of active fire suppression tools and systems.',
+      items: [
+        { name: 'Fire Extinguisher', imageUrl: 'https://www.dropbox.com/scl/fi/h084xtibrae79c6muwkq7/Fire-Extinguisher.jpeg?rlkey=il2qdhib5o5dicx8vr5prlm27&raw=1' },
+        { name: 'Fire Hose Reel', imageUrl: 'https://www.dropbox.com/scl/fi/x2v13bxqwhw48lww71kxd/Fire-Hose-Reel.png?rlkey=92pukzjd192alqzc2bsffta71&raw=1' },
+        { name: 'Sprinkler System', imageUrl: 'https://www.dropbox.com/scl/fi/n424fd175ljryxjcib7q1/Sprinkler-System.jpg?rlkey=rzntjptuqutwdpynyejq0srst&raw=1' },
+        { name: 'Fire Hydrant', imageUrl: 'https://www.dropbox.com/scl/fi/nu2w1f1hzngb6947tf7ev/Fire-Hydrant.png?rlkey=83itdqfpz100d9r8zerjbhyxj&raw=1' }
+      ]
+    },
+    {
+      category: 'Personal Protective Equipment (PPE)',
+      description: 'High-quality gear to ensure workforce safety on any job site.',
+      items: [
+        { name: 'Safety Helmet', imageUrl: 'https://www.dropbox.com/scl/fi/75eszm57j20v29acxk1wz/Safety-Helmet.jpg?rlkey=jlqzahfn5f8lh9sydhw13ftb0&raw=1' },
+        { name: 'Safety Gloves', imageUrl: 'https://www.dropbox.com/scl/fi/eapxxe18vhby1qlstwpl5/Safety-Gloves.jpg?rlkey=h8xq320viej4agx6dvxewjem6&raw=1' },
+        { name: 'Safety Harness', imageUrl: 'https://www.dropbox.com/scl/fi/kicdv52u588y0bh8rsps6/Safety-Harness.jpg?rlkey=66s6ayfcq8sxls3uzkeu8fhfm&raw=1' },
+        { name: 'Protective Boots', imageUrl: 'https://www.dropbox.com/scl/fi/b5c5d5e5f5g5h5j5k5l5m/safety-boots.jpg?rlkey=z1x1c1v1b1n1m1q1w1e1r&raw=1' }
+      ]
+    },
+    {
+      category: 'Piping & Industrial Valves',
+      description: 'Durable pipes, fittings, and valves for various industrial applications.',
+      items: [
+        { name: 'Gate Valve', imageUrl: 'https://www.dropbox.com/scl/fi/8wvee4d6nxf6jcjzw3op3/Gate-Valve.jpg?rlkey=900mbvd36ww221hbtwunri07a&raw=1' },
+        { name: 'Ball Valve', imageUrl: 'https://www.dropbox.com/scl/fi/u6j87a28p8250o3kvbp2j/Ball-Valve.jpg?rlkey=r49a0ea3gejw9fxmf5rstiw3l&raw=1' },
+        { name: 'Steel Pipes', imageUrl: 'https://www.dropbox.com/scl/fi/1uc4dasuyja1kjgi4ip2z/Steel-Pipes.jpg?rlkey=2we6quqhszeopwu5wuzyde9re&raw=1' },
+        { name: 'Pipe Fittings', imageUrl: 'https://www.dropbox.com/scl/fi/r4ke2ymh0jbglsf3iwgm4/Pipe-Fittings.jpeg?rlkey=7gb3cj0jcbvrhkdutxc9hxidt&raw=1' }
+      ]
+    },
+    {
+      category: 'Fire Suppression Systems',
+      description: 'Automated systems for high-risk areas like server rooms and kitchens.',
+      items: [
+        { name: 'FM-200 System', imageUrl: 'https://www.dropbox.com/scl/fi/5u5fa82roamrzl4ennsns/FM-200-System.jpeg?rlkey=rl7gl1nfa9qlvqlr7o6xbnbqq&raw=1' },
+        { name: 'CO2 System', imageUrl: 'https://www.dropbox.com/scl/fi/a6yb0wcwrtrhqlwjyr0qh/CO2-System.jpeg?rlkey=eh9k7eaz0t1yjlxppy66wmprm&raw=1' },
+        { name: 'Kitchen Hood System', imageUrl: 'https://www.dropbox.com/scl/fi/ywtcuizs364phd1mzdtv8/Kitchen-Hood-System.jpg?rlkey=s767r68wdc1pyhsaw9qz9azc2&raw=1' },
+        { name: 'Foam System', imageUrl: 'https://www.dropbox.com/scl/fi/kfzjajd2q8b0jgghh2aec/Foam-System.png?rlkey=0ecoi351vzpwwrxq2kyfsu867&raw=1' }
+      ]
+    }
+  ];
 
 
 // Mock Data for Projects
