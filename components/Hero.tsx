@@ -2,9 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 const heroImages = [
-  'https://www.dropbox.com/scl/fi/kqzg5hp2skj61qhlzy3vi/hero-1.png?rlkey=hztclbdhxpv41m0srainp5u9s&raw=1',
   'https://www.dropbox.com/scl/fi/jgm7lrwakzy7u2hs25tpe/hero-3.jpg?rlkey=nepf43cvc61cfrula3w4twpsa&raw=1',
-  'https://www.dropbox.com/scl/fi/1numodrll1fkq017ucpl6/hero-2.jpg?rlkey=9kiye59sow8lj351yu1dn1p5u&raw=1',
+  'https://www.dropbox.com/scl/fi/j0o43w6r3torgnj0y3lp4/Hero-image-2.jpg?rlkey=7js5x4r5bcz86o4be12ailjid&raw=1',
+  'https://www.dropbox.com/scl/fi/mkrsjp2ubhajsis4jtw1o/Hero-image-3.jpeg?rlkey=7a0yvr8p00fplwg7ejad4fux4&raw=1',
+
 ];
 
 const Hero: React.FC = () => {

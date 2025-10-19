@@ -8,7 +8,7 @@ const About: React.FC = () => {
           <div className="w-full md:w-1/2">
             <div className="relative max-w-md mx-auto md:max-w-none">
               <div className="absolute -top-4 -left-4 w-full h-full bg-firetech-red transform -skew-y-3 z-0"></div>
-              <img src="https://www.dropbox.com/scl/fi/vppr76tny98fzupw16ite/about-image.png?rlkey=2rtuwc2373yh4eq73yhthh7cl&raw=1" alt="About Firetech" className="relative z-10 rounded-lg shadow-2xl w-full h-auto object-contain max-h-96 md:max-h-none" />
+              <img src="https://www.dropbox.com/scl/fi/jmchxil739vdwvxiytw88/about-us-image.png?rlkey=1l8nh7sb2aeuxdd62l2o12ra2&raw=1" alt="About Firetech" className="relative z-10 rounded-lg shadow-2xl w-full h-auto object-contain max-h-96 md:max-h-none" />
             </div>
           </div>
           <div className="w-full md:w-1/2 text-center md:text-left">
