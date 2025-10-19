@@ -53,16 +53,6 @@ const productsByCategory = [
         ]
     },
     {
-        category: 'Fire Suppression Systems',
-        description: 'Automated systems for high-risk areas like server rooms and kitchens.',
-        items: [
-            { name: 'FM-200 System', imageUrl: 'https://www.dropbox.com/scl/fi/5u5fa82roamrzl4ennsns/FM-200-System.jpeg?rlkey=rl7gl1nfa9qlvqlr7o6xbnbqq&raw=1' },
-            { name: 'CO2 System', imageUrl: 'https://www.dropbox.com/scl/fi/a6yb0wcwrtrhqlwjyr0qh/CO2-System.jpeg?rlkey=eh9k7eaz0t1yjlxppy66wmprm&raw=1' },
-            { name: 'Kitchen Hood System', imageUrl: 'https://www.dropbox.com/scl/fi/ywtcuizs364phd1mzdtv8/Kitchen-Hood-System.jpg?rlkey=s767r68wdc1pyhsaw9qz9azc2&raw=1' },
-            { name: 'Foam System', imageUrl: 'https://www.dropbox.com/scl/fi/kfzjajd2q8b0jgghh2aec/Foam-System.png?rlkey=0ecoi351vzpwwrxq2kyfsu867&raw=1' }
-        ]
-    },
-    {
         category: 'And Many More!',
         description: 'Looking for something else or need a custom solution? We offer a vast range of products and services beyond what’s listed here. Get in touch with us for personalized assistance and to discover more!',
         // items: [] // Optional, not required after the below fix!
