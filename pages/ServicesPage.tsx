@@ -30,7 +30,7 @@ const productsByCategory = [
         { name: 'Safety Helmet', imageUrl: 'https://www.dropbox.com/scl/fi/75eszm57j20v29acxk1wz/Safety-Helmet.jpg?rlkey=jlqzahfn5f8lh9sydhw13ftb0&raw=1' },
         { name: 'Safety Gloves', imageUrl: 'https://www.dropbox.com/scl/fi/eapxxe18vhby1qlstwpl5/Safety-Gloves.jpg?rlkey=h8xq320viej4agx6dvxewjem6&raw=1' },
         { name: 'Safety Harness', imageUrl: 'https://www.dropbox.com/scl/fi/kicdv52u588y0bh8rsps6/Safety-Harness.jpg?rlkey=66s6ayfcq8sxls3uzkeu8fhfm&raw=1' },
-        { name: 'Protective Boots', imageUrl: 'https://www.dropbox.com/scl/fi/b5c5d5e5f5g5h5j5k5l5m/safety-boots.jpg?rlkey=z1x1c1v1b1n1m1q1w1e1r&raw=1' }
+        { name: 'Protective Boots', imageUrl: 'https://www.dropbox.com/scl/fi/xoul5wkvleneehusjxdtw/Protective-Boots.jpg?rlkey=9yrljc78wbmn0noge1qxrk8f1&raw=1' }
       ]
     },
     {
