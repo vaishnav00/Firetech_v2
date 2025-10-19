@@ -53,15 +53,63 @@ const productsByCategory = [
         ]
     },
     {
+        category: 'Fire Suppression Systems',
+        description: 'Automated systems for high-risk areas like server rooms and kitchens.',
+        items: [
+            { name: 'FM-200 System', imageUrl: 'https://www.dropbox.com/scl/fi/5u5fa82roamrzl4ennsns/FM-200-System.jpeg?rlkey=rl7gl1nfa9qlvqlr7o6xbnbqq&raw=1' },
+            { name: 'CO2 System', imageUrl: 'https://www.dropbox.com/scl/fi/a6yb0wcwrtrhqlwjyr0qh/CO2-System.jpeg?rlkey=eh9k7eaz0t1yjlxppy66wmprm&raw=1' },
+            { name: 'Kitchen Hood System', imageUrl: 'https://www.dropbox.com/scl/fi/ywtcuizs364phd1mzdtv8/Kitchen-Hood-System.jpg?rlkey=s767r68wdc1pyhsaw9qz9azc2&raw=1' },
+            { name: 'Foam System', imageUrl: 'https://www.dropbox.com/scl/fi/kfzjajd2q8b0jgghh2aec/Foam-System.png?rlkey=0ecoi351vzpwwrxq2kyfsu867&raw=1' }
+        ]
+    },
+    {
         category: 'And Many More!',
         description: 'Looking for something else or need a custom solution? We offer a vast range of products and services beyond what’s listed here. Get in touch with us for personalized assistance and to discover more!',
         // items: [] // Optional, not required after the below fix!
     }
 ];
 
+const projectsData = [
+    {
+        title: 'Doha Commercial Tower - Fire Safety Overhaul',
+        description: 'Supplied and installed a comprehensive, addressable fire alarm and sprinkler system for a 45-story commercial high-rise.',
+        imageUrl: 'https://www.dropbox.com/scl/fi/d4f4g4h4j4k4l4z4x4c4v/project-tower.jpg?rlkey=p1o1i1u1y1t1r1e1w1q1a&raw=1'
+    },
+    {
+        title: 'Al Wakrah Logistics Park - Industrial Supply',
+        description: 'Acted as the primary supplier for structural steel, MEP components, and safety equipment for a 500,000 sq. ft. logistics facility.',
+        imageUrl: 'https://www.dropbox.com/scl/fi/v5b5n5m5q5w5e5r5t5y5u/project-logistics.jpg?rlkey=z1x1c1v1b1n1m1q1w1e1r&raw=1'
+    },
+    {
+        title: 'Lusail Marina Residential Complex - MEP Contracting',
+        description: 'Executed the complete mechanical, electrical, and plumbing works for a luxury residential development, ensuring compliance with all local codes.',
+        imageUrl: 'https://www.dropbox.com/scl/fi/c6x6z6l6k6j6h6g6f6d6s/project-residential.jpg?rlkey=f1g1h1j1k1l1z1x1c1v1b&raw=1'
+    }
+];
 
 // FIX: items is now optional!
-
+const ProductCategoryCard: React.FC<{ category: string; description: string; items?: { name: string; imageUrl: string }[] }> = ({ category, description, items }) => (
+    <div className="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 flex flex-col h-full">
+        <div className="p-6">
+            <h3 className="text-xl font-bold text-gray-800 mb-2">{category}</h3>
+            <p className="text-gray-600 text-sm">{description}</p>
+        </div>
+        {(items && items.length > 0) && (
+            <div className="p-6 pt-0 mt-auto">
+                <div className="grid grid-cols-2 gap-4 border-t border-gray-200 pt-4">
+                    {items.map((item, index) => (
+                        <div key={index} className="text-center group">
+                            <div className="overflow-hidden rounded-md">
+                                <img src={item.imageUrl} alt={item.name} className="w-full h-24 object-cover rounded-md shadow-sm mb-2 transform group-hover:scale-110 transition-transform duration-300" />
+                            </div>
+                            <p className="text-xs font-semibold text-gray-700 mt-2">{item.name}</p>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        )}
+    </div>
+);
 
 const ProjectCard: React.FC<{ title: string, description: string, imageUrl: string }> = ({ title, description, imageUrl }) => (
     <div className="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
