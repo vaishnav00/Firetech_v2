@@ -1,14 +1,32 @@
 import React from 'react';
 import { LinkedInIcon, TwitterIcon, FacebookIcon, InstagramIcon } from './Icons';
 
+
 const Footer: React.FC = () => {
     const currentYear = new Date().getFullYear();
     const socialLinks = [
-        { name: 'LinkedIn', href: '#', icon: <LinkedInIcon className="h-6 w-6" /> },
-        { name: 'Twitter', href: '#', icon: <TwitterIcon className="h-6 w-6" /> },
-        { name: 'Facebook', href: '#', icon: <FacebookIcon className="h-6 w-6" /> },
-        { name: 'Instagram', href: '#', icon: <InstagramIcon className="h-6 w-6" /> },
+        { 
+            name: 'LinkedIn', 
+            href: 'https://www.linkedin.com/company/firetech-trading-contracting', 
+            icon: <LinkedInIcon className="h-6 w-6" /> 
+        },
+        { 
+            name: 'Twitter', 
+            href: '#', 
+            icon: <TwitterIcon className="h-6 w-6" /> 
+        },
+        { 
+            name: 'Facebook', 
+            href: '#', 
+            icon: <FacebookIcon className="h-6 w-6" /> 
+        },
+        { 
+            name: 'Instagram', 
+            href: 'https://www.instagram.com/firetech.qa/', 
+            icon: <InstagramIcon className="h-6 w-6" /> 
+        },
     ];
+
 
     return (
         <footer className="bg-gray-900 text-gray-400 py-8">
@@ -37,5 +55,6 @@ const Footer: React.FC = () => {
         </footer>
     );
 };
+
 
 export default Footer;

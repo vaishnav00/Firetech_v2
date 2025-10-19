@@ -48,7 +48,6 @@ const Contact: React.FC = () => {
                             </ContactInfoItem>
                             <ContactInfoItem icon={<MailIcon className="h-5 w-5" />} title="Email Addresses">
                                 <a href="mailto:info@firetechqa.com" className="block hover:text-firetech-red transition">info@firetechqa.com</a>
-                                <a href="mailto:suresh@firetechqa.com" className="block hover:text-firetech-red transition">suresh@firetechqa.com</a>
                             </ContactInfoItem>
                             <ContactInfoItem icon={<LocationIcon className="h-5 w-5" />} title="Office Address">
                                 <p>Office #10, 2nd Floor, Block 54 & 55, Sayer Building, Barwa Commercial Avenue, P.O. Box 22432, Doha, Qatar</p>
