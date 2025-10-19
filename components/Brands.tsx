@@ -1,20 +1,26 @@
 import React from 'react';
 
 const brandLogos = [
-    { name: '3M', logoUrl: 'https://www.dropbox.com/scl/fi/i5r8xbrrg6jlgo9rqjv01/3m-logo.png?rlkey=51j4qqugnx0oqh4l422tqzvqj&raw=1' },
-    { name: 'Honeywell', logoUrl: 'https://www.dropbox.com/scl/fi/2bbhfw7wlti1b4g78bixo/honeywell-logo.png?rlkey=t9s68af2h6qc0jphx496whf0y&raw=1' },
-    { name: 'Bosch', logoUrl: 'https://www.dropbox.com/scl/fi/7q3i166j5v2c42z0sjz05/bosch-logo.png?rlkey=5z0s76rfp61kcs8o4k30p34gp&raw=1' },
-    { name: 'Siemens', logoUrl: 'https://www.dropbox.com/scl/fi/k9q84t5q582o27z045c48/siemens-logo.png?rlkey=v6l670q8f43g5q11v1b8l5y6k&raw=1' },
-    { name: 'Tyco', logoUrl: 'https://www.dropbox.com/scl/fi/nfwf96au2o8h6j4581i9t/tyco-logo.png?rlkey=76h7z6x5j46k8l64g2h2h0f0q&raw=1' },
-    { name: 'Ansul', logoUrl: 'https://www.dropbox.com/scl/fi/84f93dq5a133l39k4m6f6/ansul-logo.png?rlkey=61l0c9h92i8m5c52c6f6g6f6x&raw=1' },
-    { name: 'Viking', logoUrl: 'https://www.dropbox.com/scl/fi/q7s3v7b8w0f7a0v4x7x7e/viking-logo.png?rlkey=c3y9e4k4v4x8n8k8j8h8h8v8v&raw=1' },
-    { name: 'Kidde', logoUrl: 'https://www.dropbox.com/scl/fi/b3n1k1m1g1f1h1j1k1l1l/kidde-logo.png?rlkey=a2s2d2f2g2h2j2k2l2m2n&raw=1' },
-    { name: 'NAFFCO', logoUrl: 'https://www.dropbox.com/scl/fi/y5r5t5u5i5o5p5a5s5d5f/naffco-logo.png?rlkey=z1x1c1v1b1n1m1q1w1e1r&raw=1' },
-    { name: 'HD Fire', logoUrl: 'https://www.dropbox.com/scl/fi/c3v3b3n3m3q3w3e3r3t3y/hd-fire-logo.png?rlkey=a1s1d1f1g1h1j1k1l1z1x&raw=1' },
-    { name: 'Weflo', logoUrl: 'https://www.dropbox.com/scl/fi/p9o9i9u9y9t9r9e9w9q9a/weflo-logo.png?rlkey=m1n1b1v1c1x1z1l1k1j1h&raw=1' },
-    { name: 'CNG', logoUrl: 'https://www.dropbox.com/scl/fi/l8k8j8h8g8f8d8s8a8p8o/cng-logo.png?rlkey=q1w1e1r1t1y1u1i1o1p1a&raw=1' },
-    { name: 'Synergy Industries', logoUrl: 'https://www.dropbox.com/scl/fi/z7x7c7v7b7n7m7q7w7e7r/synergy-logo.png?rlkey=p1o1i1u1y1t1r1e1w1q1a&raw=1' },
-    { name: 'Valmatic', logoUrl: 'https://www.dropbox.com/scl/fi/f4g4h4j4k4l4z4x4c4v4b/valmatic-logo.png?rlkey=s1d1f1g1h1j1k1l1z1x1c&raw=1' }
+    { name: 'BIS', logoUrl: 'https://www.dropbox.com/scl/fi/md1i66abxrc62uzu9dqzy/BIS.png?rlkey=anq8ml8nvnm0fhesgoimbzu90&raw=1' },
+    { name: 'Croker', logoUrl: 'https://www.dropbox.com/scl/fi/varyuojvkeey92j25c0u8/croker.png?rlkey=eghmfj5qc9m2rd140nwxhshkf&raw=1' },
+    { name: 'Fireguard', logoUrl: 'https://www.dropbox.com/scl/fi/jj2gq3d9pdy3sb6o4qkxw/Fireguard.png?rlkey=cfgoyx03jpwyjku51tqwc5tye&raw=1' },
+    { name: 'FX Fire', logoUrl: 'https://www.dropbox.com/scl/fi/fljsiwzcbhz1tztcevvmv/fxfire.png?rlkey=bdpxu6ui7qn984kp2g1glt8ye&raw=1' },
+    { name: 'Gerand', logoUrl: 'https://www.dropbox.com/scl/fi/lnnt6bj3y5et9zazlik2r/Gerand.png?rlkey=t2u5rmhp9hzyd7wwq9z0ld26b&raw=1' },
+    { name: 'Giacomini', logoUrl: 'https://www.dropbox.com/scl/fi/nynpw0uuo0qlehzlrctjb/Giacomini.png?rlkey=u006ov8crvzkuzsmrf6u6c2ec&raw=1' },
+    { name: 'GVI', logoUrl: 'https://www.dropbox.com/scl/fi/39swl67c1x9xiwuokthkt/GVI.png?rlkey=ubawkwrmfpu4bx4998mkrpvlh&raw=1' },
+    { name: 'HD Fire', logoUrl: 'https://www.dropbox.com/scl/fi/1bjnwyp2lz3nt9zkpckkl/HD-fire.png?rlkey=fksnoa6fdhy6ks75qzhxk7nz8&raw=1' },
+    { name: 'Industrial', logoUrl: 'https://www.dropbox.com/scl/fi/d7ixmwitnpip0cu2kxrz6/Industrial.jpg?rlkey=2f8wxk28o2dtjnatrvvque1hj&raw=1' },
+    { name: 'Kidde', logoUrl: 'https://www.dropbox.com/scl/fi/jqua6qqts9r389ceuwunc/kidde.jpg?rlkey=zu7xd30ul9rlhy22jhcc2g3q5&raw=1' },
+    { name: 'LEDE', logoUrl: 'https://www.dropbox.com/scl/fi/mkvzm8s8ansofd3y4jhy5/LEDE.png?rlkey=bgg2kz0yuany16k6hsk08bodd&raw=1' },
+    { name: 'LLT', logoUrl: 'https://www.dropbox.com/scl/fi/zwcdegckldt1bs45hwj6d/LLT.png?rlkey=8znvyhn889c6fnue8yzkxzyuk&raw=1' },
+    { name: 'Lxine', logoUrl: 'https://www.dropbox.com/scl/fi/8fx8gp45m7re60sha3efw/Lxine.jpg?rlkey=jyv1em4rq2umw171x87jw83n0&raw=1' },
+    { name: 'NewAge', logoUrl: 'https://www.dropbox.com/scl/fi/jrj8arkcu5h1ydtjeh0tg/newage.png?rlkey=euua1gvrkbuu28lbm8ypoz51v&raw=1' },
+    { name: 'Potter', logoUrl: 'https://www.dropbox.com/scl/fi/yj2hc8z6k1ghmp0o9a3k9/potter.png?rlkey=qbidunmahmjv07i1llf60l0by&raw=1' },
+    { name: 'Tyco', logoUrl: 'https://www.dropbox.com/scl/fi/f9uunioxaeagwke10lomg/Tyco.png?rlkey=id7phw5q5iaq6dpelw8kxqpq6&raw=1' },
+    { name: 'Valmatic', logoUrl: 'https://www.dropbox.com/scl/fi/0g147eiswz7wjb6d5yyel/val-matic.png?rlkey=myh04k99gix71uevcty51glw2&raw=1' },
+    { name: 'Viking Group', logoUrl: 'https://www.dropbox.com/scl/fi/mrazsjpf1cqtoaqi7hzsa/Viking_Group.png?rlkey=mdzrv8dpluqvjir2a1c1dp9gu&raw=1' },
+    { name: 'Weflo', logoUrl: 'https://www.dropbox.com/scl/fi/vqedr8o1dy1t2soffsvu0/Weflo.png?rlkey=s6hs2npuwh4u0893t5kain12l&raw=1' },
+    { name: 'Winters', logoUrl: 'https://www.dropbox.com/scl/fi/km8zafxsobotloawcljjp/Winters.jpg?rlkey=qtuhgqqf2e7a9ldqhst7pah9c&raw=1' },
 ];
 
 const Brands: React.FC = () => {
