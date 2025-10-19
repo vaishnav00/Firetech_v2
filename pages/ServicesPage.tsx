@@ -55,10 +55,7 @@ const productsByCategory = [
     },
     {
         category: 'And Many More!',
-        description: 'Looking for something else or need a custom solution? We offer a vast range of products and services beyond what’s listed here. Get in touch with us for personalized assistance and to discover more!',
-        items: [
-          { name: 'Contact Us', imageUrl: 'https://www.dropbox.com/scl/fi/i9ydu1nycxa8poq4001ad/logo-wit-name.png?rlkey=caadna0kix8f0kebozdxg80yf&raw=1' } // Example generic contact/support icon. Replace with your company logo/icon if desired.
-        ]
+        description: 'Looking for something else or need a custom solution? We offer a vast range of products and services beyond what’s listed here. Get in touch with us for personalized assistance and to discover more!'
       }
   ];
 
