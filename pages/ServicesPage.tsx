@@ -56,7 +56,7 @@ const productsByCategory = [
     {
         category: 'And Many More!',
         description: 'Looking for something else or need a custom solution? We offer a vast range of products and services beyond what’s listed here. Get in touch with us for personalized assistance and to discover more!'
-      }
+    }
   ];
 
 
