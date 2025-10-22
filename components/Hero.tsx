@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const heroImages = [
   'https://www.dropbox.com/scl/fi/jgm7lrwakzy7u2hs25tpe/hero-3.jpg?rlkey=nepf43cvc61cfrula3w4twpsa&raw=1',
-  'https://www.dropbox.com/scl/fi/j0o43w6r3torgnj0y3lp4/Hero-image-2.jpg?rlkey=7js5x4r5bcz86o4be12ailjid&raw=1',
+  'https://www.dropbox.com/scl/fi/6fxp61d3xehy8xske5sll/hero-image-2.png?rlkey=bggiw77uphq9hdui18a40z9xy&raw=1',
   'https://www.dropbox.com/scl/fi/mkrsjp2ubhajsis4jtw1o/Hero-image-3.jpeg?rlkey=7a0yvr8p00fplwg7ejad4fux4&raw=1',
 
 ];

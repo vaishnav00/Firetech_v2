@@ -70,7 +70,7 @@ const WhyChooseUs: React.FC = () => {
 
     const images = [
         {
-            src: "https://www.dropbox.com/scl/fi/ta6mxeq6k7idesava79ai/fire-eqp-image.jpg?rlkey=ajqzhkkyib3wo98ftsdxgssqd&raw=1",
+            src: "https://www.dropbox.com/scl/fi/b1rop0yqn575t8w851xg0/why-choose.png?rlkey=7argosacm1g7h0e46ac1z69ag&raw=1",
             alt: "Fire safety equipment"
         },
         {
