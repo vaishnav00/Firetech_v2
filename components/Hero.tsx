@@ -53,7 +53,6 @@ const Hero: React.FC = () => {
           }}
         />
       ))}
-      <div className="absolute inset-0 bg-firetech-red/90"></div>
       
       {/* Content */}
       <div className={`relative z-10 container mx-auto px-6 flex flex-col items-center transition-all duration-1000 ease-out ${

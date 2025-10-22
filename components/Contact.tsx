@@ -110,10 +110,6 @@ const Contact: React.FC = () => {
                                 <input type="email" id="email" name="email" required className="w-full bg-firetech-white/20 text-firetech-white p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-firetech-light-red transition-all duration-300 hover:bg-firetech-white/30 placeholder-firetech-light-red" placeholder="your.email@example.com" />
                             </div>
                             <div>
-                                <label htmlFor="subject" className="block text-firetech-light-red font-semibold mb-2">Subject</label>
-                                <input type="text" id="subject" name="subject" required className="w-full bg-firetech-white/20 text-firetech-white p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-firetech-light-red transition-all duration-300 hover:bg-firetech-white/30 placeholder-firetech-light-red" placeholder="Regarding..." />
-                            </div>
-                            <div>
                                 <label htmlFor="message" className="block text-firetech-light-red font-semibold mb-2">Message</label>
                                 <textarea id="message" name="message" rows={5} required className="w-full bg-firetech-white/20 text-firetech-white p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-firetech-light-red transition-all duration-300 hover:bg-firetech-white/30 placeholder-firetech-light-red" placeholder="Your message here..."></textarea>
                             </div>

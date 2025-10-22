@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { CheckCircleIcon, FireIcon, BuildingOfficeIcon, WrenchScrewdriverIcon } from './Icons';
+import { Link } from 'react-router-dom';
 
 interface ServiceCategoryProps {
     icon: React.ReactNode;
@@ -103,6 +104,26 @@ const Services: React.FC = () => {
                         index={2}
                         isVisible={isVisible}
                     />
+                </div>
+                
+                {/* Products Button */}
+                <div className={`mt-12 transition-all duration-800 ease-out delay-500 ${
+                    isVisible 
+                        ? 'opacity-100 translate-y-0' 
+                        : 'opacity-0 translate-y-12'
+                }`}>
+                    <Link 
+                        to="/services#professional-products"
+                        className="inline-flex items-center bg-gradient-to-r from-firetech-red to-red-600 text-white px-8 py-4 rounded-2xl hover:from-red-600 hover:to-red-700 transition-all duration-300 font-bold text-lg shadow-xl hover:shadow-2xl transform hover:-translate-y-1 hover:scale-105"
+                    >
+                        <svg className="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                        </svg>
+                        View Our Products
+                        <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                        </svg>
+                    </Link>
                 </div>
             </div>
         </section>

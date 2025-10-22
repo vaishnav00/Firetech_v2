@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Outlet, useLocation } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
+import ContactWidget from './ContactWidget';
 
 const Layout: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -44,6 +45,7 @@ const Layout: React.FC = () => {
         <Outlet />
       </main>
       <Footer />
+      <ContactWidget />
     </div>
   );
 };
