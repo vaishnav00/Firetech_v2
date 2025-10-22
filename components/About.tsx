@@ -33,7 +33,7 @@ const About: React.FC = () => {
             <div className="relative max-w-md mx-auto md:max-w-none cursor-pointer group">
               <div className="absolute -top-4 -left-4 w-full h-full bg-firetech-red transform -skew-y-3 z-0 group-hover:scale-105 transition-transform duration-300"></div>
               <img 
-                src="https://www.dropbox.com/scl/fi/jmchxil739vdwvxiytw88/about-us-image.png?rlkey=1l8nh7sb2aeuxdd62l2o12ra2&raw=1" 
+                src="/Images/about us image.png" 
                 alt="About Firetech" 
                 className="relative z-10 rounded-lg shadow-2xl w-full h-auto object-contain max-h-96 md:max-h-none group-hover:scale-105 transition-transform duration-300" 
               />

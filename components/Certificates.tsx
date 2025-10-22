@@ -1,11 +1,11 @@
 import React from 'react';
 
 const certificates = [
-    { name: 'UL Certified', logoUrl: 'https://www.dropbox.com/scl/fi/y8n4t0gvcn1qirk4n4ltq/UL.png?rlkey=66qf0sbltbydycxbhf4nxu68a&raw=1' },
-    { name: 'Qatar Civil Defence', logoUrl: 'https://www.dropbox.com/scl/fi/jaopyh3m1vtpyluaxrxxl/Qatar-civil.png?rlkey=5nvwo4tl2cvs7fpcf5nrvoa2d&raw=1' },
-    { name: 'NFPA Member', logoUrl: 'https://www.dropbox.com/scl/fi/msbv1vjmslfz2d2uztepk/NFPA.png?rlkey=w6ox38k7xmyd5hncwc6bdmclz&raw=1' },
-    { name: 'FM Approved', logoUrl: 'https://www.dropbox.com/scl/fi/zkcii6yq29hs27au7tbhb/FM.jpg?rlkey=sd3ka6oshrgq8n1fv0adevuk6&raw=1' },
-    { name: 'BSI Member', logoUrl: 'https://www.dropbox.com/scl/fi/rb54prvdajozaujfos081/BSI.png?rlkey=zfulncvcq2vma1q4s54l5zwnx&raw=1' },
+    { name: 'UL Certified', logoUrl: '/Images/UL.png' },
+    { name: 'Qatar Civil Defence', logoUrl: '/Images/Qatar civil.png' },
+    { name: 'NFPA Member', logoUrl: '/Images/NFPA.png' },
+    { name: 'FM Approved', logoUrl: '/Images/FM.jpg' },
+    { name: 'BSI Member', logoUrl: '/Images/BSI.png' },
 ];
 
 

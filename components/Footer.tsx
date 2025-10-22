@@ -33,7 +33,7 @@ const Footer: React.FC = () => {
             <div className="container mx-auto px-6 text-center">
                 <div className="mb-6 flex justify-center">
                     <div className="bg-white p-3 rounded-lg shadow-md">
-                        <img src="https://www.dropbox.com/scl/fi/i9ydu1nycxa8poq4001ad/logo-wit-name.png?rlkey=caadna0kix8f0kebozdxg80yf&raw=1" alt="Firetech Logo" className="h-12" />
+                        <img src="/Images/logo with nameee.png" alt="Firetech Logo" className="h-12" />
                     </div>
                 </div>
                 <div className="flex justify-center space-x-6 mb-6">

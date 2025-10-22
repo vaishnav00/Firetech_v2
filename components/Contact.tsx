@@ -51,7 +51,7 @@ const Contact: React.FC = () => {
 
   return (
     <section ref={contactRef} id="contact" className="py-16 sm:py-20 bg-firetech-red text-firetech-white relative overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center opacity-20" style={{backgroundImage: "url('https://www.dropbox.com/scl/fi/h11o44k1a7yjwbhj5o3zt/contact-bg.jpg?rlkey=y4t3jdxuevgtqch4lq2p1j5y5&raw=1')"}}></div>
+        <div className="absolute inset-0 bg-cover bg-center opacity-20" style={{backgroundImage: "url('/Images/contact-bg.jpg')"}}></div>
         <div className="absolute inset-0 bg-firetech-red/95"></div>
         <div className="container mx-auto px-4 sm:px-6 relative z-10">
             <div className={`text-center mb-12 transition-all duration-800 ease-out ${

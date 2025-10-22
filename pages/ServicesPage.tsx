@@ -9,7 +9,7 @@ const products = [
         name: 'Advanced Smoke Detector',
         category: 'Fire Alarm & Detection',
         description: 'High-sensitivity photoelectric smoke detector with wireless connectivity and long battery life.',
-        imageUrl: 'https://www.dropbox.com/scl/fi/gog9z50lrckq8m8o3pyq9/Smoke_detector.jpeg?rlkey=s03nb1z886lgbuwo4fcep4wpg&raw=1',
+        imageUrl: '/Images/Smoke_detector.jpeg',
         price: 'Contact for Quote',
         features: ['Wireless Connectivity', '10-Year Battery Life', 'Smart Home Integration', 'UL Listed'],
         inStock: true
@@ -19,7 +19,7 @@ const products = [
         name: 'Fixed Temperature Heat Detector',
         category: 'Fire Alarm & Detection',
         description: 'Reliable heat detector for areas where smoke detectors may not be suitable.',
-        imageUrl: 'https://www.dropbox.com/scl/fi/a457e72qzt8kp7noumogz/Heat-Detector.jpeg?rlkey=2qxl6iilrcqhpu1fv8h4i9fgg&raw=1',
+        imageUrl: '/Images/Heat Detector.jpeg',
         price: 'Contact for Quote',
         features: ['Fixed Temperature', 'Weather Resistant', 'Easy Installation', 'UL Listed'],
         inStock: true
@@ -29,7 +29,7 @@ const products = [
         name: 'Fire Alarm Control Panel',
         category: 'Fire Alarm & Detection',
         description: 'Central control panel for managing fire alarm systems with advanced monitoring capabilities.',
-        imageUrl: 'https://www.dropbox.com/scl/fi/w2zxaxeunxydx6xvizqu9/fire-alarm-control-panel.jpg?rlkey=mpxwfpikvvoucgqff0x33iwad&raw=1',
+        imageUrl: '/Images/fire-alarm-control-panel.jpg',
         price: 'Contact for Quote',
         features: ['Multi-Zone Control', 'LCD Display', 'Battery Backup', 'Network Connectivity'],
         inStock: true
@@ -39,7 +39,7 @@ const products = [
         name: 'Manual Call Point',
         category: 'Fire Alarm & Detection',
         description: 'Manual fire alarm activation point with glass break mechanism and LED indicators.',
-        imageUrl: 'https://www.dropbox.com/scl/fi/9c1tcr0vckdwnas1uwop9/Manual-Call-Point.jpg?rlkey=0zu3huatg3htuy44psgpzevvn&raw=1',
+        imageUrl: '/Images/Manual Call Point.jpg',
         price: 'Contact for Quote',
         features: ['Glass Break Activation', 'LED Status Indicators', 'Weatherproof Design', 'Easy Reset'],
         inStock: true
@@ -51,7 +51,7 @@ const products = [
         name: 'ABC Dry Chemical Fire Extinguisher',
         category: 'Firefighting Equipment',
         description: 'Multi-purpose fire extinguisher suitable for Class A, B, and C fires.',
-        imageUrl: 'https://www.dropbox.com/scl/fi/h084xtibrae79c6muwkq7/Fire-Extinguisher.jpeg?rlkey=il2qdhib5o5dicx8vr5prlm27&raw=1',
+        imageUrl: '/Images/Fire Extinguisher.jpeg',
         price: 'Contact for Quote',
         features: ['ABC Class Rating', 'Lightweight Design', 'Easy Grip Handle', 'Pressure Gauge'],
         inStock: true
@@ -61,7 +61,7 @@ const products = [
         name: 'Fire Hose Reel System',
         category: 'Firefighting Equipment',
         description: 'Complete fire hose reel system with high-pressure water delivery capabilities.',
-        imageUrl: 'https://www.dropbox.com/scl/fi/x2v13bxqwhw48lww71kxd/Fire-Hose-Reel.png?rlkey=92pukzjd192alqzc2bsffta71&raw=1',
+        imageUrl: '/Images/Fire Hose Reel.png',
         price: 'Contact for Quote',
         features: ['High Pressure Rating', 'Corrosion Resistant', 'Easy Deployment', 'Wall Mounted'],
         inStock: true
@@ -71,7 +71,7 @@ const products = [
         name: 'Automatic Sprinkler System',
         category: 'Firefighting Equipment',
         description: 'Wet pipe sprinkler system for automatic fire suppression in commercial buildings.',
-        imageUrl: 'https://www.dropbox.com/scl/fi/n424fd175ljryxjcib7q1/Sprinkler-System.jpg?rlkey=rzntjptuqutwdpynyejq0srst&raw=1',
+        imageUrl: '/Images/Sprinkler System.jpg',
         price: 'Contact for Quote',
         features: ['Automatic Activation', 'Wet Pipe System', 'High Flow Rate', 'Easy Maintenance'],
         inStock: true
@@ -81,7 +81,7 @@ const products = [
         name: 'Underground Fire Hydrant',
         category: 'Firefighting Equipment',
         description: 'Heavy-duty underground fire hydrant for municipal and industrial applications.',
-        imageUrl: 'https://www.dropbox.com/scl/fi/nu2w1f1hzngb6947tf7ev/Fire-Hydrant.png?rlkey=83itdqfpz100d9r8zerjbhyxj&raw=1',
+        imageUrl: '/Images/Fire Hydrant.png',
         price: 'Contact for Quote',
         features: ['Heavy Duty Construction', 'High Flow Capacity', 'Frost Resistant', 'Easy Access'],
         inStock: true
@@ -93,7 +93,7 @@ const products = [
         name: 'FM-200 Clean Agent System',
         category: 'Fire Suppression Systems',
         description: 'Clean agent fire suppression system for protecting sensitive equipment and data centers.',
-        imageUrl: 'https://www.dropbox.com/scl/fi/5u5fa82roamrzl4ennsns/FM-200-System.jpeg?rlkey=rl7gl1nfa9qlvqlr7o6xbnbqq&raw=1',
+        imageUrl: '/Images/FM-200 System.jpeg',
         price: 'Contact for Quote',
         features: ['Clean Agent', 'No Residue', 'Fast Discharge', 'Environmentally Safe'],
         inStock: true
@@ -103,7 +103,7 @@ const products = [
         name: 'CO2 Fire Suppression System',
         category: 'Fire Suppression Systems',
         description: 'Carbon dioxide suppression system for industrial and commercial applications.',
-        imageUrl: 'https://www.dropbox.com/scl/fi/a6yb0wcwrtrhqlwjyr0qh/CO2-System.jpeg?rlkey=eh9k7eaz0t1yjlxppy66wmprm&raw=1',
+        imageUrl: '/Images/CO2 System.jpeg',
         price: 'Contact for Quote',
         features: ['High Efficiency', 'No Residue', 'Fast Response', 'Cost Effective'],
         inStock: true
@@ -115,7 +115,7 @@ const products = [
         name: 'Industrial Safety Helmet',
         category: 'Personal Protective Equipment',
         description: 'High-impact resistant safety helmet with adjustable suspension system.',
-        imageUrl: 'https://www.dropbox.com/scl/fi/75eszm57j20v29acxk1wz/Safety-Helmet.jpg?rlkey=jlqzahfn5f8lh9sydhw13ftb0&raw=1',
+        imageUrl: '/Images/Safety Helmet.jpg',
         price: 'Contact for Quote',
         features: ['High Impact Resistance', 'Adjustable Suspension', 'Ventilation Slots', 'ANSI Z89.1 Certified'],
         inStock: true
@@ -125,7 +125,7 @@ const products = [
         name: 'Cut-Resistant Safety Gloves',
         category: 'Personal Protective Equipment',
         description: 'High-performance cut-resistant gloves for industrial and construction applications.',
-        imageUrl: 'https://www.dropbox.com/scl/fi/eapxxe18vhby1qlstwpl5/Safety-Gloves.jpg?rlkey=h8xq320viej4agx6dvxewjem6&raw=1',
+        imageUrl: '/Images/Safety Gloves.jpg',
         price: 'Contact for Quote',
         features: ['Cut Resistant', 'Comfortable Fit', 'Durable Material', 'EN 388 Certified'],
         inStock: true
@@ -137,7 +137,7 @@ const products = [
         name: 'Industrial Gate Valve',
         category: 'Piping & Industrial Valves',
         description: 'Heavy-duty gate valve for industrial applications with full bore design.',
-        imageUrl: 'https://www.dropbox.com/scl/fi/8wvee4d6nxf6jcjzw3op3/Gate-Valve.jpg?rlkey=900mbvd36ww221hbtwunri07a&raw=1',
+        imageUrl: '/Images/Gate Valve.jpg',
         price: 'Contact for Quote',
         features: ['Full Bore Design', 'Heavy Duty Construction', 'Easy Operation', 'High Pressure Rating'],
         inStock: true
@@ -147,7 +147,7 @@ const products = [
         name: 'High Pressure Ball Valve',
         category: 'Piping & Industrial Valves',
         description: 'Quarter-turn ball valve with high pressure rating for industrial applications.',
-        imageUrl: 'https://www.dropbox.com/scl/fi/u6j87a28p8250o3kvbp2j/Ball-Valve.jpg?rlkey=r49a0ea3gejw9fxmf5rstiw3l&raw=1',
+        imageUrl: '/Images/Ball Valve.jpg',
         price: 'Contact for Quote',
         features: ['Quarter Turn Operation', 'High Pressure Rating', 'Corrosion Resistant', 'Long Service Life'],
         inStock: true
@@ -161,7 +161,7 @@ const relatedProducts = {
             id: 'smoke-detector-002',
             name: 'Ionization Smoke Detector',
             description: 'Ionization technology for fast flame fire detection.',
-            imageUrl: 'https://www.dropbox.com/scl/fi/gog9z50lrckq8m8o3pyq9/Smoke_detector.jpeg?rlkey=s03nb1z886lgbuwo4fcep4wpg&raw=1',
+            imageUrl: '/Images/Smoke_detector.jpeg',
             price: 'Contact for Quote',
             features: ['Ionization Technology', 'Fast Response', 'Battery Operated', 'Easy Installation']
         },
@@ -169,7 +169,7 @@ const relatedProducts = {
             id: 'smoke-detector-003',
             name: 'Wireless Smoke Detector',
             description: 'Wireless connectivity with smartphone app integration.',
-            imageUrl: 'https://www.dropbox.com/scl/fi/gog9z50lrckq8m8o3pyq9/Smoke_detector.jpeg?rlkey=s03nb1z886lgbuwo4fcep4wpg&raw=1',
+            imageUrl: '/Images/Smoke_detector.jpeg',
             price: 'Contact for Quote',
             features: ['Wireless Technology', 'Smart App Control', 'Battery Backup', 'Remote Monitoring']
         },
@@ -177,7 +177,7 @@ const relatedProducts = {
             id: 'smoke-detector-004',
             name: 'Multi-Sensor Smoke Detector',
             description: 'Combines photoelectric and heat detection technologies.',
-            imageUrl: 'https://www.dropbox.com/scl/fi/gog9z50lrckq8m8o3pyq9/Smoke_detector.jpeg?rlkey=s03nb1z886lgbuwo4fcep4wpg&raw=1',
+            imageUrl: '/Images/Smoke_detector.jpeg',
             price: 'Contact for Quote',
             features: ['Dual Technology', 'Reduced False Alarms', 'High Sensitivity', 'Weather Resistant']
         },
@@ -185,7 +185,7 @@ const relatedProducts = {
             id: 'smoke-detector-005',
             name: 'Addressable Smoke Detector',
             description: 'Network-connected detector with individual identification.',
-            imageUrl: 'https://www.dropbox.com/scl/fi/gog9z50lrckq8m8o3pyq9/Smoke_detector.jpeg?rlkey=s03nb1z886lgbuwo4fcep4wpg&raw=1',
+            imageUrl: '/Images/Smoke_detector.jpeg',
             price: 'Contact for Quote',
             features: ['Network Connected', 'Individual ID', 'Central Monitoring', 'Easy Maintenance']
         },
@@ -193,7 +193,7 @@ const relatedProducts = {
             id: 'smoke-detector-006',
             name: 'Beam Smoke Detector',
             description: 'Long-range beam detector for large open areas.',
-            imageUrl: 'https://www.dropbox.com/scl/fi/gog9z50lrckq8m8o3pyq9/Smoke_detector.jpeg?rlkey=s03nb1z886lgbuwo4fcep4wpg&raw=1',
+            imageUrl: '/Images/Smoke_detector.jpeg',
             price: 'Contact for Quote',
             features: ['Long Range', 'Large Area Coverage', 'High Sensitivity', 'Weather Resistant']
         },
@@ -201,7 +201,7 @@ const relatedProducts = {
             id: 'smoke-detector-007',
             name: 'Aspirating Smoke Detector',
             description: 'Early warning system with air sampling technology.',
-            imageUrl: 'https://www.dropbox.com/scl/fi/gog9z50lrckq8m8o3pyq9/Smoke_detector.jpeg?rlkey=s03nb1z886lgbuwo4fcep4wpg&raw=1',
+            imageUrl: '/Images/Smoke_detector.jpeg',
             price: 'Contact for Quote',
             features: ['Early Detection', 'Air Sampling', 'High Sensitivity', 'Clean Room Compatible']
         }
@@ -211,7 +211,7 @@ const relatedProducts = {
             id: 'heat-detector-002',
             name: 'Rate of Rise Heat Detector',
             description: 'Detects rapid temperature increases in protected areas.',
-            imageUrl: 'https://www.dropbox.com/scl/fi/a457e72qzt8kp7noumogz/Heat-Detector.jpeg?rlkey=2qxl6iilrcqhpu1fv8h4i9fgg&raw=1',
+            imageUrl: '/Images/Heat Detector.jpeg',
             price: 'Contact for Quote',
             features: ['Rate of Rise Detection', 'Fast Response', 'Temperature Monitoring', 'Reliable']
         },
@@ -219,7 +219,7 @@ const relatedProducts = {
             id: 'heat-detector-003',
             name: 'Linear Heat Detector',
             description: 'Continuous heat detection cable for long distances.',
-            imageUrl: 'https://www.dropbox.com/scl/fi/a457e72qzt8kp7noumogz/Heat-Detector.jpeg?rlkey=2qxl6iilrcqhpu1fv8h4i9fgg&raw=1',
+            imageUrl: '/Images/Heat Detector.jpeg',
             price: 'Contact for Quote',
             features: ['Linear Detection', 'Long Distance', 'Flexible Installation', 'Continuous Monitoring']
         },
@@ -227,7 +227,7 @@ const relatedProducts = {
             id: 'heat-detector-004',
             name: 'Combination Heat Detector',
             description: 'Combines fixed temperature and rate of rise detection.',
-            imageUrl: 'https://www.dropbox.com/scl/fi/a457e72qzt8kp7noumogz/Heat-Detector.jpeg?rlkey=2qxl6iilrcqhpu1fv8h4i9fgg&raw=1',
+            imageUrl: '/Images/Heat Detector.jpeg',
             price: 'Contact for Quote',
             features: ['Dual Detection', 'Fixed Temperature', 'Rate of Rise', 'High Reliability']
         }
@@ -237,7 +237,7 @@ const relatedProducts = {
             id: 'fire-extinguisher-002',
             name: 'CO2 Fire Extinguisher',
             description: 'Clean agent extinguisher for electrical fires.',
-            imageUrl: 'https://www.dropbox.com/scl/fi/h084xtibrae79c6muwkq7/Fire-Extinguisher.jpeg?rlkey=il2qdhib5o5dicx8vr5prlm27&raw=1',
+            imageUrl: '/Images/Fire Extinguisher.jpeg',
             price: 'Contact for Quote',
             features: ['Clean Agent', 'No Residue', 'Electrical Safe', 'Fast Discharge']
         },
@@ -245,7 +245,7 @@ const relatedProducts = {
             id: 'fire-extinguisher-003',
             name: 'Water Fire Extinguisher',
             description: 'Water-based extinguisher for Class A fires.',
-            imageUrl: 'https://www.dropbox.com/scl/fi/h084xtibrae79c6muwkq7/Fire-Extinguisher.jpeg?rlkey=il2qdhib5o5dicx8vr5prlm27&raw=1',
+            imageUrl: '/Images/Fire Extinguisher.jpeg',
             price: 'Contact for Quote',
             features: ['Water Based', 'Class A Rating', 'Environmentally Safe', 'Easy Refill']
         },
@@ -253,7 +253,7 @@ const relatedProducts = {
             id: 'fire-extinguisher-004',
             name: 'Foam Fire Extinguisher',
             description: 'Foam extinguisher for Class A and B fires.',
-            imageUrl: 'https://www.dropbox.com/scl/fi/h084xtibrae79c6muwkq7/Fire-Extinguisher.jpeg?rlkey=il2qdhib5o5dicx8vr5prlm27&raw=1',
+            imageUrl: '/Images/Fire Extinguisher.jpeg',
             price: 'Contact for Quote',
             features: ['Foam Technology', 'A&B Class Rating', 'Long Range', 'Effective Coverage']
         },
@@ -261,7 +261,7 @@ const relatedProducts = {
             id: 'fire-extinguisher-005',
             name: 'Wet Chemical Extinguisher',
             description: 'Specialized extinguisher for kitchen fires.',
-            imageUrl: 'https://www.dropbox.com/scl/fi/h084xtibrae79c6muwkq7/Fire-Extinguisher.jpeg?rlkey=il2qdhib5o5dicx8vr5prlm27&raw=1',
+            imageUrl: '/Images/Fire Extinguisher.jpeg',
             price: 'Contact for Quote',
             features: ['Kitchen Safe', 'Class K Rating', 'Cooling Effect', 'No Re-ignition']
         },
@@ -269,7 +269,7 @@ const relatedProducts = {
             id: 'fire-extinguisher-006',
             name: 'Dry Powder Extinguisher',
             description: 'Multi-purpose extinguisher for various fire types.',
-            imageUrl: 'https://www.dropbox.com/scl/fi/h084xtibrae79c6muwkq7/Fire-Extinguisher.jpeg?rlkey=il2qdhib5o5dicx8vr5prlm27&raw=1',
+            imageUrl: '/Images/Fire Extinguisher.jpeg',
             price: 'Contact for Quote',
             features: ['Multi-Purpose', 'ABC Rating', 'Versatile', 'Long Shelf Life']
         },
@@ -277,7 +277,7 @@ const relatedProducts = {
             id: 'fire-extinguisher-007',
             name: 'Halon Alternative Extinguisher',
             description: 'Environmentally friendly clean agent extinguisher.',
-            imageUrl: 'https://www.dropbox.com/scl/fi/h084xtibrae79c6muwkq7/Fire-Extinguisher.jpeg?rlkey=il2qdhib5o5dicx8vr5prlm27&raw=1',
+            imageUrl: '/Images/Fire Extinguisher.jpeg',
             price: 'Contact for Quote',
             features: ['Clean Agent', 'Environmentally Safe', 'No Ozone Depletion', 'Effective']
         }
@@ -287,75 +287,19 @@ const relatedProducts = {
             id: 'safety-helmet-002',
             name: 'Hard Hat with Face Shield',
             description: 'Safety helmet with integrated face protection.',
-            imageUrl: 'https://www.dropbox.com/scl/fi/75eszm57j20v29acxk1wz/Safety-Helmet.jpg?rlkey=jlqzahfn5f8lh9sydhw13ftb0&raw=1',
+            imageUrl: '/Images/Safety Helmet.jpg',
             price: 'Contact for Quote',
             features: ['Integrated Face Shield', 'High Impact', 'Comfortable Fit', 'Adjustable']
-        },
-        {
-            id: 'safety-helmet-003',
-            name: 'Welding Helmet',
-            description: 'Specialized helmet for welding operations.',
-            imageUrl: 'https://www.dropbox.com/scl/fi/75eszm57j20v29acxk1wz/Safety-Helmet.jpg?rlkey=jlqzahfn5f8lh9sydhw13ftb0&raw=1',
-            price: 'Contact for Quote',
-            features: ['Welding Protection', 'Auto Darkening', 'UV Protection', 'Comfortable']
-        },
-        {
-            id: 'safety-helmet-004',
-            name: 'Climbing Helmet',
-            description: 'Lightweight helmet for construction and climbing.',
-            imageUrl: 'https://www.dropbox.com/scl/fi/75eszm57j20v29acxk1wz/Safety-Helmet.jpg?rlkey=jlqzahfn5f8lh9sydhw13ftb0&raw=1',
-            price: 'Contact for Quote',
-            features: ['Lightweight', 'Climbing Compatible', 'High Impact', 'Ventilated']
-        },
-        {
-            id: 'safety-helmet-005',
-            name: 'Electrical Safety Helmet',
-            description: 'Non-conductive helmet for electrical work.',
-            imageUrl: 'https://www.dropbox.com/scl/fi/75eszm57j20v29acxk1wz/Safety-Helmet.jpg?rlkey=jlqzahfn5f8lh9sydhw13ftb0&raw=1',
-            price: 'Contact for Quote',
-            features: ['Non-Conductive', 'Electrical Safe', 'High Voltage Rated', 'Insulated']
-        },
-        {
-            id: 'safety-helmet-006',
-            name: 'Rescue Helmet',
-            description: 'Specialized helmet for rescue operations.',
-            imageUrl: 'https://www.dropbox.com/scl/fi/75eszm57j20v29acxk1wz/Safety-Helmet.jpg?rlkey=jlqzahfn5f8lh9sydhw13ftb0&raw=1',
-            price: 'Contact for Quote',
-            features: ['Rescue Rated', 'High Visibility', 'Communication Ready', 'Durable']
         }
     ],
     'safety-gloves-001': [
         {
-            id: 'safety-gloves-002',
-            name: 'Chemical Resistant Gloves',
-            description: 'Protection against chemical exposure and contamination.',
-            imageUrl: 'https://www.dropbox.com/scl/fi/eapxxe18vhby1qlstwpl5/Safety-Gloves.jpg?rlkey=h8xq320viej4agx6dvxewjem6&raw=1',
-            price: 'Contact for Quote',
-            features: ['Chemical Resistant', 'Long Cuff', 'Durable Material', 'Comfortable']
-        },
-        {
             id: 'safety-gloves-003',
             name: 'Heat Resistant Gloves',
             description: 'High-temperature protection for hot work environments.',
-            imageUrl: 'https://www.dropbox.com/scl/fi/eapxxe18vhby1qlstwpl5/Safety-Gloves.jpg?rlkey=h8xq320viej4agx6dvxewjem6&raw=1',
+            imageUrl: '/Images/Safety Gloves.jpg',
             price: 'Contact for Quote',
             features: ['Heat Resistant', 'High Temperature', 'Insulated', 'Flexible']
-        },
-        {
-            id: 'safety-gloves-004',
-            name: 'Electrical Safety Gloves',
-            description: 'Insulated gloves for electrical work protection.',
-            imageUrl: 'https://www.dropbox.com/scl/fi/eapxxe18vhby1qlstwpl5/Safety-Gloves.jpg?rlkey=h8xq320viej4agx6dvxewjem6&raw=1',
-            price: 'Contact for Quote',
-            features: ['Electrical Insulated', 'High Voltage Rated', 'Non-Conductive', 'Tested']
-        },
-        {
-            id: 'safety-gloves-005',
-            name: 'Welding Gloves',
-            description: 'Heavy-duty gloves for welding and metal work.',
-            imageUrl: 'https://www.dropbox.com/scl/fi/eapxxe18vhby1qlstwpl5/Safety-Gloves.jpg?rlkey=h8xq320viej4agx6dvxewjem6&raw=1',
-            price: 'Contact for Quote',
-            features: ['Welding Protection', 'Heat Resistant', 'Heavy Duty', 'Long Cuff']
         }
     ],
     'gate-valve-001': [
@@ -363,7 +307,7 @@ const relatedProducts = {
             id: 'gate-valve-002',
             name: 'Rising Stem Gate Valve',
             description: 'Gate valve with rising stem for easy operation.',
-            imageUrl: 'https://www.dropbox.com/scl/fi/8wvee4d6nxf6jcjzw3op3/Gate-Valve.jpg?rlkey=900mbvd36ww221hbtwunri07a&raw=1',
+            imageUrl: '/Images/Gate Valve.jpg',
             price: 'Contact for Quote',
             features: ['Rising Stem', 'Easy Operation', 'Visual Position', 'Reliable']
         },
@@ -371,7 +315,7 @@ const relatedProducts = {
             id: 'gate-valve-003',
             name: 'Non-Rising Stem Gate Valve',
             description: 'Compact gate valve for space-constrained applications.',
-            imageUrl: 'https://www.dropbox.com/scl/fi/8wvee4d6nxf6jcjzw3op3/Gate-Valve.jpg?rlkey=900mbvd36ww221hbtwunri07a&raw=1',
+            imageUrl: '/Images/Gate Valve.jpg',
             price: 'Contact for Quote',
             features: ['Compact Design', 'Space Saving', 'Full Bore', 'Durable']
         },
@@ -379,7 +323,7 @@ const relatedProducts = {
             id: 'gate-valve-004',
             name: 'Knife Gate Valve',
             description: 'Sharp-edged gate valve for slurry and viscous fluids.',
-            imageUrl: 'https://www.dropbox.com/scl/fi/8wvee4d6nxf6jcjzw3op3/Gate-Valve.jpg?rlkey=900mbvd36ww221hbtwunri07a&raw=1',
+            imageUrl: '/Images/Gate Valve.jpg',
             price: 'Contact for Quote',
             features: ['Sharp Edge', 'Slurry Compatible', 'Viscous Fluid', 'Self-Cleaning']
         },
@@ -387,7 +331,7 @@ const relatedProducts = {
             id: 'gate-valve-005',
             name: 'Wedge Gate Valve',
             description: 'Wedge-shaped gate for tight shutoff applications.',
-            imageUrl: 'https://www.dropbox.com/scl/fi/8wvee4d6nxf6jcjzw3op3/Gate-Valve.jpg?rlkey=900mbvd36ww221hbtwunri07a&raw=1',
+            imageUrl: '/Images/Gate Valve.jpg',
             price: 'Contact for Quote',
             features: ['Wedge Design', 'Tight Shutoff', 'High Pressure', 'Reliable Sealing']
         }
@@ -397,7 +341,7 @@ const relatedProducts = {
             id: 'ball-valve-002',
             name: 'Floating Ball Valve',
             description: 'Ball valve with floating ball design for general applications.',
-            imageUrl: 'https://www.dropbox.com/scl/fi/u6j87a28p8250o3kvbp2j/Ball-Valve.jpg?rlkey=r49a0ea3gejw9fxmf5rstiw3l&raw=1',
+            imageUrl: '/Images/Ball Valve.jpg',
             price: 'Contact for Quote',
             features: ['Floating Ball', 'General Purpose', 'Easy Operation', 'Reliable']
         },
@@ -405,7 +349,7 @@ const relatedProducts = {
             id: 'ball-valve-003',
             name: 'Trunnion Ball Valve',
             description: 'High-pressure ball valve with trunnion support.',
-            imageUrl: 'https://www.dropbox.com/scl/fi/u6j87a28p8250o3kvbp2j/Ball-Valve.jpg?rlkey=r49a0ea3gejw9fxmf5rstiw3l&raw=1',
+            imageUrl: '/Images/Ball Valve.jpg',
             price: 'Contact for Quote',
             features: ['Trunnion Support', 'High Pressure', 'Large Diameter', 'Heavy Duty']
         },
@@ -413,7 +357,7 @@ const relatedProducts = {
             id: 'ball-valve-004',
             name: 'Three-Way Ball Valve',
             description: 'Multi-port ball valve for flow direction control.',
-            imageUrl: 'https://www.dropbox.com/scl/fi/u6j87a28p8250o3kvbp2j/Ball-Valve.jpg?rlkey=r49a0ea3gejw9fxmf5rstiw3l&raw=1',
+            imageUrl: '/Images/Ball Valve.jpg',
             price: 'Contact for Quote',
             features: ['Three-Way', 'Flow Control', 'Multi-Port', 'Versatile']
         },
@@ -421,7 +365,7 @@ const relatedProducts = {
             id: 'ball-valve-005',
             name: 'V-Port Ball Valve',
             description: 'Ball valve with V-shaped port for flow control.',
-            imageUrl: 'https://www.dropbox.com/scl/fi/u6j87a28p8250o3kvbp2j/Ball-Valve.jpg?rlkey=r49a0ea3gejw9fxmf5rstiw3l&raw=1',
+            imageUrl: '/Images/Ball Valve.jpg',
             price: 'Contact for Quote',
             features: ['V-Port Design', 'Flow Control', 'Precise Regulation', 'Linear Flow']
         }
@@ -431,7 +375,7 @@ const relatedProducts = {
             id: 'control-panel-002',
             name: 'Conventional Fire Panel',
             description: 'Traditional fire alarm control panel with zone-based detection.',
-            imageUrl: 'https://www.dropbox.com/scl/fi/w2zxaxeunxydx6xvizqu9/fire-alarm-control-panel.jpg?rlkey=mpxwfpikvvoucgqff0x33iwad&raw=1',
+            imageUrl: '/Images/fire-alarm-control-panel.jpg',
             price: 'Contact for Quote',
             features: ['Zone Based', 'Traditional Design', 'Reliable', 'Easy Maintenance']
         },
@@ -439,7 +383,7 @@ const relatedProducts = {
             id: 'control-panel-003',
             name: 'Addressable Fire Panel',
             description: 'Advanced panel with individual device identification and monitoring.',
-            imageUrl: 'https://www.dropbox.com/scl/fi/w2zxaxeunxydx6xvizqu9/fire-alarm-control-panel.jpg?rlkey=mpxwfpikvvoucgqff0x33iwad&raw=1',
+            imageUrl: '/Images/fire-alarm-control-panel.jpg',
             price: 'Contact for Quote',
             features: ['Addressable System', 'Individual ID', 'Advanced Monitoring', 'Network Ready']
         },
@@ -447,7 +391,7 @@ const relatedProducts = {
             id: 'control-panel-004',
             name: 'Wireless Fire Panel',
             description: 'Wireless fire alarm control panel for easy installation.',
-            imageUrl: 'https://www.dropbox.com/scl/fi/w2zxaxeunxydx6xvizqu9/fire-alarm-control-panel.jpg?rlkey=mpxwfpikvvoucgqff0x33iwad&raw=1',
+            imageUrl: '/Images/fire-alarm-control-panel.jpg',
             price: 'Contact for Quote',
             features: ['Wireless Technology', 'Easy Installation', 'Battery Backup', 'Remote Monitoring']
         },
@@ -455,7 +399,7 @@ const relatedProducts = {
             id: 'control-panel-005',
             name: 'Hybrid Fire Panel',
             description: 'Combines conventional and addressable technologies.',
-            imageUrl: 'https://www.dropbox.com/scl/fi/w2zxaxeunxydx6xvizqu9/fire-alarm-control-panel.jpg?rlkey=mpxwfpikvvoucgqff0x33iwad&raw=1',
+            imageUrl: '/Images/fire-alarm-control-panel.jpg',
             price: 'Contact for Quote',
             features: ['Hybrid System', 'Flexible Design', 'Cost Effective', 'Upgradeable']
         }
@@ -465,7 +409,7 @@ const relatedProducts = {
             id: 'manual-call-002',
             name: 'Break Glass Call Point',
             description: 'Traditional break glass manual call point for fire alarm activation.',
-            imageUrl: 'https://www.dropbox.com/scl/fi/9c1tcr0vckdwnas1uwop9/Manual-Call-Point.jpg?rlkey=0zu3huatg3htuy44psgpzevvn&raw=1',
+            imageUrl: '/Images/Manual Call Point.jpg',
             price: 'Contact for Quote',
             features: ['Break Glass', 'Traditional Design', 'Reliable', 'Easy Reset']
         },
@@ -473,7 +417,7 @@ const relatedProducts = {
             id: 'manual-call-003',
             name: 'Push Button Call Point',
             description: 'Modern push button manual call point with LED indicators.',
-            imageUrl: 'https://www.dropbox.com/scl/fi/9c1tcr0vckdwnas1uwop9/Manual-Call-Point.jpg?rlkey=0zu3huatg3htuy44psgpzevvn&raw=1',
+            imageUrl: '/Images/Manual Call Point.jpg',
             price: 'Contact for Quote',
             features: ['Push Button', 'LED Indicators', 'Modern Design', 'Weatherproof']
         },
@@ -481,7 +425,7 @@ const relatedProducts = {
             id: 'manual-call-004',
             name: 'Key Switch Call Point',
             description: 'Key-operated manual call point for restricted access areas.',
-            imageUrl: 'https://www.dropbox.com/scl/fi/9c1tcr0vckdwnas1uwop9/Manual-Call-Point.jpg?rlkey=0zu3huatg3htuy44psgpzevvn&raw=1',
+            imageUrl: '/Images/Manual Call Point.jpg',
             price: 'Contact for Quote',
             features: ['Key Operated', 'Restricted Access', 'Security', 'Authorized Use']
         }
@@ -491,7 +435,7 @@ const relatedProducts = {
             id: 'fire-hose-002',
             name: 'Rubber Fire Hose',
             description: 'Flexible rubber fire hose for general firefighting applications.',
-            imageUrl: 'https://www.dropbox.com/scl/fi/x2v13bxqwhw48lww71kxd/Fire-Hose-Reel.png?rlkey=92pukzjd192alqzc2bsffta71&raw=1',
+            imageUrl: '/Images/Fire Hose Reel.png',
             price: 'Contact for Quote',
             features: ['Flexible Rubber', 'High Pressure', 'Durable', 'Easy Handling']
         },
@@ -499,7 +443,7 @@ const relatedProducts = {
             id: 'fire-hose-003',
             name: 'Canvas Fire Hose',
             description: 'Traditional canvas fire hose for heavy-duty applications.',
-            imageUrl: 'https://www.dropbox.com/scl/fi/x2v13bxqwhw48lww71kxd/Fire-Hose-Reel.png?rlkey=92pukzjd192alqzc2bsffta71&raw=1',
+            imageUrl: '/Images/Fire Hose Reel.png',
             price: 'Contact for Quote',
             features: ['Canvas Material', 'Heavy Duty', 'Traditional', 'Reliable']
         },
@@ -507,7 +451,7 @@ const relatedProducts = {
             id: 'fire-hose-004',
             name: 'Synthetic Fire Hose',
             description: 'Modern synthetic fire hose with advanced materials.',
-            imageUrl: 'https://www.dropbox.com/scl/fi/x2v13bxqwhw48lww71kxd/Fire-Hose-Reel.png?rlkey=92pukzjd192alqzc2bsffta71&raw=1',
+            imageUrl: '/Images/Fire Hose Reel.png',
             price: 'Contact for Quote',
             features: ['Synthetic Material', 'Lightweight', 'High Performance', 'Weather Resistant']
         }
@@ -517,7 +461,7 @@ const relatedProducts = {
             id: 'sprinkler-002',
             name: 'Wet Pipe Sprinkler System',
             description: 'Traditional wet pipe sprinkler system with water-filled pipes.',
-            imageUrl: 'https://www.dropbox.com/scl/fi/n424fd175ljryxjcib7q1/Sprinkler-System.jpg?rlkey=rzntjptuqutwdpynyejq0srst&raw=1',
+            imageUrl: '/Images/Sprinkler System.jpg',
             price: 'Contact for Quote',
             features: ['Wet Pipe', 'Water Filled', 'Fast Response', 'Reliable']
         },
@@ -525,7 +469,7 @@ const relatedProducts = {
             id: 'sprinkler-003',
             name: 'Dry Pipe Sprinkler System',
             description: 'Dry pipe sprinkler system for areas prone to freezing.',
-            imageUrl: 'https://www.dropbox.com/scl/fi/n424fd175ljryxjcib7q1/Sprinkler-System.jpg?rlkey=rzntjptuqutwdpynyejq0srst&raw=1',
+            imageUrl: '/Images/Sprinkler System.jpg',
             price: 'Contact for Quote',
             features: ['Dry Pipe', 'Freeze Protection', 'Air Filled', 'Cold Climate']
         },
@@ -533,7 +477,7 @@ const relatedProducts = {
             id: 'sprinkler-004',
             name: 'Pre-Action Sprinkler System',
             description: 'Advanced sprinkler system with pre-action valve control.',
-            imageUrl: 'https://www.dropbox.com/scl/fi/n424fd175ljryxjcib7q1/Sprinkler-System.jpg?rlkey=rzntjptuqutwdpynyejq0srst&raw=1',
+            imageUrl: '/Images/Sprinkler System.jpg',
             price: 'Contact for Quote',
             features: ['Pre-Action', 'Dual Detection', 'Water Damage Prevention', 'Advanced Control']
         },
@@ -541,7 +485,7 @@ const relatedProducts = {
             id: 'sprinkler-005',
             name: 'Deluge Sprinkler System',
             description: 'Open sprinkler system for high-hazard areas.',
-            imageUrl: 'https://www.dropbox.com/scl/fi/n424fd175ljryxjcib7q1/Sprinkler-System.jpg?rlkey=rzntjptuqutwdpynyejq0srst&raw=1',
+            imageUrl: '/Images/Sprinkler System.jpg',
             price: 'Contact for Quote',
             features: ['Open Sprinklers', 'High Hazard', 'Fast Discharge', 'Maximum Coverage']
         }
@@ -551,7 +495,7 @@ const relatedProducts = {
             id: 'fire-hydrant-002',
             name: 'Wet Barrel Fire Hydrant',
             description: 'Traditional wet barrel hydrant with water-filled barrel.',
-            imageUrl: 'https://www.dropbox.com/scl/fi/nu2w1f1hzngb6947tf7ev/Fire-Hydrant.png?rlkey=83itdqfpz100d9r8zerjbhyxj&raw=1',
+            imageUrl: '/Images/Fire Hydrant.png',
             price: 'Contact for Quote',
             features: ['Wet Barrel', 'Water Filled', 'Traditional Design', 'Reliable']
         },
@@ -559,7 +503,7 @@ const relatedProducts = {
             id: 'fire-hydrant-003',
             name: 'Dry Barrel Fire Hydrant',
             description: 'Dry barrel hydrant for areas prone to freezing.',
-            imageUrl: 'https://www.dropbox.com/scl/fi/nu2w1f1hzngb6947tf7ev/Fire-Hydrant.png?rlkey=83itdqfpz100d9r8zerjbhyxj&raw=1',
+            imageUrl: '/Images/Fire Hydrant.png',
             price: 'Contact for Quote',
             features: ['Dry Barrel', 'Freeze Protection', 'Cold Climate', 'Drain Valve']
         },
@@ -567,7 +511,7 @@ const relatedProducts = {
             id: 'fire-hydrant-004',
             name: 'Wall Hydrant',
             description: 'Wall-mounted fire hydrant for building interiors.',
-            imageUrl: 'https://www.dropbox.com/scl/fi/nu2w1f1hzngb6947tf7ev/Fire-Hydrant.png?rlkey=83itdqfpz100d9r8zerjbhyxj&raw=1',
+            imageUrl: '/Images/Fire Hydrant.png',
             price: 'Contact for Quote',
             features: ['Wall Mounted', 'Interior Use', 'Space Saving', 'Easy Access']
         }
@@ -577,7 +521,7 @@ const relatedProducts = {
             id: 'fm200-002',
             name: 'FM-200 System with Cylinders',
             description: 'Complete FM-200 system with storage cylinders.',
-            imageUrl: 'https://www.dropbox.com/scl/fi/5u5fa82roamrzl4ennsns/FM-200-System.jpeg?rlkey=rl7gl1nfa9qlvqlr7o6xbnbqq&raw=1',
+            imageUrl: '/Images/FM-200 System.jpeg',
             price: 'Contact for Quote',
             features: ['Storage Cylinders', 'Complete System', 'Professional Installation', 'Certified']
         },
@@ -585,7 +529,7 @@ const relatedProducts = {
             id: 'fm200-003',
             name: 'FM-200 Control Panel',
             description: 'Control panel for FM-200 fire suppression system.',
-            imageUrl: 'https://www.dropbox.com/scl/fi/5u5fa82roamrzl4ennsns/FM-200-System.jpeg?rlkey=rl7gl1nfa9qlvqlr7o6xbnbqq&raw=1',
+            imageUrl: '/Images/FM-200 System.jpeg',
             price: 'Contact for Quote',
             features: ['Control Panel', 'System Monitoring', 'Manual Override', 'Status Indicators']
         },
@@ -593,7 +537,7 @@ const relatedProducts = {
             id: 'fm200-004',
             name: 'FM-200 Detection System',
             description: 'Detection system for FM-200 fire suppression.',
-            imageUrl: 'https://www.dropbox.com/scl/fi/5u5fa82roamrzl4ennsns/FM-200-System.jpeg?rlkey=rl7gl1nfa9qlvqlr7o6xbnbqq&raw=1',
+            imageUrl: '/Images/FM-200 System.jpeg',
             price: 'Contact for Quote',
             features: ['Detection System', 'Early Warning', 'Automatic Activation', 'Reliable']
         }
@@ -603,7 +547,7 @@ const relatedProducts = {
             id: 'co2-002',
             name: 'CO2 Storage Cylinders',
             description: 'High-pressure CO2 storage cylinders for fire suppression.',
-            imageUrl: 'https://www.dropbox.com/scl/fi/a6yb0wcwrtrhqlwjyr0qh/CO2-System.jpeg?rlkey=eh9k7eaz0t1yjlxppy66wmprm&raw=1',
+            imageUrl: '/Images/CO2 System.jpeg',
             price: 'Contact for Quote',
             features: ['High Pressure', 'CO2 Storage', 'Durable', 'Certified']
         },
@@ -611,7 +555,7 @@ const relatedProducts = {
             id: 'co2-003',
             name: 'CO2 Control Panel',
             description: 'Control panel for CO2 fire suppression system.',
-            imageUrl: 'https://www.dropbox.com/scl/fi/a6yb0wcwrtrhqlwjyr0qh/CO2-System.jpeg?rlkey=eh9k7eaz0t1yjlxppy66wmprm&raw=1',
+            imageUrl: '/Images/CO2 System.jpeg',
             price: 'Contact for Quote',
             features: ['Control Panel', 'System Control', 'Safety Features', 'Monitoring']
         },
@@ -619,7 +563,7 @@ const relatedProducts = {
             id: 'co2-004',
             name: 'CO2 Discharge Nozzles',
             description: 'Discharge nozzles for CO2 fire suppression system.',
-            imageUrl: 'https://www.dropbox.com/scl/fi/a6yb0wcwrtrhqlwjyr0qh/CO2-System.jpeg?rlkey=eh9k7eaz0t1yjlxppy66wmprm&raw=1',
+            imageUrl: '/Images/CO2 System.jpeg',
             price: 'Contact for Quote',
             features: ['Discharge Nozzles', 'Precise Distribution', 'High Flow', 'Durable']
         }
@@ -632,17 +576,17 @@ const projectsData = [
     {
         title: 'Doha Commercial Tower - Fire Safety Overhaul',
         description: 'Supplied and installed a comprehensive, addressable fire alarm and sprinkler system for a 45-story commercial high-rise.',
-        imageUrl: 'https://www.dropbox.com/scl/fi/d4f4g4h4j4k4l4z4x4c4v/project-tower.jpg?rlkey=p1o1i1u1y1t1r1e1w1q1a&raw=1'
+        imageUrl: '/Images/project-tower.jpg'
     },
     {
         title: 'Al Wakrah Logistics Park - Industrial Supply',
         description: 'Acted as the primary supplier for structural steel, MEP components, and safety equipment for a 500,000 sq. ft. logistics facility.',
-        imageUrl: 'https://www.dropbox.com/scl/fi/v5b5n5m5q5w5e5r5t5y5u/project-logistics.jpg?rlkey=z1x1c1v1b1n1m1q1w1e1r&raw=1'
+        imageUrl: '/Images/project-logistics.jpg'
     },
     {
         title: 'Lusail Marina Residential Complex - MEP Contracting',
         description: 'Executed the complete mechanical, electrical, and plumbing works for a luxury residential development, ensuring compliance with all local codes.',
-        imageUrl: 'https://www.dropbox.com/scl/fi/c6x6z6l6k6j6h6g6f6d6s/project-residential.jpg?rlkey=f1g1h1j1k1l1z1x1c1v1b&raw=1'
+        imageUrl: '/Images/project-residential.jpg'
     }
 ];
 

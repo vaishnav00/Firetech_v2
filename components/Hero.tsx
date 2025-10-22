@@ -2,10 +2,9 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 
 const heroImages = [
-  'https://www.dropbox.com/scl/fi/jgm7lrwakzy7u2hs25tpe/hero-3.jpg?rlkey=nepf43cvc61cfrula3w4twpsa&raw=1',
-  'https://www.dropbox.com/scl/fi/6fxp61d3xehy8xske5sll/hero-image-2.png?rlkey=bggiw77uphq9hdui18a40z9xy&raw=1',
-  'https://www.dropbox.com/scl/fi/mkrsjp2ubhajsis4jtw1o/Hero-image-3.jpeg?rlkey=7a0yvr8p00fplwg7ejad4fux4&raw=1',
-
+  '/Images/hero 3.jpg',
+  '/Images/hero image 2.png',
+  '/Images/Hero image 3.jpeg',
 ];
 
 const Hero: React.FC = () => {
@@ -66,7 +65,7 @@ const Hero: React.FC = () => {
             : 'opacity-0 translate-y-12'
         }`}>
           <img 
-            src="https://www.dropbox.com/scl/fi/gom5bwstmzus2rvbg06yd/firetech-logo-white.png?rlkey=qk3ffqe49620grjdmb3t2oa7w&raw=1" 
+            src="/Images/firetech logo white.png" 
             alt="Firetech Logo" 
             className="h-28 sm:h-40 md:h-56 mb-2" 
           />
