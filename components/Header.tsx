@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Header: React.FC = () => {
     const [scrolled, setScrolled] = useState(false);
@@ -21,29 +21,22 @@ const Header: React.FC = () => {
         { name: 'Contact', href: '/contact' },
     ];
 
-    const location = useLocation();
-
     return (
-        <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 bg-white/95 backdrop-blur-md ${scrolled ? 'shadow-lg shadow-gray-200/50' : 'shadow-sm'}`}>
-            <div className={`w-full flex justify-between items-center ${scrolled ? 'h-16' : 'h-20'} px-2 sm:px-3 transition-all duration-500`}>
-                <Link to="/" className="flex-shrink-0 h-full flex items-center" aria-label="Firetech Home">
-                    <span className="sr-only">Firetech Engineering</span>
+        <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white ${scrolled ? 'shadow-md py-2' : 'shadow-sm py-3'}`}>
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 flex justify-between items-center">
+                <Link to="/" className="flex-shrink-0">
                     <img 
-                        src="https://www.dropbox.com/scl/fi/2xg0mtf8w4tlvmtxp6amw/logo-with-name-hedder.png?rlkey=0k74na0y64u1mezwkwbg94def&raw=1" 
-                        alt="Firetech Engineering logo" 
-                        className="h-full w-auto object-contain block"
-                        decoding="async"
-                        loading="eager"
+                        src="https://www.dropbox.com/scl/fi/g5esh24ikp2wfmwtkd2gn/logo-wit-name_ma.png?rlkey=e1dq12gdhdvmttybzqbd78rjm&raw=1" 
+                        alt="Firetech Logo" 
+                        className={`transition-all duration-300 ${scrolled ? 'h-12 sm:h-14' : 'h-14 sm:h-16'}`} 
                     />
                 </Link>
-                <nav className="hidden md:flex space-x-2" aria-label="Primary menu">
+                <nav className="hidden md:flex space-x-2">
                     {navLinks.map((link) => (
                         <Link 
                             key={link.name} 
                             to={link.href} 
                             className="font-semibold px-4 py-2 rounded-md transition-all duration-300 text-gray-600 hover:bg-firetech-red hover:text-white"
-                            aria-current={location.pathname === link.href ? 'page' : undefined}
-                            title={link.name}
                         >
                             {link.name}
                         </Link>
@@ -54,8 +47,6 @@ const Header: React.FC = () => {
                         onClick={() => setMobileMenuOpen(!mobileMenuOpen)} 
                         className="focus:outline-none transition-colors duration-300 text-gray-600 hover:text-firetech-red p-2"
                         aria-label="Toggle mobile menu"
-                        aria-expanded={mobileMenuOpen}
-                        aria-controls="primary-mobile-menu"
                     >
                         <svg className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={mobileMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16m-7 6h7"} />
@@ -64,16 +55,14 @@ const Header: React.FC = () => {
                 </div>
             </div>
             {/* Mobile Menu */}
-            <div id="primary-mobile-menu" className={`md:hidden bg-white shadow-lg transition-all duration-300 ease-in-out overflow-hidden ${mobileMenuOpen ? 'max-h-96' : 'max-h-0'}`}>
-                <nav className="flex flex-col items-center py-2 space-y-1" aria-label="Primary menu">
+            <div className={`md:hidden bg-white shadow-lg transition-all duration-300 ease-in-out overflow-hidden ${mobileMenuOpen ? 'max-h-96' : 'max-h-0'}`}>
+                <nav className="flex flex-col items-center py-2 space-y-1">
                     {navLinks.map((link) => (
                         <Link 
                             key={link.name} 
                             to={link.href} 
                             onClick={() => setMobileMenuOpen(false)} 
                             className="text-gray-600 hover:bg-gray-100 transition duration-300 font-semibold w-full text-center px-3 py-3"
-                            aria-current={location.pathname === link.href ? 'page' : undefined}
-                            title={link.name}
                         >
                             {link.name}
                         </Link>

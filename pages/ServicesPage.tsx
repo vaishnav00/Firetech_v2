@@ -1,6 +1,5 @@
 import React from 'react';
 import { FireIcon, BuildingOfficeIcon, WrenchScrewdriverIcon, CheckCircleIcon } from '../components/Icons';
-import Seo from '../components/Seo';
 
 const productsByCategory = [
     {
@@ -134,11 +133,6 @@ const ServiceCategory: React.FC<{ icon: React.ReactNode, title: string, items: s
 const ServicesPage: React.FC = () => {
     return (
         <div className="pt-24 sm:pt-28 bg-gray-50">
-            <Seo
-                title="Services"
-                description="Explore Firetech's fire protection, safety systems, and building material services tailored for Qatar's leading projects."
-                urlPath="/services"
-            />
             {/* Page Header */}
             <section className="bg-firetech-red text-white py-16 sm:py-20">
                 <div className="container mx-auto px-4 sm:px-6 text-center">
