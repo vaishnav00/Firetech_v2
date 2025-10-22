@@ -23,26 +23,26 @@ const Header: React.FC = () => {
 
     return (
         <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white ${scrolled ? 'shadow-md py-2' : 'shadow-sm py-3'}`}>
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 flex justify-between items-center">
-                <Link to="/" className="flex-shrink-0">
+            <div className="w-full flex justify-between items-center px-2 sm:px-4 lg:px-6">
+                <Link to="/" className="flex-shrink-0 flex items-center">
                     <img 
-                        src="https://www.dropbox.com/scl/fi/g5esh24ikp2wfmwtkd2gn/logo-wit-name_ma.png?rlkey=e1dq12gdhdvmttybzqbd78rjm&raw=1" 
+                        src="https://www.dropbox.com/scl/fi/2xg0mtf8w4tlvmtxp6amw/logo-with-name-hedder.png?rlkey=0k74na0y64u1mezwkwbg94def&raw=1" 
                         alt="Firetech Logo" 
-                        className={`transition-all duration-300 ${scrolled ? 'h-12 sm:h-14' : 'h-14 sm:h-16'}`} 
+                        className={`transition-all duration-300 object-contain ${scrolled ? 'h-12 sm:h-14' : 'h-14 sm:h-16'}`} 
                     />
                 </Link>
-                <nav className="hidden md:flex space-x-2">
+                <nav className="hidden md:flex space-x-1 lg:space-x-2 items-center">
                     {navLinks.map((link) => (
                         <Link 
                             key={link.name} 
                             to={link.href} 
-                            className="font-semibold px-4 py-2 rounded-md transition-all duration-300 text-gray-600 hover:bg-firetech-red hover:text-white"
+                            className="font-semibold px-3 lg:px-4 py-2 rounded-md transition-all duration-300 text-gray-600 hover:bg-firetech-red hover:text-white whitespace-nowrap"
                         >
                             {link.name}
                         </Link>
                     ))}
                 </nav>
-                <div className="md:hidden">
+                <div className="md:hidden flex items-center justify-end">
                     <button 
                         onClick={() => setMobileMenuOpen(!mobileMenuOpen)} 
                         className="focus:outline-none transition-colors duration-300 text-gray-600 hover:text-firetech-red p-2"
