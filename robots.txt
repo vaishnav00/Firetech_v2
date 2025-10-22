@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Disallow build artifacts
+Disallow: /node_modules/
+Disallow: /dist/
+
+Sitemap: /sitemap.xml
+
+
