@@ -692,8 +692,17 @@ const ProductDetailsModal: React.FC<{
 }> = ({ isOpen, onClose, product, relatedProducts, onRelatedProductClick }) => {
     if (!isOpen || !product) return null;
 
+    const handleBackdropClick = (e: React.MouseEvent<HTMLDivElement>) => {
+        if (e.target === e.currentTarget) {
+            onClose();
+        }
+    };
+
     return (
-        <div className="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center z-50 p-4">
+        <div 
+            className="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center z-50 p-4"
+            onClick={handleBackdropClick}
+        >
             <div className="bg-white rounded-3xl shadow-2xl max-w-6xl w-full max-h-[90vh] overflow-y-auto">
                 {/* Header */}
                 <div className="bg-gradient-to-r from-firetech-red to-red-600 text-white p-8 rounded-t-3xl">
@@ -803,8 +812,17 @@ const QuoteModal: React.FC<{
 }> = ({ isOpen, onClose, product }) => {
     if (!isOpen || !product) return null;
 
+    const handleBackdropClick = (e: React.MouseEvent<HTMLDivElement>) => {
+        if (e.target === e.currentTarget) {
+            onClose();
+        }
+    };
+
     return (
-        <div className="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center z-50 p-4">
+        <div 
+            className="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center z-50 p-4"
+            onClick={handleBackdropClick}
+        >
             <div className="bg-white rounded-3xl shadow-2xl max-w-lg w-full max-h-[90vh] overflow-y-auto">
                 {/* Header */}
                 <div className="bg-gradient-to-r from-firetech-red to-red-600 text-white p-8 rounded-t-3xl">
@@ -904,8 +922,17 @@ const ContactModal: React.FC<{
 }> = ({ isOpen, onClose }) => {
     if (!isOpen) return null;
 
+    const handleBackdropClick = (e: React.MouseEvent<HTMLDivElement>) => {
+        if (e.target === e.currentTarget) {
+            onClose();
+        }
+    };
+
     return (
-        <div className="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center z-50 p-4">
+        <div 
+            className="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center z-50 p-4"
+            onClick={handleBackdropClick}
+        >
             <div className="bg-white rounded-3xl shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
                 {/* Header */}
                 <div className="bg-gradient-to-r from-firetech-red to-red-600 text-white p-8 rounded-t-3xl">

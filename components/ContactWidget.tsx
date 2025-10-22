@@ -7,6 +7,12 @@ const ContactWidget: React.FC = () => {
     setIsOpen(!isOpen);
   };
 
+  const handleBackdropClick = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (e.target === e.currentTarget) {
+      setIsOpen(false);
+    }
+  };
+
   return (
     <div className="fixed bottom-6 right-6 z-50">
       {/* Contact Widget Button */}
@@ -19,9 +25,17 @@ const ContactWidget: React.FC = () => {
         </svg>
       </button>
 
+      {/* Backdrop for click outside */}
+      {isOpen && (
+        <div 
+          className="fixed inset-0 bg-black/20 backdrop-blur-sm z-40"
+          onClick={handleBackdropClick}
+        />
+      )}
+
       {/* Contact Widget Panel */}
       {isOpen && (
-        <div className="absolute bottom-16 right-0 bg-white rounded-2xl shadow-2xl border border-gray-200 w-80 overflow-hidden animate-slideUp">
+        <div className="absolute bottom-16 right-0 bg-white rounded-2xl shadow-2xl border border-gray-200 w-80 overflow-hidden animate-slideUp z-50">
           {/* Header */}
           <div className="bg-gradient-to-r from-firetech-red to-red-600 text-white p-4">
             <div className="flex items-center justify-between">
