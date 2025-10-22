@@ -29,6 +29,7 @@ const Feature: React.FC<FeatureProps> = ({ title, description, index, isVisible 
 
 const WhyChooseUs: React.FC = () => {
     const [isVisible, setIsVisible] = useState(false);
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const whyUsRef = useRef<HTMLElement>(null);
 
     useEffect(() => {
@@ -48,12 +49,46 @@ const WhyChooseUs: React.FC = () => {
         return () => observer.disconnect();
     }, []);
 
+    // Auto-rotate images every 4 seconds
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentImageIndex((prevIndex) => 
+                prevIndex === images.length - 1 ? 0 : prevIndex + 1
+            );
+        }, 4000);
+
+        return () => clearInterval(interval);
+    }, []);
+
     const features = [
         { title: 'Comprehensive Product Range', description: 'Gain access to a complete portfolio of certified safety and construction products, all meeting the highest international quality and safety standards.' },
         { title: 'Trusted Global Partnerships', description: 'Strong partnerships with trusted international manufacturers ensure product quality and reliability.' },
         { title: 'Experienced & Dedicated Team', description: 'Our skilled workforce and experienced management team are fully dedicated to providing exceptional support and ensuring total client satisfaction.' },
         { title: 'Proven Track Record', description: 'With a history of successful projects across the region, we have the proven expertise and reliability to deliver results you can depend on.' },
         { title: 'Reliable Supply Chain', description: 'Benefit from our competitive pricing and a robust supply chain network designed for timely and efficient delivery.' },
+    ];
+
+    const images = [
+        {
+            src: "https://www.dropbox.com/scl/fi/ta6mxeq6k7idesava79ai/fire-eqp-image.jpg?rlkey=ajqzhkkyib3wo98ftsdxgssqd&raw=1",
+            alt: "Fire safety equipment"
+        },
+        {
+            src: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=600&fit=crop",
+            alt: "Construction safety equipment"
+        },
+        {
+            src: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&h=600&fit=crop",
+            alt: "Safety training and equipment"
+        },
+        {
+            src: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop",
+            alt: "Industrial safety solutions"
+        },
+        {
+            src: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&h=600&fit=crop",
+            alt: "Professional safety consultation"
+        }
     ];
 
     return (
@@ -70,31 +105,34 @@ const WhyChooseUs: React.FC = () => {
                     <p className="text-lg text-firetech-gray max-w-3xl mx-auto">We provide a combination of superior products, expert service, and proven reliability to ensure your project's success.</p>
                 </div>
 
-                {/* Features Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {features.map((feature, index) => (
-                        <Feature 
-                            key={index} 
-                            title={feature.title} 
-                            description={feature.description}
-                            index={index}
-                            isVisible={isVisible}
-                        />
-                    ))}
-                </div>
+                {/* Main Content with Side Image */}
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    {/* Features Grid */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        {features.map((feature, index) => (
+                            <Feature 
+                                key={index} 
+                                title={feature.title} 
+                                description={feature.description}
+                                index={index}
+                                isVisible={isVisible}
+                            />
+                        ))}
+                    </div>
 
-                {/* Image Section */}
-                <div className={`mt-16 transition-all duration-800 ease-out delay-500 ${
-                    isVisible 
-                        ? 'opacity-100 translate-y-0' 
-                        : 'opacity-0 translate-y-12'
-                }`}>
-                    <div className="relative max-w-4xl mx-auto">
-                        <img 
-                            src="https://www.dropbox.com/scl/fi/ta6mxeq6k7idesava79ai/fire-eqp-image.jpg?rlkey=ajqzhkkyib3wo98ftsdxgssqd&raw=1" 
-                            alt="Fire safety equipment" 
-                            className="rounded-lg shadow-xl w-full h-auto object-cover" 
-                        />
+                    {/* Image Slideshow Section */}
+                    <div className={`transition-all duration-800 ease-out delay-500 ${
+                        isVisible 
+                            ? 'opacity-100 translate-y-0' 
+                            : 'opacity-0 translate-y-12'
+                    }`}>
+                        <div className="relative overflow-hidden rounded-lg shadow-xl">
+                            <img 
+                                src={images[currentImageIndex].src}
+                                alt={images[currentImageIndex].alt}
+                                className="w-full h-96 object-cover transition-all duration-500 ease-in-out"
+                            />
+                        </div>
                     </div>
                 </div>
             </div>
