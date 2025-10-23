@@ -1,9 +1,50 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { FireIcon, BuildingOfficeIcon, WrenchScrewdriverIcon, CheckCircleIcon } from '../components/Icons';
+import Brands from '../components/Brands';
 
 // Product data for the professional products section
 const products = [
-    // Fire Alarm & Detection Systems
+    // Fire Alarm & Detection
+    {
+        id: 'sprinkler-001',
+        name: 'Sprinkler',
+        category: 'Firefighting Equipment',
+        description: 'Automatic fire sprinkler head for wet pipe and dry pipe systems.',
+        imageUrl: '/Images/Sprinkler System.jpg',
+        price: 'Contact for Quote',
+        features: ['Automatic Activation', 'Pendent/Upright/Sidewall', 'UL/FM Approved', 'Viking/Tyco/HD Brands'],
+        inStock: true
+    },
+    {
+        id: 'fire-hydrant-001',
+        name: 'Fire Hydrant',
+        category: 'Firefighting Equipment',
+        description: 'Heavy-duty fire hydrant for municipal and industrial applications.',
+        imageUrl: '/Images/Fire Hydrant.png',
+        price: 'Contact for Quote',
+        features: ['Heavy Duty Construction', 'High Flow Capacity', 'UL/FM Approved', 'Weflo/APC/Gala Brands'],
+        inStock: true
+    },
+    {
+        id: 'fire-extinguisher-001',
+        name: 'Fire Extinguisher',
+        category: 'Firefighting Equipment',
+        description: 'Multi-purpose fire extinguisher (Dry Powder, CO2, Foam, Wet, Water).',
+        imageUrl: '/Images/Fire Extinguisher.jpeg',
+        price: 'Contact for Quote',
+        features: ['ABC Class Rating', 'CO2 for Electrical', 'Wet Chemical for Kitchens', 'Tianping/Kaixuan Brands'],
+        inStock: true
+    },
+    {
+        id: 'sounder-strobe-001',
+        name: 'Fire Alarm Sounder/Strobe',
+        category: 'Fire Alarm & Detection',
+        description: 'Audible and visual alarm device to alert occupants of a fire.',
+        imageUrl: '/Images/Fire Alarm Sounder.png',
+        price: 'Contact for Quote',
+        features: ['High Decibel Sounder', 'Bright LED Strobe', 'UL Listed', 'Numens/Hochiki/GST Brands'],
+        inStock: true
+    },
     {
         id: 'smoke-detector-001',
         name: 'Smoke Detector',
@@ -26,17 +67,17 @@ const products = [
     },
     {
         id: 'control-panel-001',
-        name: 'Control Panel',
+        name: 'Fire Alarm Control Panel',
         category: 'Fire Alarm & Detection',
-        description: 'Central control panel for managing fire alarm systems with advanced monitoring capabilities.',
+        description: 'Central control panel for managing addressable & conventional fire alarm systems.',
         imageUrl: '/Images/fire-alarm-control-panel.jpg',
         price: 'Contact for Quote',
-        features: ['Multi-Zone Control', 'LCD Display', 'Battery Backup', 'Network Connectivity'],
+        features: ['Addressable & Conventional', 'LCD Display', 'Battery Backup', 'Network Connectivity'],
         inStock: true
     },
     {
         id: 'manual-call-001',
-        name: 'Call Point',
+        name: 'Manual Call Point',
         category: 'Fire Alarm & Detection',
         description: 'Manual fire alarm activation point with glass break mechanism and LED indicators.',
         imageUrl: '/Images/Manual Call Point.jpg',
@@ -44,46 +85,115 @@ const products = [
         features: ['Glass Break Activation', 'LED Status Indicators', 'Weatherproof Design', 'Easy Reset'],
         inStock: true
     },
-
+    {
+        id: 'water-flow-switch-001',
+        name: 'Water Flow Switch',
+        category: 'Fire Alarm & Detection',
+        description: 'Monitors water flow in sprinkler systems to detect activation.',
+        imageUrl: '/Images/Water Flow Switch.jpg',
+        price: 'Contact for Quote',
+        features: ['Potter/Weflo Brands', 'UL Listed', 'Paddle Type', 'System Monitoring'],
+        inStock: true
+    },
+    {
+        id: 'tamper-switch-001',
+        name: 'Tamper Switch',
+        category: 'Fire Alarm & Detection',
+        description: 'Supervisory switch to monitor the open state of control valves.',
+        imageUrl: '/Images/Tamper Switch.png',
+        price: 'Contact for Quote',
+        features: ['Potter/Weflo Brands', 'UL Listed', 'Valve Monitoring', 'Supervisory Signal'],
+        inStock: true
+    },
+    {
+        id: 'emergency-light-001',
+        name: 'Emergency Light',
+        category: 'Fire Alarm & Detection',
+        description: 'Provides backup illumination during a power failure or emergency.',
+        imageUrl: '/Images/Emergency Light.jpg',
+        price: 'Contact for Quote',
+        features: ['Non-Maintained/Maintained', 'Battery Backup', 'LED', 'Lixine/Garrini Brands'],
+        inStock: true
+    },
+    {
+        id: 'exit-light-001',
+        name: 'Exit Light & Exit Sign',
+        category: 'Fire Alarm & Detection',
+        description: 'Illuminated sign to guide occupants to the nearest exit.',
+        imageUrl: '/Images/Exit Light & Exit Sign.jpeg',
+        price: 'Contact for Quote',
+        features: ['Maintained', 'Battery Backup', 'Clear Signage', 'Lixine/Garrini Brands'],
+        inStock: true
+    },
     // Firefighting Equipment
     {
-        id: 'fire-extinguisher-001',
-        name: 'Fire Extinguisher',
+        id: 'fire-blanket-001',
+        name: 'Fire Blanket',
         category: 'Firefighting Equipment',
-        description: 'Multi-purpose fire extinguisher suitable for Class A, B, and C fires.',
-        imageUrl: '/Images/Fire Extinguisher.jpeg',
+        description: 'Safety blanket designed to extinguish small incipient (starting) fires.',
+        imageUrl: '/Images/Fire Blanket.jpg',
         price: 'Contact for Quote',
-        features: ['ABC Class Rating', 'Lightweight Design', 'Easy Grip Handle', 'Pressure Gauge'],
+        features: ['Fiberglass Material', 'Quick Release', 'Wall Mounted', 'Changshu Jiangnan Brand'],
         inStock: true
     },
     {
         id: 'fire-hose-001',
         name: 'Fire Hose Reel System',
         category: 'Firefighting Equipment',
-        description: 'Complete fire hose reel system with high-pressure water delivery capabilities.',
+        description: 'Complete fire hose reel system with high-pressure water delivery.',
         imageUrl: '/Images/Fire Hose Reel.png',
         price: 'Contact for Quote',
-        features: ['High Pressure Rating', 'Corrosion Resistant', 'Easy Deployment', 'Wall Mounted'],
+        features: ['High Pressure Rating', 'Corrosion Resistant', 'Easy Deployment', 'Ningbo Kaixuan/CSJ Brands'],
         inStock: true
     },
     {
-        id: 'sprinkler-001',
-        name: 'Sprinkler',
+        id: 'breeching-inlet-001',
+        name: 'Breeching Inlet & Cabinet',
         category: 'Firefighting Equipment',
-        description: 'Wet pipe sprinkler system for automatic fire suppression in commercial buildings.',
-        imageUrl: '/Images/Sprinkler System.jpg',
+        description: 'Inlet for firefighting services to pump water into the building\'s system.',
+        imageUrl: '/Images/Fire Hose Cabinet.jpg',
         price: 'Contact for Quote',
-        features: ['Automatic Activation', 'Wet Pipe System', 'High Flow Rate', 'Easy Maintenance'],
+        features: ['2-Way or 4-Way', 'Includes Cabinet', 'UL Listed', 'Ningbo Kaixuan/Swati Fire Brands'],
         inStock: true
     },
     {
-        id: 'fire-hydrant-001',
-        name: 'Fire Hydrant',
+        id: 'landing-valve-001',
+        name: 'Landing Valve',
         category: 'Firefighting Equipment',
-        description: 'Heavy-duty fire hydrant for municipal and industrial applications.',
-        imageUrl: '/Images/Fire Hydrant.png',
+        description: '2.5" landing valve for fire hydrant and hose systems.',
+        imageUrl: '/Images/Landing Valve.jpg',
         price: 'Contact for Quote',
-        features: ['Heavy Duty Construction', 'High Flow Capacity', 'Frost Resistant', 'Easy Access'],
+        features: ['2.5" Size', 'Threaded & Flanged', 'UL Listed', 'Swati Fire/Kaixuan Brands'],
+        inStock: true
+    },
+    {
+        id: 'fire-hose-cabinet-001',
+        name: 'Fire Hose Cabinet',
+        category: 'Firefighting Equipment',
+        description: 'Cabinet for storing fire hose reels and landing valves.',
+        imageUrl: '/Images/Fire Hose Cabinet.jpg',
+        price: 'Contact for Quote',
+        features: ['Wall Mounted', 'Recessed/Surface', 'Steel Construction', 'Ningbo Kaixuan/CSJ Brands'],
+        inStock: true
+    },
+    {
+        id: 'synthetic-hose-001',
+        name: 'Synthetic Fire Hose',
+        category: 'Firefighting Equipment',
+        description: 'Durable synthetic fire hose for firefighting applications.',
+        imageUrl: '/Images/Fire Hose Reel.png',
+        price: 'Contact for Quote',
+        features: ['Type 2', 'Type 3', 'High Burst Pressure', 'Torrent Walcoat/Newage Brands'],
+        inStock: true
+    },
+    {
+        id: 'fire-pumps-001',
+        name: 'Fire Pumps',
+        category: 'Firefighting Equipment',
+        description: 'Complete fire pump sets (Electric, Diesel, Jockey) for fire protection systems.',
+        imageUrl: '/Images/Fire Pumps.jpg',
+        price: 'Contact for Quote',
+        features: ['UL Listed', 'QCDD Approved', 'Electric/Diesel/Jockey', 'Complete Skid'],
         inStock: true
     },
 
@@ -92,10 +202,10 @@ const products = [
         id: 'fm200-001',
         name: 'FM-200 / Novec System',
         category: 'Fire Suppression Systems',
-        description: 'Clean agent fire suppression system for protecting sensitive equipment and data centers.',
+        description: 'Clean agent fire suppression system for sensitive equipment and data centers.',
         imageUrl: '/Images/FM-200 System.jpeg',
         price: 'Contact for Quote',
-        features: ['Clean Agent', 'No Residue', 'Fast Discharge', 'Environmentally Safe'],
+        features: ['Clean Agent', 'No Residue', 'Fast Discharge', 'Kidde/Others'],
         inStock: true
     },
     {
@@ -106,6 +216,16 @@ const products = [
         imageUrl: '/Images/CO2 System.jpeg',
         price: 'Contact for Quote',
         features: ['High Efficiency', 'No Residue', 'Fast Response', 'Cost Effective'],
+        inStock: true
+    },
+    {
+        id: 'aerosol-system-001',
+        name: 'Aerosol System',
+        category: 'Fire Suppression Systems',
+        description: 'Condensed aerosol fire suppression system, environmentally friendly.',
+        imageUrl: '/Images/FM-200 System.jpeg',
+        price: 'Contact for Quote',
+        features: ['Clean Agent', 'No Residue', 'Environmentally Safe', 'FirePro/Greenex Brands'],
         inStock: true
     },
 
@@ -120,15 +240,16 @@ const products = [
         features: ['High Impact Resistance', 'Adjustable Suspension', 'Ventilation Slots', 'ANSI Z89.1 Certified'],
         inStock: true
     },
+
     // Piping & Industrial Valves
     {
         id: 'gate-valve-001',
         name: 'Gate Valve',
         category: 'Piping & Industrial Valves',
-        description: 'Heavy-duty gate valve for industrial applications with full bore design.',
+        description: 'Heavy-duty gate valve for fire protection systems.',
         imageUrl: '/Images/Gate Valve.jpg',
         price: 'Contact for Quote',
-        features: ['Full Bore Design', 'Heavy Duty Construction', 'Easy Operation', 'High Pressure Rating'],
+        features: ['Full Bore Design', 'UL/FM Approved', 'Weflo/Fireking/Lede Brands', 'High Pressure Rating'],
         inStock: true
     },
     {
@@ -139,6 +260,150 @@ const products = [
         imageUrl: '/Images/Ball Valve.jpg',
         price: 'Contact for Quote',
         features: ['Quarter Turn Operation', 'High Pressure Rating', 'Corrosion Resistant', 'Long Service Life'],
+        inStock: true
+    },
+    {
+        id: 'butterfly-valve-001',
+        name: 'Butterfly Valve',
+        category: 'Piping & Industrial Valves',
+        description: 'Butterfly valve for fire protection and industrial systems.',
+        imageUrl: '/Images/Butterfly Valve.jpeg',
+        price: 'Contact for Quote',
+        features: ['Gear Operated/Lever', 'UL/FM Approved', 'Weflo/Fireking/Lede Brands', 'Wafer/Lug Type'],
+        inStock: true
+    },
+    {
+        id: 'check-valve-001',
+        name: 'Check Valve',
+        category: 'Piping & Industrial Valves',
+        description: 'Prevents backflow in fire protection and water systems.',
+        imageUrl: '/Images/Check Valve.jpg',
+        price: 'Contact for Quote',
+        features: ['Swing Type/Wafer Type', 'UL/FM Approved', 'Weflo/Fireking/Lede Brands', 'Non-Return'],
+        inStock: true
+    },
+    {
+        id: 'alarm-check-valve-001',
+        name: 'Alarm Check Valve',
+        category: 'Piping & Industrial Valves',
+        description: 'Valve for wet pipe sprinkler systems that signals water flow.',
+        imageUrl: '/Images/Alarm Check Valve.jpg',
+        price: 'Contact for Quote',
+        features: ['Signals Water Flow', 'UL/FM Approved', 'Weflo/Viking/Tyco Brands', 'Includes Trim'],
+        inStock: true
+    },
+    {
+        id: 'prv-001',
+        name: 'Pressure Reducing Valve',
+        category: 'Piping & Industrial Valves',
+        description: 'Reduces high inlet pressure to a lower, constant outlet pressure.',
+        imageUrl: '/Images/Pressure Reducing Valve.png',
+        price: 'Contact for Quote',
+        features: ['Regulates Pressure', 'UL/FM Approved', 'Cla-Val/Weflo Brands', 'Adjustable'],
+        inStock: true
+    },
+    {
+        id: 'prv-002',
+        name: 'Pressure Relief Valve',
+        category: 'Piping & Industrial Valves',
+        description: 'Safety valve to protect systems from overpressure.',
+        imageUrl: '/Images/Pressure Relief Valve.jpg',
+        price: 'Contact for Quote',
+        features: ['Overpressure Protection', 'UL/FM Approved', 'Cla-Val/Weflo Brands', 'Safety Device'],
+        inStock: true
+    },
+    {
+        id: 'test-drain-valve-001',
+        name: 'Test & Drain Valve',
+        category: 'Piping & Industrial Valves',
+        description: 'Valve used for testing and draining sprinkler systems.',
+        imageUrl: '/Images/Test & Drain Valve.jpeg',
+        price: 'Contact for Quote',
+        features: ['Test and Drain Function', 'UL/FM Approved', 'Duyar/HD Brands', 'Sight Glass'],
+        inStock: true
+    },
+
+    // Fire System Components
+    {
+        id: 'pressure-gauge-001',
+        name: 'Pressure Gauge',
+        category: 'Fire System Components',
+        description: 'Measures water or air pressure within the fire protection system.',
+        imageUrl: '/Images/pressure gauge.jpg',
+        price: 'Contact for Quote',
+        features: ['Measures Pressure', 'UL Listed', 'Winters/Viking Brands', 'Dial Type'],
+        inStock: true
+    },
+    {
+        id: 'fire-pipes-001',
+        name: 'Fire Pipes',
+        category: 'Fire System Components',
+        description: 'ERW and seamless steel pipes for fire sprinkler systems.',
+        imageUrl: '/Images/Steel Pipes.jpg',
+        price: 'Contact for Quote',
+        features: ['ERW/Seamless', 'UL/FM Approved', 'Al Jazeera/Surya/UTP Brands', 'Steel'],
+        inStock: true
+    },
+    {
+        id: 'grooved-fittings-001',
+        name: 'Grooved Fittings',
+        category: 'Fire System Components',
+        description: 'Fittings (elbows, tees, couplings) for grooved pipe systems.',
+        imageUrl: '/Images/Grooved Fittings.jpg',
+        price: 'Contact for Quote',
+        features: ['For Grooved Pipe', 'UL/FM Approved', 'Lede/National/CNG Brands', 'Ductile Iron'],
+        inStock: true
+    },
+    {
+        id: 'threaded-fittings-001',
+        name: 'Threaded Fittings',
+        category: 'Fire System Components',
+        description: 'Fittings (elbows, tees, unions) for threaded pipe systems.',
+        imageUrl: '/Images/Pipe Fittings.jpeg',
+        price: 'Contact for Quote',
+        features: ['For Threaded Pipe', 'UL/FM Approved', 'BIS/Siam Brands', 'Malleable Iron'],
+        inStock: true
+    },
+    {
+        id: 'pipe-supports-001',
+        name: 'Fire Pipe Supports',
+        category: 'Fire System Components',
+        description: 'Hangers, brackets, and supports for fire system piping.',
+        imageUrl: '/Images/Fire Pipes.jpg',
+        price: 'Contact for Quote',
+        features: ['Pipe Hangers', 'UL/FM Approved', 'Brackets', 'Steel Construction'],
+        inStock: true
+    },
+    {
+        id: 'flow-meter-001',
+        name: 'Test Flow Meter',
+        category: 'Fire System Components',
+        description: 'Device to test and measure water flow in fire pump systems.',
+        imageUrl: '/Images/Test Flow Meter.jpg',
+        price: 'Contact for Quote',
+        features: ['Pump Testing', 'UL/FM Approved', 'Gerand/Global Vision Brands', 'Measures GPM'],
+        inStock: true
+    },
+
+    // Services & Maintenance
+    {
+        id: 'water-level-indicator-001',
+        name: 'Water Level Indicator',
+        category: 'Fire System Components',
+        description: 'System to monitor the water level in fire storage tanks.',
+        imageUrl: '/Images/Water Level Indicator.jpg',
+        price: 'Contact for Quote',
+        features: ['Tank Level Monitoring', 'QCDD Approved', 'Alarm Signal', 'Electronic'],
+        inStock: true
+    },
+    {
+        id: 'extinguisher-refilling-001',
+        name: 'Fire Extinguisher Refilling',
+        category: 'Services & Maintenance',
+        description: 'Refilling and servicing for all types of fire extinguishers.',
+        imageUrl: '/Images/Fire Extinguisher Refilling.jpg',
+        price: 'Contact for Quote',
+        features: ['DCP Refilling', 'CO2 Refilling', 'Foam/Water Refilling', 'QCDD Approved'],
         inStock: true
     }
 ];
@@ -173,7 +438,7 @@ const relatedProducts = {
         {
             id: 'smoke-detector-005',
             name: 'Addressable Smoke Detector',
-            description: 'Network-connected detector with individual identification.',
+            description: 'Detector with individual identification.',
             imageUrl: '/Images/Smoke_detector.jpeg',
             price: 'Contact for Quote',
             features: ['Network Connected', 'Individual ID', 'Central Monitoring', 'Easy Maintenance']
@@ -193,332 +458,6 @@ const relatedProducts = {
             imageUrl: '/Images/Smoke_detector.jpeg',
             price: 'Contact for Quote',
             features: ['Early Detection', 'Air Sampling', 'High Sensitivity', 'Clean Room Compatible']
-        }
-    ],
-    'heat-detector-001': [
-        {
-            id: 'heat-detector-002',
-            name: 'Rate of Rise Heat Detector',
-            description: 'Detects rapid temperature increases in protected areas.',
-            imageUrl: '/Images/Heat Detector.jpeg',
-            price: 'Contact for Quote',
-            features: ['Rate of Rise Detection', 'Fast Response', 'Temperature Monitoring', 'Reliable']
-        },
-        {
-            id: 'heat-detector-003',
-            name: 'Linear Heat Detector',
-            description: 'Continuous heat detection cable for long distances.',
-            imageUrl: '/Images/Heat Detector.jpeg',
-            price: 'Contact for Quote',
-            features: ['Linear Detection', 'Long Distance', 'Flexible Installation', 'Continuous Monitoring']
-        },
-        {
-            id: 'heat-detector-004',
-            name: 'Combination Heat Detector',
-            description: 'Combines fixed temperature and rate of rise detection.',
-            imageUrl: '/Images/Heat Detector.jpeg',
-            price: 'Contact for Quote',
-            features: ['Dual Detection', 'Fixed Temperature', 'Rate of Rise', 'High Reliability']
-        }
-    ],
-    'fire-extinguisher-001': [
-        {
-            id: 'fire-extinguisher-002',
-            name: 'CO2 Fire Extinguisher',
-            description: 'Clean agent extinguisher for electrical fires.',
-            imageUrl: '/Images/Fire Extinguisher.jpeg',
-            price: 'Contact for Quote',
-            features: ['Clean Agent', 'No Residue', 'Electrical Safe', 'Fast Discharge']
-        },
-        {
-            id: 'fire-extinguisher-003',
-            name: 'Water Fire Extinguisher',
-            description: 'Water-based extinguisher for Class A fires.',
-            imageUrl: '/Images/Fire Extinguisher.jpeg',
-            price: 'Contact for Quote',
-            features: ['Water Based', 'Class A Rating', 'Environmentally Safe', 'Easy Refill']
-        },
-        {
-            id: 'fire-extinguisher-004',
-            name: 'Foam Fire Extinguisher',
-            description: 'Foam extinguisher for Class A and B fires.',
-            imageUrl: '/Images/Fire Extinguisher.jpeg',
-            price: 'Contact for Quote',
-            features: ['Foam Technology', 'A&B Class Rating', 'Long Range', 'Effective Coverage']
-        },
-        {
-            id: 'fire-extinguisher-005',
-            name: 'Wet Chemical Extinguisher',
-            description: 'Specialized extinguisher for kitchen fires.',
-            imageUrl: '/Images/Fire Extinguisher.jpeg',
-            price: 'Contact for Quote',
-            features: ['Kitchen Safe', 'Class K Rating', 'Cooling Effect', 'No Re-ignition']
-        },
-        {
-            id: 'fire-extinguisher-006',
-            name: 'Dry Powder Extinguisher',
-            description: 'Multi-purpose extinguisher for various fire types.',
-            imageUrl: '/Images/Fire Extinguisher.jpeg',
-            price: 'Contact for Quote',
-            features: ['Multi-Purpose', 'ABC Rating', 'Versatile', 'Long Shelf Life']
-        },
-        {
-            id: 'fire-extinguisher-007',
-            name: 'Halon Alternative Extinguisher',
-            description: 'Environmentally friendly clean agent extinguisher.',
-            imageUrl: '/Images/Fire Extinguisher.jpeg',
-            price: 'Contact for Quote',
-            features: ['Clean Agent', 'Environmentally Safe', 'No Ozone Depletion', 'Effective']
-        }
-    ],
-    'safety-helmet-001': [
-        {
-            id: 'safety-helmet-002',
-            name: 'Hard Hat with Face Shield',
-            description: 'Safety helmet with integrated face protection.',
-            imageUrl: '/Images/Safety Helmet.jpg',
-            price: 'Contact for Quote',
-            features: ['Integrated Face Shield', 'High Impact', 'Comfortable Fit', 'Adjustable']
-        }
-    ],
-    'gate-valve-001': [
-        {
-            id: 'gate-valve-002',
-            name: 'Rising Stem Gate Valve',
-            description: 'Gate valve with rising stem for easy operation.',
-            imageUrl: '/Images/Gate Valve.jpg',
-            price: 'Contact for Quote',
-            features: ['Rising Stem', 'Easy Operation', 'Visual Position', 'Reliable']
-        },
-        {
-            id: 'gate-valve-003',
-            name: 'Non-Rising Stem Gate Valve',
-            description: 'Compact gate valve for space-constrained applications.',
-            imageUrl: '/Images/Gate Valve.jpg',
-            price: 'Contact for Quote',
-            features: ['Compact Design', 'Space Saving', 'Full Bore', 'Durable']
-        },
-        {
-            id: 'gate-valve-004',
-            name: 'Knife Gate Valve',
-            description: 'Sharp-edged gate valve for slurry and viscous fluids.',
-            imageUrl: '/Images/Gate Valve.jpg',
-            price: 'Contact for Quote',
-            features: ['Sharp Edge', 'Slurry Compatible', 'Viscous Fluid', 'Self-Cleaning']
-        },
-        {
-            id: 'gate-valve-005',
-            name: 'Wedge Gate Valve',
-            description: 'Wedge-shaped gate for tight shutoff applications.',
-            imageUrl: '/Images/Gate Valve.jpg',
-            price: 'Contact for Quote',
-            features: ['Wedge Design', 'Tight Shutoff', 'High Pressure', 'Reliable Sealing']
-        }
-    ],
-    'ball-valve-001': [
-        {
-            id: 'ball-valve-002',
-            name: 'Floating Ball Valve',
-            description: 'Ball valve with floating ball design for general applications.',
-            imageUrl: '/Images/Ball Valve.jpg',
-            price: 'Contact for Quote',
-            features: ['Floating Ball', 'General Purpose', 'Easy Operation', 'Reliable']
-        },
-        {
-            id: 'ball-valve-003',
-            name: 'Trunnion Ball Valve',
-            description: 'High-pressure ball valve with trunnion support.',
-            imageUrl: '/Images/Ball Valve.jpg',
-            price: 'Contact for Quote',
-            features: ['Trunnion Support', 'High Pressure', 'Large Diameter', 'Heavy Duty']
-        },
-        {
-            id: 'ball-valve-004',
-            name: 'Three-Way Ball Valve',
-            description: 'Multi-port ball valve for flow direction control.',
-            imageUrl: '/Images/Ball Valve.jpg',
-            price: 'Contact for Quote',
-            features: ['Three-Way', 'Flow Control', 'Multi-Port', 'Versatile']
-        },
-        {
-            id: 'ball-valve-005',
-            name: 'V-Port Ball Valve',
-            description: 'Ball valve with V-shaped port for flow control.',
-            imageUrl: '/Images/Ball Valve.jpg',
-            price: 'Contact for Quote',
-            features: ['V-Port Design', 'Flow Control', 'Precise Regulation', 'Linear Flow']
-        }
-    ],
-    'control-panel-001': [
-        {
-            id: 'control-panel-002',
-            name: 'Conventional Fire Panel',
-            description: 'Traditional fire alarm control panel with zone-based detection.',
-            imageUrl: '/Images/fire-alarm-control-panel.jpg',
-            price: 'Contact for Quote',
-            features: ['Zone Based', 'Traditional Design', 'Reliable', 'Easy Maintenance']
-        },
-        {
-            id: 'control-panel-003',
-            name: 'Addressable Fire Panel',
-            description: 'Advanced panel with individual device identification and monitoring.',
-            imageUrl: '/Images/fire-alarm-control-panel.jpg',
-            price: 'Contact for Quote',
-            features: ['Addressable System', 'Individual ID', 'Advanced Monitoring', 'Network Ready']
-        },
-        {
-            id: 'control-panel-004',
-            name: 'Wireless Fire Panel',
-            description: 'Wireless fire alarm control panel for easy installation.',
-            imageUrl: '/Images/fire-alarm-control-panel.jpg',
-            price: 'Contact for Quote',
-            features: ['Wireless Technology', 'Easy Installation', 'Battery Backup', 'Remote Monitoring']
-        },
-        {
-            id: 'control-panel-005',
-            name: 'Hybrid Fire Panel',
-            description: 'Combines conventional and addressable technologies.',
-            imageUrl: '/Images/fire-alarm-control-panel.jpg',
-            price: 'Contact for Quote',
-            features: ['Hybrid System', 'Flexible Design', 'Cost Effective', 'Upgradeable']
-        }
-    ],
-    'manual-call-001': [
-        {
-            id: 'manual-call-002',
-            name: 'Break Glass Call Point',
-            description: 'Traditional break glass manual call point for fire alarm activation.',
-            imageUrl: '/Images/Manual Call Point.jpg',
-            price: 'Contact for Quote',
-            features: ['Break Glass', 'Traditional Design', 'Reliable', 'Easy Reset']
-        },
-        {
-            id: 'manual-call-003',
-            name: 'Push Button Call Point',
-            description: 'Modern push button manual call point with LED indicators.',
-            imageUrl: '/Images/Manual Call Point.jpg',
-            price: 'Contact for Quote',
-            features: ['Push Button', 'LED Indicators', 'Modern Design', 'Weatherproof']
-        },
-        {
-            id: 'manual-call-004',
-            name: 'Key Switch Call Point',
-            description: 'Key-operated manual call point for restricted access areas.',
-            imageUrl: '/Images/Manual Call Point.jpg',
-            price: 'Contact for Quote',
-            features: ['Key Operated', 'Restricted Access', 'Security', 'Authorized Use']
-        }
-    ],
-    'fire-hose-001': [
-        {
-            id: 'fire-hose-002',
-            name: 'Rubber Fire Hose',
-            description: 'Flexible rubber fire hose for general firefighting applications.',
-            imageUrl: '/Images/Fire Hose Reel.png',
-            price: 'Contact for Quote',
-            features: ['Flexible Rubber', 'High Pressure', 'Durable', 'Easy Handling']
-        },
-        {
-            id: 'fire-hose-003',
-            name: 'Canvas Fire Hose',
-            description: 'Traditional canvas fire hose for heavy-duty applications.',
-            imageUrl: '/Images/Fire Hose Reel.png',
-            price: 'Contact for Quote',
-            features: ['Canvas Material', 'Heavy Duty', 'Traditional', 'Reliable']
-        },
-        {
-            id: 'fire-hose-004',
-            name: 'Synthetic Fire Hose',
-            description: 'Modern synthetic fire hose with advanced materials.',
-            imageUrl: '/Images/Fire Hose Reel.png',
-            price: 'Contact for Quote',
-            features: ['Synthetic Material', 'Lightweight', 'High Performance', 'Weather Resistant']
-        }
-    ],
-    'sprinkler-001': [
-        {
-            id: 'sprinkler-002',
-            name: 'Wet Pipe Sprinkler System',
-            description: 'Traditional wet pipe sprinkler system with water-filled pipes.',
-            imageUrl: '/Images/Sprinkler System.jpg',
-            price: 'Contact for Quote',
-            features: ['Wet Pipe', 'Water Filled', 'Fast Response', 'Reliable']
-        },
-        {
-            id: 'sprinkler-003',
-            name: 'Dry Pipe Sprinkler System',
-            description: 'Dry pipe sprinkler system for areas prone to freezing.',
-            imageUrl: '/Images/Sprinkler System.jpg',
-            price: 'Contact for Quote',
-            features: ['Dry Pipe', 'Freeze Protection', 'Air Filled', 'Cold Climate']
-        },
-        {
-            id: 'sprinkler-004',
-            name: 'Pre-Action Sprinkler System',
-            description: 'Advanced sprinkler system with pre-action valve control.',
-            imageUrl: '/Images/Sprinkler System.jpg',
-            price: 'Contact for Quote',
-            features: ['Pre-Action', 'Dual Detection', 'Water Damage Prevention', 'Advanced Control']
-        },
-        {
-            id: 'sprinkler-005',
-            name: 'Deluge Sprinkler System',
-            description: 'Open sprinkler system for high-hazard areas.',
-            imageUrl: '/Images/Sprinkler System.jpg',
-            price: 'Contact for Quote',
-            features: ['Open Sprinklers', 'High Hazard', 'Fast Discharge', 'Maximum Coverage']
-        }
-    ],
-    'fire-hydrant-001': [
-        {
-            id: 'fire-hydrant-002',
-            name: 'Wet Barrel Fire Hydrant',
-            description: 'Traditional wet barrel hydrant with water-filled barrel.',
-            imageUrl: '/Images/Fire Hydrant.png',
-            price: 'Contact for Quote',
-            features: ['Wet Barrel', 'Water Filled', 'Traditional Design', 'Reliable']
-        },
-        {
-            id: 'fire-hydrant-003',
-            name: 'Dry Barrel Fire Hydrant',
-            description: 'Dry barrel hydrant for areas prone to freezing.',
-            imageUrl: '/Images/Fire Hydrant.png',
-            price: 'Contact for Quote',
-            features: ['Dry Barrel', 'Freeze Protection', 'Cold Climate', 'Drain Valve']
-        },
-        {
-            id: 'fire-hydrant-004',
-            name: 'Wall Hydrant',
-            description: 'Wall-mounted fire hydrant for building interiors.',
-            imageUrl: '/Images/Fire Hydrant.png',
-            price: 'Contact for Quote',
-            features: ['Wall Mounted', 'Interior Use', 'Space Saving', 'Easy Access']
-        }
-    ],
-    'fm200-001': [
-        {
-            id: 'fm200-002',
-            name: 'FM-200 System with Cylinders',
-            description: 'Complete FM-200 system with storage cylinders.',
-            imageUrl: '/Images/FM-200 System.jpeg',
-            price: 'Contact for Quote',
-            features: ['Storage Cylinders', 'Complete System', 'Professional Installation', 'Certified']
-        },
-        {
-            id: 'fm200-003',
-            name: 'FM-200 Control Panel',
-            description: 'Control panel for FM-200 fire suppression system.',
-            imageUrl: '/Images/FM-200 System.jpeg',
-            price: 'Contact for Quote',
-            features: ['Control Panel', 'System Monitoring', 'Manual Override', 'Status Indicators']
-        },
-        {
-            id: 'fm200-004',
-            name: 'FM-200 Detection System',
-            description: 'Detection system for FM-200 fire suppression.',
-            imageUrl: '/Images/FM-200 System.jpeg',
-            price: 'Contact for Quote',
-            features: ['Detection System', 'Early Warning', 'Automatic Activation', 'Reliable']
         }
     ],
     'co2-001': [
@@ -545,6 +484,305 @@ const relatedProducts = {
             imageUrl: '/Images/CO2 System.jpeg',
             price: 'Contact for Quote',
             features: ['Discharge Nozzles', 'Precise Distribution', 'High Flow', 'Durable']
+        }
+    ],
+    
+    // Add related products for all main products
+    'heat-detector-001': [
+        {
+            id: 'heat-detector-002',
+            name: 'Rate of Rise Heat Detector',
+            description: 'Detects rapid temperature increases in protected areas.',
+            imageUrl: '/Images/Heat Detector.jpeg',
+            price: 'Contact for Quote',
+            features: ['Rate of Rise Detection', 'Fast Response', 'Temperature Monitoring', 'Reliable']
+        },
+        {
+            id: 'heat-detector-003',
+            name: 'Linear Heat Detector',
+            description: 'Continuous heat detection cable for long distances.',
+            imageUrl: '/Images/Heat Detector.jpeg',
+            price: 'Contact for Quote',
+            features: ['Linear Detection', 'Long Distance', 'Flexible Installation', 'Continuous Monitoring']
+        }
+    ],
+    
+    'control-panel-001': [
+        {
+            id: 'control-panel-002',
+            name: 'Conventional Fire Panel',
+            description: 'Traditional fire alarm control panel with zone-based detection.',
+            imageUrl: '/Images/fire-alarm-control-panel.jpg',
+            price: 'Contact for Quote',
+            features: ['Zone Based', 'Traditional Design', 'Reliable', 'Easy Maintenance']
+        },
+        {
+            id: 'control-panel-003',
+            name: 'Addressable Fire Panel',
+            description: 'Advanced panel with individual device identification and monitoring.',
+            imageUrl: '/Images/fire-alarm-control-panel.jpg',
+            price: 'Contact for Quote',
+            features: ['Addressable System', 'Individual ID', 'Advanced Monitoring', 'Network Ready']
+        }
+    ],
+    
+    'fire-extinguisher-001': [
+        // Different Types of Fire Extinguishers
+        {
+            id: 'fire-extinguisher-002',
+            name: 'CO2 Fire Extinguisher',
+            description: 'Clean agent extinguisher for electrical fires and sensitive equipment. No residue, safe for electronics.',
+            imageUrl: '/Images/Fire Extinguisher.jpeg',
+            price: 'Contact for Quote',
+            features: ['Clean Agent Technology', 'No Residue', 'Electrical Safe', 'Fast Discharge', 'UL Listed']
+        },
+        {
+            id: 'fire-extinguisher-003',
+            name: 'Water Fire Extinguisher',
+            description: 'Water-based extinguisher for Class A fires. Environmentally friendly and cost-effective.',
+            imageUrl: '/Images/Fire Extinguisher.jpeg',
+            price: 'Contact for Quote',
+            features: ['Class A Rating', 'Environmentally Safe', 'Easy Refill', 'Long Range', 'Durable Construction']
+        },
+        {
+            id: 'fire-extinguisher-004',
+            name: 'Foam Fire Extinguisher',
+            description: 'AFFF foam extinguisher for Class A and B fires. Provides excellent coverage and cooling effect.',
+            imageUrl: '/Images/Fire Extinguisher.jpeg',
+            price: 'Contact for Quote',
+            features: ['A&B Class Rating', 'Foam Technology', 'Long Range', 'Effective Coverage', 'Cooling Effect']
+        },
+        {
+            id: 'fire-extinguisher-005',
+            name: 'Wet Chemical Extinguisher',
+            description: 'Specialized extinguisher for kitchen fires and cooking oil fires. Class K rated for commercial kitchens.',
+            imageUrl: '/Images/Fire Extinguisher.jpeg',
+            price: 'Contact for Quote',
+            features: ['Class K Rating', 'Kitchen Safe', 'Cooling Effect', 'No Re-ignition', 'Commercial Grade']
+        },
+        {
+            id: 'fire-extinguisher-006',
+            name: 'Dry Powder Extinguisher',
+            description: 'Multi-purpose ABC powder extinguisher for various fire types. Versatile and long-lasting.',
+            imageUrl: '/Images/Fire Extinguisher.jpeg',
+            price: 'Contact for Quote',
+            features: ['ABC Rating', 'Multi-Purpose', 'Versatile', 'Long Shelf Life', 'High Performance']
+        },
+        {
+            id: 'fire-extinguisher-007',
+            name: 'Halon Alternative Extinguisher',
+            description: 'Environmentally friendly clean agent extinguisher. Safe for occupied spaces and sensitive equipment.',
+            imageUrl: '/Images/Fire Extinguisher.jpeg',
+            price: 'Contact for Quote',
+            features: ['Clean Agent', 'Environmentally Safe', 'No Ozone Depletion', 'Occupied Space Safe', 'Zero Residue']
+        },
+        // Fire Extinguisher Parts & Accessories
+        {
+            id: 'extinguisher-parts-001',
+            name: 'Fire Extinguisher Nozzle (Standard)',
+            description: 'High-quality replacement nozzle for fire extinguishers. Compatible with most extinguisher types.',
+            imageUrl: '/Images/Fire Extinguisher.jpeg',
+            price: 'Contact for Quote',
+            features: ['High Quality Brass', 'Universal Compatibility', 'Durable Construction', 'Easy Installation', 'Corrosion Resistant']
+        },
+        {
+            id: 'extinguisher-parts-002',
+            name: 'Fire Extinguisher Pressure Gauge',
+            description: 'Accurate pressure gauge for monitoring extinguisher pressure. Clear, easy-to-read display.',
+            imageUrl: '/Images/pressure gauge.jpg',
+            price: 'Contact for Quote',
+            features: ['Accurate Reading', 'Clear Display', 'Durable Construction', 'Easy to Read', 'Reliable Performance']
+        },
+        {
+            id: 'extinguisher-parts-003',
+            name: 'Fire Extinguisher Safety Pin',
+            description: 'Tamper-evident safety pin for fire extinguishers. Prevents accidental discharge.',
+            imageUrl: '/Images/Fire Extinguisher.jpeg',
+            price: 'Contact for Quote',
+            features: ['Tamper Evident', 'Safety Device', 'High Quality', 'Reliable', 'Easy to Use']
+        },
+        {
+            id: 'extinguisher-parts-004',
+            name: 'Fire Extinguisher Discharge Hose',
+            description: 'Flexible discharge hose for fire extinguishers. High-pressure rated and durable.',
+            imageUrl: '/Images/Fire Extinguisher.jpeg',
+            price: 'Contact for Quote',
+            features: ['High Pressure Rated', 'Flexible Design', 'Durable Material', 'Easy Installation', 'Long Lasting']
+        },
+        // Fire Extinguisher Cabinets & Mounting
+        {
+            id: 'extinguisher-cabinet-001',
+            name: 'Fire Extinguisher Wall Cabinet',
+            description: 'Wall-mounted cabinet for fire extinguisher storage. Lockable and weather-resistant.',
+            imageUrl: '/Images/Fire Hose Cabinet.jpg',
+            price: 'Contact for Quote',
+            features: ['Wall Mounted', 'Lockable Design', 'Weather Resistant', 'Easy Access', 'Durable Construction']
+        },
+        {
+            id: 'extinguisher-bracket-001',
+            name: 'Fire Extinguisher Mounting Bracket',
+            description: 'Secure mounting bracket for fire extinguishers. Universal fit for most extinguisher types.',
+            imageUrl: '/Images/Fire Extinguisher.jpeg',
+            price: 'Contact for Quote',
+            features: ['Secure Mounting', 'Universal Fit', 'Easy Installation', 'Durable', 'Stainless Steel']
+        },
+        // Fire Extinguisher Services & Maintenance
+        {
+            id: 'extinguisher-refilling-001',
+            name: 'Fire Extinguisher Refilling Service',
+            description: 'Professional refilling and servicing service. QCDD approved and certified technicians.',
+            imageUrl: '/Images/Fire Extinguisher Refilling.jpg',
+            price: 'Contact for Quote',
+            features: ['DCP Refilling', 'CO2 Refilling', 'Foam/Water Refilling', 'QCDD Approved', 'Certified Technicians']
+        },
+        {
+            id: 'extinguisher-inspection-001',
+            name: 'Fire Extinguisher Inspection Service',
+            description: 'Regular inspection and testing service. Monthly and annual inspections available.',
+            imageUrl: '/Images/Fire Extinguisher.jpeg',
+            price: 'Contact for Quote',
+            features: ['Monthly Inspection', 'Annual Testing', 'Pressure Check', 'QCDD Compliant', 'Detailed Reports']
+        },
+        {
+            id: 'extinguisher-maintenance-001',
+            name: 'Fire Extinguisher Maintenance Service',
+            description: 'Complete maintenance and repair service. Parts replacement and certification included.',
+            imageUrl: '/Images/Fire Extinguisher.jpeg',
+            price: 'Contact for Quote',
+            features: ['Complete Service', 'Parts Replacement', 'Testing & Certification', 'QCDD Compliant', 'Warranty Included']
+        },
+        // Related Fire Safety Products
+        {
+            id: 'fire-blanket-001',
+            name: 'Fire Blanket',
+            description: 'Fiberglass fire blanket for small fires and kitchen safety. Quick release mechanism.',
+            imageUrl: '/Images/Fire Blanket.jpg',
+            price: 'Contact for Quote',
+            features: ['Fiberglass Material', 'Quick Release', 'Wall Mounted', 'Kitchen Safe', 'Easy to Use']
+        }
+    ],
+    
+    'fire-hose-001': [
+        {
+            id: 'fire-hose-002',
+            name: 'Rubber Fire Hose',
+            description: 'Flexible rubber fire hose for general firefighting applications.',
+            imageUrl: '/Images/Fire Hose Reel.png',
+            price: 'Contact for Quote',
+            features: ['Flexible Rubber', 'High Pressure', 'Durable', 'Easy Handling']
+        },
+        {
+            id: 'fire-hose-cabinet-001',
+            name: 'Fire Hose Cabinet',
+            description: 'Cabinet for storing fire hose reels and landing valves.',
+            imageUrl: '/Images/Fire Hose Cabinet.jpg',
+            price: 'Contact for Quote',
+            features: ['Wall Mounted', 'Recessed/Surface', 'Steel Construction', 'Complete System']
+        },
+        {
+            id: 'landing-valve-001',
+            name: 'Landing Valve',
+            description: '2.5" landing valve for fire hydrant and hose systems.',
+            imageUrl: '/Images/Landing Valve.jpg',
+            price: 'Contact for Quote',
+            features: ['2.5" Size', 'Threaded & Flanged', 'UL Listed', 'System Compatible']
+        }
+    ],
+    
+    'sprinkler-001': [
+        {
+            id: 'sprinkler-002',
+            name: 'Wet Pipe Sprinkler System',
+            description: 'Traditional wet pipe sprinkler system with water-filled pipes.',
+            imageUrl: '/Images/Sprinkler System.jpg',
+            price: 'Contact for Quote',
+            features: ['Wet Pipe', 'Water Filled', 'Fast Response', 'Reliable']
+        },
+        {
+            id: 'upright-sprinkler-001',
+            name: 'Upright Sprinkler Head',
+            description: 'Standard upright sprinkler head for ceiling installation. Reliable fire suppression coverage.',
+            imageUrl: '/Images/Sprinkler System.jpg',
+            price: 'Contact for Quote',
+            features: ['Upright Design', 'Ceiling Mounted', 'Reliable Coverage', 'UL Listed', 'Easy Installation']
+        },
+        {
+            id: 'pendant-sprinkler-001',
+            name: 'Pendant Sprinkler Head',
+            description: 'Pendant sprinkler head for suspended ceiling installation. Professional fire protection.',
+            imageUrl: '/Images/Sprinkler System.jpg',
+            price: 'Contact for Quote',
+            features: ['Pendant Design', 'Suspended Ceiling', 'Professional Grade', 'UL Listed', 'Reliable']
+        },
+        {
+            id: 'sidewall-sprinkler-001',
+            name: 'Sidewall Sprinkler Head',
+            description: 'Sidewall sprinkler head for wall installation. Perfect for corridors and narrow spaces.',
+            imageUrl: '/Images/Sprinkler System.jpg',
+            price: 'Contact for Quote',
+            features: ['Sidewall Design', 'Wall Mounted', 'Narrow Spaces', 'UL Listed', 'Versatile']
+        },
+        {
+            id: 'concealed-sprinkler-001',
+            name: 'Concealed Sprinkler Head',
+            description: 'Concealed sprinkler head for aesthetic installations. Hidden until activation.',
+            imageUrl: '/Images/Sprinkler System.jpg',
+            price: 'Contact for Quote',
+            features: ['Concealed Design', 'Aesthetic Installation', 'Hidden Activation', 'UL Listed', 'Professional']
+        },
+        {
+            id: 'esfr-sprinkler-001',
+            name: 'ESFR Sprinkler Head',
+            description: 'Early Suppression Fast Response sprinkler head for high-challenge fires.',
+            imageUrl: '/Images/Sprinkler System.jpg',
+            price: 'Contact for Quote',
+            features: ['ESFR Technology', 'Fast Response', 'High Challenge Fires', 'UL Listed', 'Advanced']
+        },
+        {
+            id: 'deluge-sprinkler-001',
+            name: 'Deluge Sprinkler Head',
+            description: 'Deluge sprinkler head for high-hazard areas. Open head design for maximum coverage.',
+            imageUrl: '/Images/Sprinkler System.jpg',
+            price: 'Contact for Quote',
+            features: ['Deluge Design', 'High Hazard Areas', 'Open Head', 'Maximum Coverage', 'Professional']
+        }
+    ],
+    
+    'fire-pumps-001': [
+        {
+            id: 'fire-pumps-002',
+            name: 'Electric Fire Pump',
+            description: 'Electric motor driven fire pump for reliable water supply.',
+            imageUrl: '/Images/Fire Pumps.jpg',
+            price: 'Contact for Quote',
+            features: ['Electric Motor', 'High Efficiency', 'Reliable Operation', 'UL Listed']
+        },
+        {
+            id: 'fire-pumps-003',
+            name: 'Diesel Fire Pump',
+            description: 'Diesel engine driven fire pump for backup power applications.',
+            imageUrl: '/Images/Fire Pumps.jpg',
+            price: 'Contact for Quote',
+            features: ['Diesel Engine', 'Backup Power', 'High Performance', 'Emergency Ready']
+        }
+    ],
+    
+    'pressure-gauge-001': [
+        {
+            id: 'pressure-gauge-002',
+            name: 'Digital Pressure Gauge',
+            description: 'Digital pressure gauge with LCD display for precise readings.',
+            imageUrl: '/Images/pressure gauge.jpg',
+            price: 'Contact for Quote',
+            features: ['Digital Display', 'High Accuracy', 'Easy Reading', 'Battery Powered']
+        },
+        {
+            id: 'pressure-gauge-003',
+            name: 'High Pressure Gauge',
+            description: 'Heavy-duty pressure gauge for high-pressure applications.',
+            imageUrl: '/Images/pressure gauge.jpg',
+            price: 'Contact for Quote',
+            features: ['High Pressure Rating', 'Durable Construction', 'Precise Readings', 'Industrial Grade']
         }
     ]
 };
@@ -600,8 +838,42 @@ const ServiceCategory: React.FC<{ icon: React.ReactNode, title: string, items: s
     </div>
 );
 
+// Related Products Component
+const RelatedProducts: React.FC<{ 
+    productId: string; 
+    relatedProducts: any[]; 
+    onProductClick: (product: any) => void;
+}> = ({ productId, relatedProducts, onProductClick }) => {
+    if (!relatedProducts || relatedProducts.length === 0) return null;
+
+    return (
+        <div className="mt-4">
+            <button 
+                onClick={() => onProductClick({ id: productId, relatedProducts })}
+                className="w-full flex items-center justify-center p-3 bg-gradient-to-r from-gray-50 to-gray-100 rounded-lg hover:from-firetech-red/5 hover:to-red-50 transition-all duration-300 border border-gray-200 hover:border-firetech-red/30"
+            >
+                <div className="flex items-center">
+                    <svg className="w-4 h-4 mr-2 text-firetech-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+                    </svg>
+                    <span className="text-sm font-bold text-gray-700">View Related Products ({relatedProducts.length})</span>
+                </div>
+            </button>
+        </div>
+    );
+};
+
 // Professional Product Card Component
-const ProfessionalProductCard: React.FC<{ product: any; index: number; isVisible: boolean; onProductClick: (product: any) => void; onQuoteClick: (product: any) => void }> = ({ product, index, isVisible, onProductClick, onQuoteClick }) => (
+const ProfessionalProductCard: React.FC<{ 
+    product: any; 
+    index: number; 
+    isVisible: boolean; 
+    onProductClick: (product: any) => void; 
+    onQuoteClick: (product: any) => void;
+    relatedProducts: any[];
+    onRelatedProductClick: (product: any) => void;
+}> = ({ product, index, isVisible, onProductClick, onQuoteClick, relatedProducts, onRelatedProductClick }) => {
+    return (
     <div className={`bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-700 ease-out transform hover:-translate-y-3 group overflow-hidden border border-gray-100 cursor-pointer ${
         isVisible 
             ? 'opacity-100 translate-y-0' 
@@ -657,9 +929,17 @@ const ProfessionalProductCard: React.FC<{ product: any; index: number; isVisible
                     Get Quote
                 </button>
             </div>
+
+            {/* Related Products */}
+            <RelatedProducts 
+                productId={product.id}
+                relatedProducts={relatedProducts}
+                onProductClick={onProductClick}
+            />
         </div>
     </div>
 );
+};
 
 // Product Details Modal Component
 const ProductDetailsModal: React.FC<{ 
@@ -1021,6 +1301,8 @@ const ServicesPage: React.FC = () => {
     const [showProductDetailsModal, setShowProductDetailsModal] = useState(false);
     const [showContactModal, setShowContactModal] = useState(false);
     const [selectedProduct, setSelectedProduct] = useState<any>(null);
+    const [searchTerm, setSearchTerm] = useState('');
+    const [selectedCategory, setSelectedCategory] = useState('All');
     const productsRef = useRef<HTMLElement>(null);
 
     useEffect(() => {
@@ -1041,14 +1323,28 @@ const ServicesPage: React.FC = () => {
     }, []);
 
     const handleProductClick = (product: any) => {
+        // If it's a related products click, use the original product
+        if (product.relatedProducts) {
+            const originalProduct = products.find(p => p.id === product.id);
+            if (originalProduct) {
+                setSelectedProduct(originalProduct);
+                setShowProductDetailsModal(true);
+            }
+        } else {
         setSelectedProduct(product);
         setShowProductDetailsModal(true);
+        }
     };
 
     const handleQuoteClick = (product: any) => {
         setSelectedProduct(product);
         setShowQuoteModal(true);
         setShowProductDetailsModal(false);
+    };
+
+    const handleRelatedProductClick = (product: any) => {
+        setSelectedProduct(product);
+        setShowProductDetailsModal(true);
     };
 
     const closeQuoteModal = () => {
@@ -1069,83 +1365,270 @@ const ServicesPage: React.FC = () => {
         return relatedProducts[productId as keyof typeof relatedProducts] || [];
     };
 
+    // Get unique categories
+    const categories = ['All', ...Array.from(new Set(products.map(product => product.category)))];
+
+    // Filter products based on search term and category
+    const filteredProducts = products.filter(product => {
+        const matchesSearch = product.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                            product.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                            product.features.some((feature: string) => feature.toLowerCase().includes(searchTerm.toLowerCase()));
+        const matchesCategory = selectedCategory === 'All' || product.category === selectedCategory;
+        return matchesSearch && matchesCategory;
+    });
+
     return (
         <div className="pt-24 sm:pt-28 bg-gray-50">
-            {/* Page Header */}
-            <section className="bg-firetech-red text-white py-16 sm:py-20">
-                <div className="container mx-auto px-4 sm:px-6 text-center">
-                    <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4">Our Products & Services</h1>
-                    <p className="text-base md:text-lg lg:text-xl max-w-3xl mx-auto">
-                        Delivering integrated, world-class solutions across fire safety, construction, and industrial supply to safeguard your assets and ensure project success.
-                    </p>
+            {/* Professional Page Header */}
+            <section className="bg-gradient-to-br from-firetech-red via-red-700 to-red-800 text-white py-20 sm:py-24 relative overflow-hidden">
+                {/* Background Pattern */}
+                <div className="absolute inset-0 bg-black/10"></div>
+                <div className="absolute top-0 left-0 w-full h-full">
+                    <div className="absolute top-10 left-10 w-20 h-20 border border-white/20 rounded-full"></div>
+                    <div className="absolute top-32 right-16 w-16 h-16 border border-white/20 rounded-full"></div>
+                    <div className="absolute bottom-20 left-1/4 w-12 h-12 border border-white/20 rounded-full"></div>
+                    <div className="absolute bottom-32 right-1/3 w-8 h-8 border border-white/20 rounded-full"></div>
+                </div>
+                
+                <div className="container mx-auto px-4 sm:px-6 text-center relative z-10">
+                    <div className="max-w-5xl mx-auto">
+                        <div className="inline-block bg-white/10 backdrop-blur-sm rounded-2xl px-6 py-3 mb-8">
+                            <span className="text-white/90 font-semibold text-sm uppercase tracking-wider">
+                                Professional Fire Safety Solutions
+                            </span>
+                        </div>
+                        
+                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-black mb-6 leading-tight">
+                            Comprehensive
+                            <span className="block bg-gradient-to-r from-yellow-300 to-yellow-100 bg-clip-text text-transparent">
+                                Fire Safety & Industrial Solutions
+                            </span>
+                        </h1>
+                        
+                        <p className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed max-w-4xl mx-auto">
+                            From advanced fire detection systems to complete industrial solutions, we deliver 
+                            <span className="font-bold text-yellow-300"> world-class products and services</span> that protect 
+                            your assets and ensure regulatory compliance across Qatar and the region.
+                        </p>
+                        
+                    </div>
                 </div>
             </section>
             
-            {/* Core Services Section */}
-            <section className="py-16 sm:py-20">
+            {/* Professional Core Services Section */}
+            <section className="py-20 sm:py-24 bg-white">
                 <div className="container mx-auto px-4 sm:px-6">
-                    <div className="text-center mb-12">
-                        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800">Our Core Service Areas</h2>
+                    <div className="text-center mb-16">
+                        <div className="inline-block bg-firetech-red/10 rounded-2xl px-6 py-3 mb-6">
+                            <span className="text-firetech-red font-bold text-sm uppercase tracking-wider">
+                                Our Expertise
+                            </span>
                     </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        <ServiceCategory 
-                            icon={<FireIcon className="w-8 h-8"/>}
-                            title="Fire & Safety Solutions"
-                            items={[
-                                'Advanced Firefighting & Fire Alarm Systems', 
-                                'Personal Protective Equipment (PPE)',
-                                'Safety & Emergency Lighting'
-                            ]}
-                        />
-                        <ServiceCategory 
-                            icon={<BuildingOfficeIcon className="w-8 h-8"/>}
-                            title="Construction & Industrial"
-                            items={[
-                                'Building Materials, Tools & Equipment', 
-                                'Piping Products & Accessories', 
-                                'Fasteners & Industrial Hardware'
-                            ]}
-                        />
-                        <ServiceCategory 
-                            icon={<WrenchScrewdriverIcon className="w-8 h-8"/>}
-                            title="Contracting Services"
-                            items={[
-                                'General Contracting & Construction', 
-                                'MEP (Mechanical, Electrical & Plumbing)', 
-                                'Civil, Structural & Maintenance Works'
-                            ]}
-                        />
+                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-gray-900 mb-6">
+                            Three Pillars of
+                            <span className="block bg-gradient-to-r from-firetech-red to-red-600 bg-clip-text text-transparent">
+                                Professional Excellence
+                            </span>
+                        </h2>
+                        <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+                            Our comprehensive approach combines cutting-edge technology, industry expertise, and 
+                            regulatory compliance to deliver complete fire safety and industrial solutions.
+                        </p>
+                    </div>
+                    
+                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
+                        <div className="group">
+                            <div className="bg-gradient-to-br from-red-50 to-red-100 rounded-3xl p-8 h-full border border-red-200 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+                                <div className="flex items-center mb-6">
+                                    <div className="bg-gradient-to-r from-firetech-red to-red-600 text-white p-4 rounded-2xl mr-4 group-hover:scale-110 transition-transform duration-300">
+                                        <FireIcon className="w-8 h-8"/>
+                </div>
+                                    <h3 className="text-2xl font-bold text-gray-900">Fire & Safety Solutions</h3>
+                                </div>
+                                <p className="text-gray-600 mb-6 leading-relaxed">
+                                    Complete fire protection systems from detection to suppression, ensuring maximum safety 
+                                    and regulatory compliance for your facility.
+                                </p>
+                                <ul className="space-y-3">
+                                    <li className="flex items-start">
+                                        <CheckCircleIcon className="w-5 h-5 text-firetech-red mr-3 mt-1 flex-shrink-0" />
+                                        <span className="text-gray-700 font-medium">Advanced Fire Alarm & Detection Systems</span>
+                                    </li>
+                                    <li className="flex items-start">
+                                        <CheckCircleIcon className="w-5 h-5 text-firetech-red mr-3 mt-1 flex-shrink-0" />
+                                        <span className="text-gray-700 font-medium">Fire Suppression & Sprinkler Systems</span>
+                                    </li>
+                                    <li className="flex items-start">
+                                        <CheckCircleIcon className="w-5 h-5 text-firetech-red mr-3 mt-1 flex-shrink-0" />
+                                        <span className="text-gray-700 font-medium">Personal Protective Equipment (PPE)</span>
+                                    </li>
+                                    <li className="flex items-start">
+                                        <CheckCircleIcon className="w-5 h-5 text-firetech-red mr-3 mt-1 flex-shrink-0" />
+                                        <span className="text-gray-700 font-medium">Emergency & Safety Lighting</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div className="group">
+                            <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-3xl p-8 h-full border border-blue-200 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+                                <div className="flex items-center mb-6">
+                                    <div className="bg-gradient-to-r from-blue-500 to-blue-600 text-white p-4 rounded-2xl mr-4 group-hover:scale-110 transition-transform duration-300">
+                                        <BuildingOfficeIcon className="w-8 h-8"/>
+                                    </div>
+                                    <h3 className="text-2xl font-bold text-gray-900">Construction & Industrial</h3>
+                                </div>
+                                <p className="text-gray-600 mb-6 leading-relaxed">
+                                    Premium building materials and industrial supplies for construction projects, 
+                                    backed by our extensive network of trusted manufacturers.
+                                </p>
+                                <ul className="space-y-3">
+                                    <li className="flex items-start">
+                                        <CheckCircleIcon className="w-5 h-5 text-blue-500 mr-3 mt-1 flex-shrink-0" />
+                                        <span className="text-gray-700 font-medium">Structural Steel & Building Materials</span>
+                                    </li>
+                                    <li className="flex items-start">
+                                        <CheckCircleIcon className="w-5 h-5 text-blue-500 mr-3 mt-1 flex-shrink-0" />
+                                        <span className="text-gray-700 font-medium">Piping Systems & Industrial Valves</span>
+                                    </li>
+                                    <li className="flex items-start">
+                                        <CheckCircleIcon className="w-5 h-5 text-blue-500 mr-3 mt-1 flex-shrink-0" />
+                                        <span className="text-gray-700 font-medium">Tools & Industrial Hardware</span>
+                                    </li>
+                                    <li className="flex items-start">
+                                        <CheckCircleIcon className="w-5 h-5 text-blue-500 mr-3 mt-1 flex-shrink-0" />
+                                        <span className="text-gray-700 font-medium">Fasteners & Mechanical Components</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div className="group">
+                            <div className="bg-gradient-to-br from-emerald-50 to-emerald-100 rounded-3xl p-8 h-full border border-emerald-200 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+                                <div className="flex items-center mb-6">
+                                    <div className="bg-gradient-to-r from-emerald-500 to-emerald-600 text-white p-4 rounded-2xl mr-4 group-hover:scale-110 transition-transform duration-300">
+                                        <WrenchScrewdriverIcon className="w-8 h-8"/>
+                                    </div>
+                                    <h3 className="text-2xl font-bold text-gray-900">Contracting Services</h3>
+                                </div>
+                                <p className="text-gray-600 mb-6 leading-relaxed">
+                                    End-to-end contracting solutions from design to completion, ensuring quality 
+                                    execution and timely delivery of your projects.
+                                </p>
+                                <ul className="space-y-3">
+                                    <li className="flex items-start">
+                                        <CheckCircleIcon className="w-5 h-5 text-emerald-500 mr-3 mt-1 flex-shrink-0" />
+                                        <span className="text-gray-700 font-medium">General Contracting & Construction</span>
+                                    </li>
+                                    <li className="flex items-start">
+                                        <CheckCircleIcon className="w-5 h-5 text-emerald-500 mr-3 mt-1 flex-shrink-0" />
+                                        <span className="text-gray-700 font-medium">MEP (Mechanical, Electrical & Plumbing)</span>
+                                    </li>
+                                    <li className="flex items-start">
+                                        <CheckCircleIcon className="w-5 h-5 text-emerald-500 mr-3 mt-1 flex-shrink-0" />
+                                        <span className="text-gray-700 font-medium">Civil & Structural Works</span>
+                                    </li>
+                                    <li className="flex items-start">
+                                        <CheckCircleIcon className="w-5 h-5 text-emerald-500 mr-3 mt-1 flex-shrink-0" />
+                                        <span className="text-gray-700 font-medium">Maintenance & Service Contracts</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
 
-            {/* Product Showcase */}
-            
+            {/* Brands Section */}
+            <Brands />
 
             {/* Professional Products Section */}
             <section id="professional-products" ref={productsRef} className="py-20 sm:py-24 bg-gradient-to-b from-gray-50 to-white">
                 <div className="container mx-auto px-4 sm:px-6">
-                    {/* Section Header */}
+                    {/* Professional Section Header */}
                     <div className="text-center mb-16">
                         <div className="inline-block bg-firetech-red/10 rounded-2xl px-6 py-3 mb-6">
                             <span className="text-firetech-red font-bold text-sm uppercase tracking-wider">
-                                Professional Product Range
+                                Professional Product Catalog
                             </span>
                         </div>
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-gray-900 mb-6">
-                            Browse Our
+                            Premium Fire Safety
                             <span className="block bg-gradient-to-r from-firetech-red to-red-600 bg-clip-text text-transparent">
-                                Professional Products
+                                & Industrial Products
                             </span>
                         </h2>
                         <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                            Explore our comprehensive range of professional-grade products across multiple categories
+                            Discover our extensive catalog of <span className="font-bold text-firetech-red">certified, high-quality products</span> 
+                            from leading manufacturers. Each product is carefully selected for reliability, performance, and 
+                            compliance with international standards.
                         </p>
+                    </div>
+
+                    {/* Search and Filter Section */}
+                    <div className="mb-12">
+                        <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-200">
+                            {/* Search Bar */}
+                            <div className="mb-8">
+                                <div className="relative max-w-2xl mx-auto">
+                                    <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                                        <svg className="h-6 w-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                        </svg>
+                                    </div>
+                                    <input
+                                        type="text"
+                                        placeholder="Search products by name, description, or features..."
+                                        value={searchTerm}
+                                        onChange={(e) => setSearchTerm(e.target.value)}
+                                        className="w-full pl-12 pr-4 py-4 border border-gray-300 rounded-xl focus:ring-2 focus:ring-firetech-red focus:border-transparent text-lg placeholder-gray-500"
+                                    />
+                                </div>
+                            </div>
+
+                            {/* Category Filters */}
+                            <div className="mb-6">
+                                <h3 className="text-lg font-bold text-gray-900 mb-4 text-center">Filter by Category</h3>
+                                <div className="flex flex-wrap justify-center gap-3">
+                                    {categories.map((category) => (
+                                        <button
+                                            key={category}
+                                            onClick={() => setSelectedCategory(category)}
+                                            className={`px-6 py-3 rounded-xl font-bold text-sm transition-all duration-300 transform hover:scale-105 ${
+                                                selectedCategory === category
+                                                    ? 'bg-gradient-to-r from-firetech-red to-red-600 text-white shadow-lg'
+                                                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                                            }`}
+                                        >
+                                            {category}
+                                        </button>
+                                    ))}
+                                </div>
+                            </div>
+
+                            {/* Results Count */}
+                            <div className="text-center">
+                                <p className="text-gray-600">
+                                    Showing <span className="font-bold text-firetech-red">{filteredProducts.length}</span> of <span className="font-bold text-gray-900">{products.length}</span> products
+                                    {searchTerm && (
+                                        <span className="block text-sm text-gray-500 mt-1">
+                                            for "{searchTerm}"
+                                        </span>
+                                    )}
+                                    {selectedCategory !== 'All' && (
+                                        <span className="block text-sm text-gray-500 mt-1">
+                                            in {selectedCategory}
+                                        </span>
+                                    )}
+                                </p>
+                            </div>
+                        </div>
                     </div>
 
                     {/* Products Grid */}
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mb-16">
-                        {products.map((product, index) => (
+                        {filteredProducts.length > 0 ? (
+                            filteredProducts.map((product, index) => (
                             <ProfessionalProductCard 
                                 key={product.id} 
                                 product={product} 
@@ -1153,8 +1636,45 @@ const ServicesPage: React.FC = () => {
                                 isVisible={isVisible}
                                 onProductClick={handleProductClick}
                                 onQuoteClick={handleQuoteClick}
-                            />
-                        ))}
+                                    relatedProducts={getRelatedProducts(product.id)}
+                                    onRelatedProductClick={handleRelatedProductClick}
+                                />
+                            ))
+                        ) : (
+                            <div className="col-span-full text-center py-16">
+                                <div className="bg-white rounded-2xl shadow-lg p-12 max-w-2xl mx-auto">
+                                    <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                                        <svg className="w-8 h-8 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                        </svg>
+                                    </div>
+                                    <h3 className="text-2xl font-bold text-gray-900 mb-4">No Products Found</h3>
+                                    <p className="text-gray-600 mb-6">
+                                        {searchTerm 
+                                            ? `No products match your search for "${searchTerm}"`
+                                            : `No products found in the "${selectedCategory}" category`
+                                        }
+                                    </p>
+                                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                                        <button
+                                            onClick={() => {
+                                                setSearchTerm('');
+                                                setSelectedCategory('All');
+                                            }}
+                                            className="bg-gradient-to-r from-firetech-red to-red-600 text-white px-6 py-3 rounded-xl hover:from-red-600 hover:to-red-700 transition-all duration-300 font-bold"
+                                        >
+                                            Clear Filters
+                                        </button>
+                                        <button
+                                            onClick={() => setShowContactModal(true)}
+                                            className="border-2 border-firetech-red text-firetech-red px-6 py-3 rounded-xl hover:bg-firetech-red hover:text-white transition-all duration-300 font-bold"
+                                        >
+                                            Contact Us
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        )}
                     </div>
 
                     {/* Call to Action */}
