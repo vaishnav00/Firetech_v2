@@ -1380,37 +1380,18 @@ const ServicesPage: React.FC = () => {
     return (
         <div className="pt-24 sm:pt-28 bg-gray-50">
             {/* Professional Page Header */}
-            <section className="bg-gradient-to-br from-firetech-red via-red-700 to-red-800 text-white py-20 sm:py-24 relative overflow-hidden">
-                {/* Background Pattern */}
-                <div className="absolute inset-0 bg-black/10"></div>
-                <div className="absolute top-0 left-0 w-full h-full">
-                    <div className="absolute top-10 left-10 w-20 h-20 border border-white/20 rounded-full"></div>
-                    <div className="absolute top-32 right-16 w-16 h-16 border border-white/20 rounded-full"></div>
-                    <div className="absolute bottom-20 left-1/4 w-12 h-12 border border-white/20 rounded-full"></div>
-                    <div className="absolute bottom-32 right-1/3 w-8 h-8 border border-white/20 rounded-full"></div>
-                </div>
+            <section className="bg-gradient-to-br from-firetech-red via-red-700 to-red-800 text-white py-20 sm:py-24">
                 
-                <div className="container mx-auto px-4 sm:px-6 text-center relative z-10">
-                    <div className="max-w-5xl mx-auto">
-                        <div className="inline-block bg-white/10 backdrop-blur-sm rounded-2xl px-6 py-3 mb-8">
-                            <span className="text-white/90 font-semibold text-sm uppercase tracking-wider">
-                                Professional Fire Safety Solutions
-                            </span>
-                        </div>
-                        
-                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-black mb-6 leading-tight">
-                            Comprehensive
-                            <span className="block bg-gradient-to-r from-yellow-300 to-yellow-100 bg-clip-text text-transparent">
-                                Fire Safety & Industrial Solutions
-                            </span>
+                <div className="container mx-auto px-4 sm:px-6 text-center">
+                    <div className="max-w-4xl mx-auto">
+                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                            Professional Fire Safety & Industrial Solutions
                         </h1>
                         
-                        <p className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed max-w-4xl mx-auto">
+                        <p className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed">
                             From advanced fire detection systems to complete industrial solutions, we deliver 
-                            <span className="font-bold text-yellow-300"> world-class products and services</span> that protect 
-                            your assets and ensure regulatory compliance across Qatar and the region.
+                            world-class products and services that protect your assets and ensure regulatory compliance across Qatar and the region.
                         </p>
-                        
                     </div>
                 </div>
             </section>
@@ -1419,16 +1400,8 @@ const ServicesPage: React.FC = () => {
             <section className="py-20 sm:py-24 bg-white">
                 <div className="container mx-auto px-4 sm:px-6">
                     <div className="text-center mb-16">
-                        <div className="inline-block bg-firetech-red/10 rounded-2xl px-6 py-3 mb-6">
-                            <span className="text-firetech-red font-bold text-sm uppercase tracking-wider">
-                                Our Expertise
-                            </span>
-                    </div>
-                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-gray-900 mb-6">
-                            Three Pillars of
-                            <span className="block bg-gradient-to-r from-firetech-red to-red-600 bg-clip-text text-transparent">
-                                Professional Excellence
-                            </span>
+                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+                            Three Pillars of Professional Excellence
                         </h2>
                         <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
                             Our comprehensive approach combines cutting-edge technology, industry expertise, and 
@@ -1438,11 +1411,11 @@ const ServicesPage: React.FC = () => {
                     
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
                         <div className="group">
-                            <div className="bg-gradient-to-br from-red-50 to-red-100 rounded-3xl p-8 h-full border border-red-200 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+                            <div className="bg-white rounded-3xl p-8 h-full border border-gray-200 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
                                 <div className="flex items-center mb-6">
-                                    <div className="bg-gradient-to-r from-firetech-red to-red-600 text-white p-4 rounded-2xl mr-4 group-hover:scale-110 transition-transform duration-300">
+                                    <div className="bg-gray-100 text-gray-700 p-4 rounded-2xl mr-4 group-hover:scale-110 transition-transform duration-300">
                                         <FireIcon className="w-8 h-8"/>
-                </div>
+                                    </div>
                                     <h3 className="text-2xl font-bold text-gray-900">Fire & Safety Solutions</h3>
                                 </div>
                                 <p className="text-gray-600 mb-6 leading-relaxed">
@@ -1451,19 +1424,19 @@ const ServicesPage: React.FC = () => {
                                 </p>
                                 <ul className="space-y-3">
                                     <li className="flex items-start">
-                                        <CheckCircleIcon className="w-5 h-5 text-firetech-red mr-3 mt-1 flex-shrink-0" />
+                                        <CheckCircleIcon className="w-5 h-5 text-gray-500 mr-3 mt-1 flex-shrink-0" />
                                         <span className="text-gray-700 font-medium">Advanced Fire Alarm & Detection Systems</span>
                                     </li>
                                     <li className="flex items-start">
-                                        <CheckCircleIcon className="w-5 h-5 text-firetech-red mr-3 mt-1 flex-shrink-0" />
+                                        <CheckCircleIcon className="w-5 h-5 text-gray-500 mr-3 mt-1 flex-shrink-0" />
                                         <span className="text-gray-700 font-medium">Fire Suppression & Sprinkler Systems</span>
                                     </li>
                                     <li className="flex items-start">
-                                        <CheckCircleIcon className="w-5 h-5 text-firetech-red mr-3 mt-1 flex-shrink-0" />
+                                        <CheckCircleIcon className="w-5 h-5 text-gray-500 mr-3 mt-1 flex-shrink-0" />
                                         <span className="text-gray-700 font-medium">Personal Protective Equipment (PPE)</span>
                                     </li>
                                     <li className="flex items-start">
-                                        <CheckCircleIcon className="w-5 h-5 text-firetech-red mr-3 mt-1 flex-shrink-0" />
+                                        <CheckCircleIcon className="w-5 h-5 text-gray-500 mr-3 mt-1 flex-shrink-0" />
                                         <span className="text-gray-700 font-medium">Emergency & Safety Lighting</span>
                                     </li>
                                 </ul>
@@ -1471,9 +1444,9 @@ const ServicesPage: React.FC = () => {
                         </div>
                         
                         <div className="group">
-                            <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-3xl p-8 h-full border border-blue-200 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+                            <div className="bg-white rounded-3xl p-8 h-full border border-gray-200 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
                                 <div className="flex items-center mb-6">
-                                    <div className="bg-gradient-to-r from-blue-500 to-blue-600 text-white p-4 rounded-2xl mr-4 group-hover:scale-110 transition-transform duration-300">
+                                    <div className="bg-gray-100 text-gray-700 p-4 rounded-2xl mr-4 group-hover:scale-110 transition-transform duration-300">
                                         <BuildingOfficeIcon className="w-8 h-8"/>
                                     </div>
                                     <h3 className="text-2xl font-bold text-gray-900">Construction & Industrial</h3>
@@ -1484,19 +1457,19 @@ const ServicesPage: React.FC = () => {
                                 </p>
                                 <ul className="space-y-3">
                                     <li className="flex items-start">
-                                        <CheckCircleIcon className="w-5 h-5 text-blue-500 mr-3 mt-1 flex-shrink-0" />
+                                        <CheckCircleIcon className="w-5 h-5 text-gray-500 mr-3 mt-1 flex-shrink-0" />
                                         <span className="text-gray-700 font-medium">Structural Steel & Building Materials</span>
                                     </li>
                                     <li className="flex items-start">
-                                        <CheckCircleIcon className="w-5 h-5 text-blue-500 mr-3 mt-1 flex-shrink-0" />
+                                        <CheckCircleIcon className="w-5 h-5 text-gray-500 mr-3 mt-1 flex-shrink-0" />
                                         <span className="text-gray-700 font-medium">Piping Systems & Industrial Valves</span>
                                     </li>
                                     <li className="flex items-start">
-                                        <CheckCircleIcon className="w-5 h-5 text-blue-500 mr-3 mt-1 flex-shrink-0" />
+                                        <CheckCircleIcon className="w-5 h-5 text-gray-500 mr-3 mt-1 flex-shrink-0" />
                                         <span className="text-gray-700 font-medium">Tools & Industrial Hardware</span>
                                     </li>
                                     <li className="flex items-start">
-                                        <CheckCircleIcon className="w-5 h-5 text-blue-500 mr-3 mt-1 flex-shrink-0" />
+                                        <CheckCircleIcon className="w-5 h-5 text-gray-500 mr-3 mt-1 flex-shrink-0" />
                                         <span className="text-gray-700 font-medium">Fasteners & Mechanical Components</span>
                                     </li>
                                 </ul>
@@ -1504,9 +1477,9 @@ const ServicesPage: React.FC = () => {
                         </div>
                         
                         <div className="group">
-                            <div className="bg-gradient-to-br from-emerald-50 to-emerald-100 rounded-3xl p-8 h-full border border-emerald-200 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+                            <div className="bg-white rounded-3xl p-8 h-full border border-gray-200 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
                                 <div className="flex items-center mb-6">
-                                    <div className="bg-gradient-to-r from-emerald-500 to-emerald-600 text-white p-4 rounded-2xl mr-4 group-hover:scale-110 transition-transform duration-300">
+                                    <div className="bg-gray-100 text-gray-700 p-4 rounded-2xl mr-4 group-hover:scale-110 transition-transform duration-300">
                                         <WrenchScrewdriverIcon className="w-8 h-8"/>
                                     </div>
                                     <h3 className="text-2xl font-bold text-gray-900">Contracting Services</h3>
@@ -1517,19 +1490,19 @@ const ServicesPage: React.FC = () => {
                                 </p>
                                 <ul className="space-y-3">
                                     <li className="flex items-start">
-                                        <CheckCircleIcon className="w-5 h-5 text-emerald-500 mr-3 mt-1 flex-shrink-0" />
+                                        <CheckCircleIcon className="w-5 h-5 text-gray-500 mr-3 mt-1 flex-shrink-0" />
                                         <span className="text-gray-700 font-medium">General Contracting & Construction</span>
                                     </li>
                                     <li className="flex items-start">
-                                        <CheckCircleIcon className="w-5 h-5 text-emerald-500 mr-3 mt-1 flex-shrink-0" />
+                                        <CheckCircleIcon className="w-5 h-5 text-gray-500 mr-3 mt-1 flex-shrink-0" />
                                         <span className="text-gray-700 font-medium">MEP (Mechanical, Electrical & Plumbing)</span>
                                     </li>
                                     <li className="flex items-start">
-                                        <CheckCircleIcon className="w-5 h-5 text-emerald-500 mr-3 mt-1 flex-shrink-0" />
+                                        <CheckCircleIcon className="w-5 h-5 text-gray-500 mr-3 mt-1 flex-shrink-0" />
                                         <span className="text-gray-700 font-medium">Civil & Structural Works</span>
                                     </li>
                                     <li className="flex items-start">
-                                        <CheckCircleIcon className="w-5 h-5 text-emerald-500 mr-3 mt-1 flex-shrink-0" />
+                                        <CheckCircleIcon className="w-5 h-5 text-gray-500 mr-3 mt-1 flex-shrink-0" />
                                         <span className="text-gray-700 font-medium">Maintenance & Service Contracts</span>
                                     </li>
                                 </ul>
