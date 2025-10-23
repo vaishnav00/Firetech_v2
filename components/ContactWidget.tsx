@@ -67,9 +67,9 @@ const ContactWidget: React.FC = () => {
                   <p className="text-sm text-gray-600">Call us directly</p>
                 </div>
               </div>
-              <p className="text-xl font-bold text-emerald-600 mb-3">+974 1234 5678</p>
+              <p className="text-xl font-bold text-emerald-600 mb-3">+974 5522 1465</p>
               <button
-                onClick={() => window.open('tel:+97412345678')}
+                onClick={() => window.open('tel:+97455221465')}
                 className="w-full bg-gradient-to-r from-emerald-500 to-emerald-600 text-white py-2 px-4 rounded-lg hover:from-emerald-600 hover:to-emerald-700 transition-all duration-300 font-bold text-sm shadow-lg hover:shadow-xl transform hover:-translate-y-1"
               >
                 Call Now
@@ -89,9 +89,9 @@ const ContactWidget: React.FC = () => {
                   <p className="text-sm text-gray-600">Send us a message</p>
                 </div>
               </div>
-              <p className="text-lg font-bold text-blue-600 mb-3 break-all">info@firetech.qa</p>
+              <p className="text-lg font-bold text-blue-600 mb-3 break-all">suresh@firetechqa.com</p>
               <button
-                onClick={() => window.open('mailto:info@firetech.qa')}
+                onClick={() => window.open('mailto:suresh@firetechqa.com')}
                 className="w-full bg-gradient-to-r from-blue-500 to-blue-600 text-white py-2 px-4 rounded-lg hover:from-blue-600 hover:to-blue-700 transition-all duration-300 font-bold text-sm shadow-lg hover:shadow-xl transform hover:-translate-y-1"
               >
                 Send Email
@@ -111,9 +111,9 @@ const ContactWidget: React.FC = () => {
                   <p className="text-sm text-gray-600">Quick chat</p>
                 </div>
               </div>
-              <p className="text-lg font-bold text-green-600 mb-3">+974 1234 5678</p>
+              <p className="text-lg font-bold text-green-600 mb-3">+974 5522 1465</p>
               <button
-                onClick={() => window.open('https://wa.me/97412345678')}
+                onClick={() => window.open('https://wa.me/97455221465')}
                 className="w-full bg-gradient-to-r from-green-500 to-green-600 text-white py-2 px-4 rounded-lg hover:from-green-600 hover:to-green-700 transition-all duration-300 font-bold text-sm shadow-lg hover:shadow-xl transform hover:-translate-y-1"
               >
                 Chat on WhatsApp
@@ -128,8 +128,7 @@ const ContactWidget: React.FC = () => {
                 </svg>
                 <h4 className="font-bold text-gray-900">Office Hours</h4>
               </div>
-              <p className="text-sm text-gray-600">Monday - Friday: 8:00 AM - 6:00 PM</p>
-              <p className="text-sm text-gray-600">Saturday: 9:00 AM - 2:00 PM</p>
+              <p className="text-sm text-gray-600">Saturday - Thursday : 8:00 AM - 6:00 PM</p>
             </div>
           </div>
         </div>

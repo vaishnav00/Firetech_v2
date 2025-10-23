@@ -5,6 +5,7 @@ import Services from '../components/Services';
 import WhyChooseUs from '../components/WhyChooseUs';
 import Brands from '../components/Brands';
 import Clients from '../components/Clients';
+import Certificates from '../components/Certificates';
 import Contact from '../components/Contact';
 
 const HomePage: React.FC = () => {
@@ -12,6 +13,7 @@ const HomePage: React.FC = () => {
     <>
       <Hero />
       <About />
+      <Certificates />
       <Services />
       <WhyChooseUs />
       <Brands />

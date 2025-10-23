@@ -79,12 +79,13 @@ const Contact: React.FC = () => {
                         <h3 className="text-2xl font-bold text-firetech-white mb-8 text-center md:text-left">Contact Information</h3>
                         <div className="space-y-8">
                             <ContactInfoItem icon={<PhoneIcon className="h-5 w-5" />} title="Phone Numbers" index={0} isVisible={isVisible}>
-                                <a href="tel:+97440054812" className="block hover:text-firetech-light-red transition-colors duration-300 text-firetech-light-red">+974 4005 4812</a>
-                                <a href="tel:+97455221465" className="block hover:text-firetech-light-red transition-colors duration-300 text-firetech-light-red">+974 5522 1465</a>
+                                <a href="tel:+97455221465" className="block hover:text-firetech-light-red transition-colors duration-300 text-firetech-light-red">+974 4005 4812</a>
+                                <a href="tel:+97440054812" className="block hover:text-firetech-light-red transition-colors duration-300 text-firetech-light-red">+974 5522 1465</a>
                                 <a href="tel:+97470111355" className="block hover:text-firetech-light-red transition-colors duration-300 text-firetech-light-red">+974 7011 1355</a>
                                 <a href="tel:+97460069787" className="block hover:text-firetech-light-red transition-colors duration-300 text-firetech-light-red">+974 6006 9787</a>
                             </ContactInfoItem>
                             <ContactInfoItem icon={<MailIcon className="h-5 w-5" />} title="Email Addresses" index={1} isVisible={isVisible}>
+                            <a href="mailto:suresh@firetechqa.com" className="block hover:text-firetech-light-red transition-colors duration-300 text-firetech-light-red">suresh@firetechqa.com</a>
                                 <a href="mailto:info@firetechqa.com" className="block hover:text-firetech-light-red transition-colors duration-300 text-firetech-light-red">info@firetechqa.com</a>
                             </ContactInfoItem>
                             <ContactInfoItem icon={<LocationIcon className="h-5 w-5" />} title="Office Address" index={2} isVisible={isVisible}>

@@ -1,11 +1,13 @@
 import React from 'react';
 
 const certificates = [
+    { name: ' ISO Certified', logoUrl: '/Images/ISO_9001-2015_w.png' },
     { name: 'UL Certified', logoUrl: '/Images/UL.png' },
     { name: 'Qatar Civil Defence', logoUrl: '/Images/Qatar civil.png' },
     { name: 'NFPA Member', logoUrl: '/Images/NFPA.png' },
     { name: 'FM Approved', logoUrl: '/Images/FM.jpg' },
     { name: 'BSI Member', logoUrl: '/Images/BSI.png' },
+    { name: 'LPCB', logoUrl: '/Images/lpcb.png' },
 ];
 
 
@@ -23,7 +25,7 @@ const Certificates: React.FC = () => {
                                 <img 
                                     src={cert.logoUrl} 
                                     alt={cert.name} 
-                                    className="h-16 md:h-20 w-auto object-contain filter grayscale hover:grayscale-0 transition-all duration-300 cursor-pointer"
+                                    className="h-16 md:h-20 w-auto object-contain transition-all duration-300 cursor-pointer"
                                 />
                                 <p className="text-xs text-gray-600 mt-2 font-semibold text-center">{cert.name}</p>
                             </li>
@@ -35,7 +37,7 @@ const Certificates: React.FC = () => {
                                 <img 
                                     src={cert.logoUrl} 
                                     alt={cert.name} 
-                                    className="h-16 md:h-20 w-auto object-contain filter grayscale hover:grayscale-0 transition-all duration-300 cursor-pointer"
+                                    className="h-16 md:h-20 w-auto object-contain transition-all duration-300 cursor-pointer"
                                 />
                                 <p className="text-xs text-gray-600 mt-2 font-semibold text-center">{cert.name}</p>
                             </li>
