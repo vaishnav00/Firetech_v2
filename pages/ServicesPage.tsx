@@ -6,7 +6,7 @@ const products = [
     // Fire Alarm & Detection Systems
     {
         id: 'smoke-detector-001',
-        name: 'Advanced Smoke Detector',
+        name: 'Smoke Detector',
         category: 'Fire Alarm & Detection',
         description: 'High-sensitivity photoelectric smoke detector with wireless connectivity and long battery life.',
         imageUrl: '/Images/Smoke_detector.jpeg',
@@ -16,7 +16,7 @@ const products = [
     },
     {
         id: 'heat-detector-001',
-        name: 'Fixed Temperature Heat Detector',
+        name: 'Heat Detector',
         category: 'Fire Alarm & Detection',
         description: 'Reliable heat detector for areas where smoke detectors may not be suitable.',
         imageUrl: '/Images/Heat Detector.jpeg',
@@ -26,7 +26,7 @@ const products = [
     },
     {
         id: 'control-panel-001',
-        name: 'Fire Alarm Control Panel',
+        name: 'Control Panel',
         category: 'Fire Alarm & Detection',
         description: 'Central control panel for managing fire alarm systems with advanced monitoring capabilities.',
         imageUrl: '/Images/fire-alarm-control-panel.jpg',
@@ -36,7 +36,7 @@ const products = [
     },
     {
         id: 'manual-call-001',
-        name: 'Manual Call Point',
+        name: 'Call Point',
         category: 'Fire Alarm & Detection',
         description: 'Manual fire alarm activation point with glass break mechanism and LED indicators.',
         imageUrl: '/Images/Manual Call Point.jpg',
@@ -48,7 +48,7 @@ const products = [
     // Firefighting Equipment
     {
         id: 'fire-extinguisher-001',
-        name: 'ABC Dry Chemical Fire Extinguisher',
+        name: 'Fire Extinguisher',
         category: 'Firefighting Equipment',
         description: 'Multi-purpose fire extinguisher suitable for Class A, B, and C fires.',
         imageUrl: '/Images/Fire Extinguisher.jpeg',
@@ -68,7 +68,7 @@ const products = [
     },
     {
         id: 'sprinkler-001',
-        name: 'Automatic Sprinkler System',
+        name: 'Sprinkler',
         category: 'Firefighting Equipment',
         description: 'Wet pipe sprinkler system for automatic fire suppression in commercial buildings.',
         imageUrl: '/Images/Sprinkler System.jpg',
@@ -78,9 +78,9 @@ const products = [
     },
     {
         id: 'fire-hydrant-001',
-        name: 'Underground Fire Hydrant',
+        name: 'Fire Hydrant',
         category: 'Firefighting Equipment',
-        description: 'Heavy-duty underground fire hydrant for municipal and industrial applications.',
+        description: 'Heavy-duty fire hydrant for municipal and industrial applications.',
         imageUrl: '/Images/Fire Hydrant.png',
         price: 'Contact for Quote',
         features: ['Heavy Duty Construction', 'High Flow Capacity', 'Frost Resistant', 'Easy Access'],
@@ -90,7 +90,7 @@ const products = [
     // Fire Suppression Systems
     {
         id: 'fm200-001',
-        name: 'FM-200 Clean Agent System',
+        name: 'FM-200 / Novec System',
         category: 'Fire Suppression Systems',
         description: 'Clean agent fire suppression system for protecting sensitive equipment and data centers.',
         imageUrl: '/Images/FM-200 System.jpeg',
@@ -112,7 +112,7 @@ const products = [
     // Personal Protective Equipment
     {
         id: 'safety-helmet-001',
-        name: 'Industrial Safety Helmet',
+        name: 'Safety Helmet',
         category: 'Personal Protective Equipment',
         description: 'High-impact resistant safety helmet with adjustable suspension system.',
         imageUrl: '/Images/Safety Helmet.jpg',
@@ -120,21 +120,10 @@ const products = [
         features: ['High Impact Resistance', 'Adjustable Suspension', 'Ventilation Slots', 'ANSI Z89.1 Certified'],
         inStock: true
     },
-    {
-        id: 'safety-gloves-001',
-        name: 'Cut-Resistant Safety Gloves',
-        category: 'Personal Protective Equipment',
-        description: 'High-performance cut-resistant gloves for industrial and construction applications.',
-        imageUrl: '/Images/Safety Gloves.jpg',
-        price: 'Contact for Quote',
-        features: ['Cut Resistant', 'Comfortable Fit', 'Durable Material', 'EN 388 Certified'],
-        inStock: true
-    },
-
     // Piping & Industrial Valves
     {
         id: 'gate-valve-001',
-        name: 'Industrial Gate Valve',
+        name: 'Gate Valve',
         category: 'Piping & Industrial Valves',
         description: 'Heavy-duty gate valve for industrial applications with full bore design.',
         imageUrl: '/Images/Gate Valve.jpg',
@@ -144,7 +133,7 @@ const products = [
     },
     {
         id: 'ball-valve-001',
-        name: 'High Pressure Ball Valve',
+        name: 'Ball Valve',
         category: 'Piping & Industrial Valves',
         description: 'Quarter-turn ball valve with high pressure rating for industrial applications.',
         imageUrl: '/Images/Ball Valve.jpg',
@@ -290,16 +279,6 @@ const relatedProducts = {
             imageUrl: '/Images/Safety Helmet.jpg',
             price: 'Contact for Quote',
             features: ['Integrated Face Shield', 'High Impact', 'Comfortable Fit', 'Adjustable']
-        }
-    ],
-    'safety-gloves-001': [
-        {
-            id: 'safety-gloves-003',
-            name: 'Heat Resistant Gloves',
-            description: 'High-temperature protection for hot work environments.',
-            imageUrl: '/Images/Safety Gloves.jpg',
-            price: 'Contact for Quote',
-            features: ['Heat Resistant', 'High Temperature', 'Insulated', 'Flexible']
         }
     ],
     'gate-valve-001': [
