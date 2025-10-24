@@ -1247,7 +1247,7 @@ const ContactModal: React.FC<{
                                         <p className="text-gray-600">Send detailed requirements</p>
                                     </div>
                                 </div>
-                                <p className="text-xl font-bold text-blue-600 mb-4 break-all">info@firetech.qa</p>
+                                <p className="text-xl font-bold text-blue-600 mb-4 break-all">suresh@firetechqa.com</p>
                                 <button 
                                     onClick={() => window.open('mailto:info@firetech.qa?subject=Custom Product Quote Request')}
                                     className="bg-gradient-to-r from-blue-500 to-blue-600 text-white py-3 px-6 rounded-xl hover:from-blue-600 hover:to-blue-700 transition-all duration-300 font-bold shadow-lg hover:shadow-xl transform hover:-translate-y-1 w-full"
