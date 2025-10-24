@@ -1226,7 +1226,7 @@ const ContactModal: React.FC<{
                                         <p className="text-gray-600">Call for immediate assistance</p>
                                     </div>
                                 </div>
-                                <p className="text-3xl font-bold text-emerald-600 mb-4">+974 1234 5678</p>
+                                <p className="text-3xl font-bold text-emerald-600 mb-4">+974 5522 1465</p>
                                 <button 
                                     onClick={() => window.open('tel:+97412345678')}
                                     className="bg-gradient-to-r from-emerald-500 to-emerald-600 text-white py-3 px-6 rounded-xl hover:from-emerald-600 hover:to-emerald-700 transition-all duration-300 font-bold shadow-lg hover:shadow-xl transform hover:-translate-y-1 w-full"
