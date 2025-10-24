@@ -1127,7 +1127,7 @@ const QuoteModal: React.FC<{
                                         <p className="text-sm text-gray-600">Call for immediate assistance</p>
                                     </div>
                                 </div>
-                                <p className="text-2xl font-bold text-emerald-600">+974 1234 5678</p>
+                                <p className="text-2xl font-bold text-emerald-600">+974 5522 1465</p>
                             </div>
                             
                             <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-2xl border border-blue-200 hover:shadow-lg transition-all duration-300">
@@ -1142,7 +1142,7 @@ const QuoteModal: React.FC<{
                                         <p className="text-sm text-gray-600">Send detailed requirements</p>
                                     </div>
                                 </div>
-                                <p className="text-lg font-bold text-blue-600 break-all">info@firetech.qa</p>
+                                <p className="text-lg font-bold text-blue-600 break-all">suresh@firetechqa.com</p>
                             </div>
                         </div>
                     </div>
@@ -1150,7 +1150,7 @@ const QuoteModal: React.FC<{
                     {/* Action Buttons */}
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <button 
-                            onClick={() => window.open('tel:+97412345678')}
+                            onClick={() => window.open('tel:+97455221465')}
                             className="bg-gradient-to-r from-emerald-500 to-emerald-600 text-white py-4 px-6 rounded-2xl hover:from-emerald-600 hover:to-emerald-700 transition-all duration-300 font-bold text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 flex items-center justify-center"
                         >
                             <svg className="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
