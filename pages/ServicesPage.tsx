@@ -349,7 +349,7 @@ const products = [
         name: 'Grooved Fittings',
         category: 'Fire System Components',
         description: 'Fittings (elbows, tees, couplings) for grooved pipe systems.',
-        imageUrl: '/Images/Grooved Fittings.jpg',
+        imageUrl: '/Images/Pipe Fittings.jpeg',
         price: 'Contact for Quote',
         features: ['For Grooved Pipe', 'UL/FM Approved', 'Lede/National/CNG Brands', 'Ductile Iron'],
         inStock: true
@@ -359,7 +359,7 @@ const products = [
         name: 'Threaded Fittings',
         category: 'Fire System Components',
         description: 'Fittings (elbows, tees, unions) for threaded pipe systems.',
-        imageUrl: '/Images/Pipe Fittings.jpeg',
+        imageUrl: '/Images/threaded-pipe-fittings.jpg',
         price: 'Contact for Quote',
         features: ['For Threaded Pipe', 'UL/FM Approved', 'BIS/Siam Brands', 'Malleable Iron'],
         inStock: true
@@ -1286,7 +1286,7 @@ const ContactModal: React.FC<{
                         <div className="bg-gradient-to-r from-gray-50 to-gray-100 p-6 rounded-2xl">
                             <h6 className="font-bold text-gray-900 mb-2">Firetech Qatar Office</h6>
                             <p className="text-gray-600">Doha, Qatar</p>
-                            <p className="text-sm text-gray-500">Open Monday - Friday, 8:00 AM - 6:00 PM</p>
+                            <p className="text-sm text-gray-500">Open Saturday - Thursday, 7:30 AM - 5:30 PM</p>
                         </div>
                     </div>
                 </div>

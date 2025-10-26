@@ -128,7 +128,7 @@ const ContactWidget: React.FC = () => {
                 </svg>
                 <h4 className="font-bold text-gray-900">Office Hours</h4>
               </div>
-              <p className="text-sm text-gray-600">Saturday - Thursday : 8:00 AM - 6:00 PM</p>
+              <p className="text-sm text-gray-600">Saturday - Thursday : 7:30 AM - 5:30 PM</p>
             </div>
           </div>
         </div>
