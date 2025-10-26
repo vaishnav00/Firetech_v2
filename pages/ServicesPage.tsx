@@ -10,7 +10,7 @@ const products = [
         name: 'Sprinkler',
         category: 'Firefighting Equipment',
         description: 'Automatic fire sprinkler head for wet pipe and dry pipe systems.',
-        imageUrl: '/Images/Sprinkler System.jpg',
+        imageUrl: '/Images/fire-sprinkler.png',
         price: 'Contact for Quote',
         features: ['Automatic Activation', 'Pendent/Upright/Sidewall', 'UL/FM Approved', 'Viking/Tyco/HD Brands'],
         inStock: true
@@ -100,7 +100,7 @@ const products = [
         name: 'Tamper Switch',
         category: 'Fire Alarm & Detection',
         description: 'Supervisory switch to monitor the open state of control valves.',
-        imageUrl: '/Images/Tamper Switch.png',
+        imageUrl: '/Images/Tamper Switch.jpg',
         price: 'Contact for Quote',
         features: ['Potter/Weflo Brands', 'UL Listed', 'Valve Monitoring', 'Supervisory Signal'],
         inStock: true
@@ -151,7 +151,7 @@ const products = [
         name: 'Breeching Inlet & Cabinet',
         category: 'Firefighting Equipment',
         description: 'Inlet for firefighting services to pump water into the building\'s system.',
-        imageUrl: '/Images/Fire Hose Cabinet.jpg',
+        imageUrl: '/Images/Breeching Inlet.png',
         price: 'Contact for Quote',
         features: ['2-Way or 4-Way', 'Includes Cabinet', 'UL Listed', 'Ningbo Kaixuan/Swati Fire Brands'],
         inStock: true
@@ -181,7 +181,7 @@ const products = [
         name: 'Synthetic Fire Hose',
         category: 'Firefighting Equipment',
         description: 'Durable synthetic fire hose for firefighting applications.',
-        imageUrl: '/Images/Fire Hose Reel.png',
+        imageUrl: '/Images/Synthetic fire hose.jpg',
         price: 'Contact for Quote',
         features: ['Type 2', 'Type 3', 'High Burst Pressure', 'Torrent Walcoat/Newage Brands'],
         inStock: true
@@ -247,7 +247,7 @@ const products = [
         name: 'Gate Valve',
         category: 'Piping & Industrial Valves',
         description: 'Heavy-duty gate valve for fire protection systems.',
-        imageUrl: '/Images/Gate Valve.jpg',
+        imageUrl: '/Images/gate Valve.png',
         price: 'Contact for Quote',
         features: ['Full Bore Design', 'UL/FM Approved', 'Weflo/Fireking/Lede Brands', 'High Pressure Rating'],
         inStock: true
@@ -581,7 +581,7 @@ const relatedProducts = {
             id: 'extinguisher-parts-001',
             name: 'Fire Extinguisher Nozzle (Standard)',
             description: 'High-quality replacement nozzle for fire extinguishers. Compatible with most extinguisher types.',
-            imageUrl: '/Images/Fire Extinguisher.jpeg',
+            imageUrl: '/Images/Fire Extinguisher Accessories.jpg',
             price: 'Contact for Quote',
             features: ['High Quality Brass', 'Universal Compatibility', 'Durable Construction', 'Easy Installation', 'Corrosion Resistant']
         },
@@ -597,7 +597,7 @@ const relatedProducts = {
             id: 'extinguisher-parts-003',
             name: 'Fire Extinguisher Safety Pin',
             description: 'Tamper-evident safety pin for fire extinguishers. Prevents accidental discharge.',
-            imageUrl: '/Images/Fire Extinguisher.jpeg',
+            imageUrl: '/Images/Fire Extinguisher Accessories.jpg',
             price: 'Contact for Quote',
             features: ['Tamper Evident', 'Safety Device', 'High Quality', 'Reliable', 'Easy to Use']
         },
@@ -605,7 +605,7 @@ const relatedProducts = {
             id: 'extinguisher-parts-004',
             name: 'Fire Extinguisher Discharge Hose',
             description: 'Flexible discharge hose for fire extinguishers. High-pressure rated and durable.',
-            imageUrl: '/Images/Fire Extinguisher.jpeg',
+            imageUrl: '/Images/Fire Extinguisher Accessories.jpg',
             price: 'Contact for Quote',
             features: ['High Pressure Rated', 'Flexible Design', 'Durable Material', 'Easy Installation', 'Long Lasting']
         },
@@ -622,7 +622,7 @@ const relatedProducts = {
             id: 'extinguisher-bracket-001',
             name: 'Fire Extinguisher Mounting Bracket',
             description: 'Secure mounting bracket for fire extinguishers. Universal fit for most extinguisher types.',
-            imageUrl: '/Images/Fire Extinguisher.jpeg',
+            imageUrl: '/Images/Fire Extinguisher Accessories.jpg',
             price: 'Contact for Quote',
             features: ['Secure Mounting', 'Universal Fit', 'Easy Installation', 'Durable', 'Stainless Steel']
         },
@@ -639,7 +639,7 @@ const relatedProducts = {
             id: 'extinguisher-inspection-001',
             name: 'Fire Extinguisher Inspection Service',
             description: 'Regular inspection and testing service. Monthly and annual inspections available.',
-            imageUrl: '/Images/Fire Extinguisher.jpeg',
+            imageUrl: '/Images/Fire Extinguisher Inspection.jpeg',
             price: 'Contact for Quote',
             features: ['Monthly Inspection', 'Annual Testing', 'Pressure Check', 'QCDD Compliant', 'Detailed Reports']
         },
@@ -647,7 +647,7 @@ const relatedProducts = {
             id: 'extinguisher-maintenance-001',
             name: 'Fire Extinguisher Maintenance Service',
             description: 'Complete maintenance and repair service. Parts replacement and certification included.',
-            imageUrl: '/Images/Fire Extinguisher.jpeg',
+            imageUrl: '/Images/Fire Extinguisher Inspection.jpeg',
             price: 'Contact for Quote',
             features: ['Complete Service', 'Parts Replacement', 'Testing & Certification', 'QCDD Compliant', 'Warranty Included']
         },
@@ -667,7 +667,7 @@ const relatedProducts = {
             id: 'fire-hose-002',
             name: 'Rubber Fire Hose',
             description: 'Flexible rubber fire hose for general firefighting applications.',
-            imageUrl: '/Images/Fire Hose Reel.png',
+            imageUrl: '/Images/Synthetic fire hose.jpg',
             price: 'Contact for Quote',
             features: ['Flexible Rubber', 'High Pressure', 'Durable', 'Easy Handling']
         },
@@ -694,7 +694,7 @@ const relatedProducts = {
             id: 'sprinkler-002',
             name: 'Wet Pipe Sprinkler System',
             description: 'Traditional wet pipe sprinkler system with water-filled pipes.',
-            imageUrl: '/Images/Sprinkler System.jpg',
+            imageUrl: '/Images/fire-sprinkler.png',
             price: 'Contact for Quote',
             features: ['Wet Pipe', 'Water Filled', 'Fast Response', 'Reliable']
         },
@@ -702,7 +702,7 @@ const relatedProducts = {
             id: 'upright-sprinkler-001',
             name: 'Upright Sprinkler Head',
             description: 'Standard upright sprinkler head for ceiling installation. Reliable fire suppression coverage.',
-            imageUrl: '/Images/Sprinkler System.jpg',
+            imageUrl: '/Images/fire-sprinkler.png',
             price: 'Contact for Quote',
             features: ['Upright Design', 'Ceiling Mounted', 'Reliable Coverage', 'UL Listed', 'Easy Installation']
         },
@@ -710,7 +710,7 @@ const relatedProducts = {
             id: 'pendant-sprinkler-001',
             name: 'Pendant Sprinkler Head',
             description: 'Pendant sprinkler head for suspended ceiling installation. Professional fire protection.',
-            imageUrl: '/Images/Sprinkler System.jpg',
+            imageUrl: '/Images/fire-sprinkler.png',
             price: 'Contact for Quote',
             features: ['Pendant Design', 'Suspended Ceiling', 'Professional Grade', 'UL Listed', 'Reliable']
         },
@@ -718,7 +718,7 @@ const relatedProducts = {
             id: 'sidewall-sprinkler-001',
             name: 'Sidewall Sprinkler Head',
             description: 'Sidewall sprinkler head for wall installation. Perfect for corridors and narrow spaces.',
-            imageUrl: '/Images/Sprinkler System.jpg',
+            imageUrl: '/Images/fire-sprinkler.png',
             price: 'Contact for Quote',
             features: ['Sidewall Design', 'Wall Mounted', 'Narrow Spaces', 'UL Listed', 'Versatile']
         },
@@ -726,7 +726,7 @@ const relatedProducts = {
             id: 'concealed-sprinkler-001',
             name: 'Concealed Sprinkler Head',
             description: 'Concealed sprinkler head for aesthetic installations. Hidden until activation.',
-            imageUrl: '/Images/Sprinkler System.jpg',
+            imageUrl: '/Images/fire-sprinkler.png',
             price: 'Contact for Quote',
             features: ['Concealed Design', 'Aesthetic Installation', 'Hidden Activation', 'UL Listed', 'Professional']
         },
@@ -734,7 +734,7 @@ const relatedProducts = {
             id: 'esfr-sprinkler-001',
             name: 'ESFR Sprinkler Head',
             description: 'Early Suppression Fast Response sprinkler head for high-challenge fires.',
-            imageUrl: '/Images/Sprinkler System.jpg',
+            imageUrl: '/Images/fire-sprinkler.png',
             price: 'Contact for Quote',
             features: ['ESFR Technology', 'Fast Response', 'High Challenge Fires', 'UL Listed', 'Advanced']
         },
@@ -742,7 +742,7 @@ const relatedProducts = {
             id: 'deluge-sprinkler-001',
             name: 'Deluge Sprinkler Head',
             description: 'Deluge sprinkler head for high-hazard areas. Open head design for maximum coverage.',
-            imageUrl: '/Images/Sprinkler System.jpg',
+            imageUrl: '/Images/fire-sprinkler.png',
             price: 'Contact for Quote',
             features: ['Deluge Design', 'High Hazard Areas', 'Open Head', 'Maximum Coverage', 'Professional']
         }
