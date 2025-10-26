@@ -247,7 +247,7 @@ const products = [
         name: 'Gate Valve',
         category: 'Piping & Industrial Valves',
         description: 'Heavy-duty gate valve for fire protection systems.',
-        imageUrl: '/Images/gate Valve.png',
+        imageUrl: '/Images/Gate valves.png',
         price: 'Contact for Quote',
         features: ['Full Bore Design', 'UL/FM Approved', 'Weflo/Fireking/Lede Brands', 'High Pressure Rating'],
         inStock: true
