@@ -106,6 +106,22 @@ const Services: React.FC = () => {
                     />
                 </div>
                 
+                {/* PDF Catalog View Button - clean, no icon */}
+                <div className={`mt-8 transition-all duration-800 ease-out delay-400 ${
+                    isVisible 
+                        ? 'opacity-100 translate-y-0' 
+                        : 'opacity-0 translate-y-12'
+                } flex justify-center`}>
+                    <a
+                        href="/Images/Firetech Product Catalog 2025.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-block bg-gradient-to-r from-firetech-red to-red-600 text-white px-10 py-4 rounded-2xl font-bold text-lg shadow-xl hover:from-red-600 hover:to-red-700 hover:scale-105 transition-all duration-300"
+                        style={{ letterSpacing: '0.04em' }}
+                    >
+                        View Product Catalog (PDF)
+                    </a>
+                </div>
                 {/* Products Button */}
                 <div className={`mt-12 transition-all duration-800 ease-out delay-500 ${
                     isVisible 
